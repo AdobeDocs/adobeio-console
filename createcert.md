@@ -2,6 +2,8 @@
 
 You need a valid digital signing certificate to verify your identity in the JWT for your service-to-service integration with an Adobe I/O API or service. You upload a public-key certificate file to the Adobe I/O Console as part of creating your API key, and use the corresponding private key to sign any JWTs that you create.
 
+If you are a member of multiple Adobe organizations, please note that you will need a unique certificate pair for each organization.
+
 You can create a self-signed certificate, or purchase one from a Certificate Authority.
 
 - When you create your own self-signed certificate, you create two separate files. One file contains the public key and another contains the private key. The public-key file can be in CRT, CER, DER, or PEM format. See [Creating a self-signed certificate](#creating-a-self-signed-certificate).
