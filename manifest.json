@@ -11,59 +11,17 @@
 "base_path": "https://raw.githubusercontent.com",
 "pages": [
 {
-"importedFileName": "gettingstarted",
+"importedFileName": "README",
 "pages": [
-    {
-      "importedFileName": "api_key_workflow",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/api_key_workflow.md",
-      "title": "API Key Integration"
-    },
-    {
-      "importedFileName": "oauth_workflow",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/oauth_workflow.md",
-      "title": "OAuth Integration"
-    },
-   {
-      "importedFileName": "jwt_workflow",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/jwt_workflow.md",
-      "title": "Service Account Integration"
-    },
 	{
-      "importedFileName": "createjwt",
+      "importedFileName": "integrations",
       "pages": [],
-      "path": "adobedocs/adobeio-console/master/createjwt.md",
-      "title": "Creating a JSON Web Token"
-    },
-		{
-      "importedFileName": "createjwt",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/createjwt/jwt_java.md",
-      "title": "Creating a JWT for a Java App"
-    },
-		{
-      "importedFileName": "createjwt",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/createjwt/jwt_nodeJS.md",
-      "title": "Creating a JWT for a Node.js App"
-    },
-	{
-      "importedFileName": "createcert",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/createcert.md",
-      "title": "Public Key Certificates for JWTs"
-    },
-	{
-      "importedFileName": "connect",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/connect.md",
-      "title": "JWT Authentication Reference"
+      "path": "adobedocs/adobeio-console/master/integrations.md",
+      "title": "Creating an Integration"
 	}
 	],
-	 "path": "adobedocs/adobeio-console/master/gettingstarted.md",
-     "title": "Adobe I/O Authentication Overview"
+	 "path": "adobedocs/adobeio-console/master/README.md",
+     "title": "Adobe I/O Console Developer's Guide"
 	 }
 	 ]
 }
