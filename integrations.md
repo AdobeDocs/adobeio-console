@@ -1,6 +1,6 @@
 # Integrations
 
-Through the Adobe I/O API Gateway, Adobe makes much of the power of many of its products and technologies avialable to the developer to integrate into their own applications. An _integration_ is a mechanism for your application to communicate with Adobe APIs. You create integrations in the Adobe I/O Console. 
+Through the Adobe I/O API Gateway, Adobe makes much of the power of many of its products and technologies avialable to the developer to integrate into their own applications. An _integration_ is a mechanism for your application to communicate with Adobe APIs. You create integrations in Adobe I/O Console. 
 
 ## Types of Integrations
 
@@ -42,7 +42,7 @@ Depending on the type of integration you create and the type of authentication i
 
 Once you know what kind of authentication your application requires and how you want to integrate with Adobe, you can create an integration for your application in Adobe I/O Console. 
 
-1. Log in to the [Adobe I/O Console](https://console.adobe.io) and select **Integrations.**  
+1. Log in to [Adobe I/O Console](https://console.adobe.io) and select **Integrations.**  
 
     ![Integrations](img/console_int_1.png)  
       
