@@ -2,16 +2,6 @@
 
 Through the Adobe I/O API Gateway, Adobe makes much of the power of many of its products and technologies avialable to the developer to integrate into their own applications. An _integration_ is a mechanism for your application to communicate with Adobe APIs. You create integrations in the Adobe I/O Console. 
 
-## Authentication and Authorization
-
-Access to Adobe APIs is granted by the Adobe I/O API Gateway when your application authenticates through the Adobe Identity Management Service. When you create your integration, you will need to determine what kind of authentication your application will require:
-
-* **API Key Integration:** Some Adobe services, such as Adobe Stock, don&rsquo;t need an authenticated user to access; they merely require authorization. Such services can be called _anonymously_ and typically provide consistent results regardless of the identity of the user or service making the request. For such scenarios, API Key Authorization is sufficient. See [API Key Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/APIKeyIntegration.md) in the _Adobe Authentication Developer Guide_ for more information.  
-
-* **OAuth Integration:** Most Adobe services require that your application be authorized by your user to access their APIs. For such scenarios, your application sends your user to an Adobe login screen, where your user logs in: your user&rsquo;s client credentials are then used to pass back to your application an authorization token that enables your app to access Adobe APIs on behalf of your user. This is called [OAuth Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/OAuthIntegration.md), for which you will find more information in the _Adobe Authentication Developer Guide._
-
-* **Service Account Integration:** For some scenarios, your application needs to authenticate on its own behalf, or on behalf of an organziation. In these scenarios, there is no user present. Instead of having a user log in and grant your application the authorization to access Adobe services, your application gets its own authorization by means of passing a JSON Web Token (JWT) and receiving an access token to be used to access Adobe APIs. For more information, see [Service Account Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) in the _Adobe Authentication Developer Guide._
-
 ## Types of Integrations
 
 Your application can integrate with Adobe in one of these ways:
@@ -23,6 +13,16 @@ Your application can integrate with Adobe in one of these ways:
 <!--
 * **Deploy serverless actions:** (beta) This type of integration lets you post functions to Adobe I/O Runtime, a serverless function platform. Functions posted on Runtime are known as **actions.** Once you have posted your functions as actions, you can access them over the web and enjoy virtually unlimited scalability and availability without having to manage servers. For more information, see [Adobe I/O Runtime on adobe.io](https://www.adobe.io/apis/experienceplatform/runtime.html). 
 -->
+
+## Authentication and Authorization
+
+Access to Adobe APIs is granted by the Adobe I/O API Gateway when your application authenticates through the Adobe Identity Management Service. When you create your integration, you will need to determine what kind of authentication your application will require:
+
+* **API Key Integration:** Some Adobe services, such as Adobe Stock, don&rsquo;t need an authenticated user to access; they merely require authorization. Such services can be called _anonymously_ and typically provide consistent results regardless of the identity of the user or service making the request. For such scenarios, API Key Authorization is sufficient. See [API Key Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/APIKeyIntegration.md) in the _Adobe Authentication Developer Guide_ for more information.  
+
+* **OAuth Integration:** Most Adobe services require that your application be authorized by your user to access their APIs. For such scenarios, your application sends your user to an Adobe login screen, where your user logs in: your user&rsquo;s client credentials are then used to pass back to your application an authorization token that enables your app to access Adobe APIs on behalf of your user. This is called [OAuth Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/OAuthIntegration.md), for which you will find more information in the _Adobe Authentication Developer Guide._
+
+* **Service Account Integration:** For some scenarios, your application needs to authenticate on its own behalf, or on behalf of an organziation. In these scenarios, there is no user present. Instead of having a user log in and grant your application the authorization to access Adobe services, your application gets its own authorization by means of passing a JSON Web Token (JWT) and receiving an access token to be used to access Adobe APIs. For more information, see [Service Account Integration](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/ServiceAccountIntegration.md) in the _Adobe Authentication Developer Guide._
 
 ## Prerequisites for Integration
 
@@ -62,7 +62,7 @@ Once you know what kind of authentication your application requires and how you 
 
 5. Continue to view integration details.   
     
-    ![Integration complete](img/console_int_4.png)  
+    ![Integration complete](img/console_int_5.png)  
     
     **Note:** For integrations that require Adobe approval before deployment, such as Android and iOS apps, your integration will be created in development mode, during which you can only use the integration with up to 25 unique Adobe IDs. You can reset development mode if you use up these IDs during testing.
 
