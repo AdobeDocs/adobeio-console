@@ -1,69 +1,33 @@
 {
-"name": "Authentication",
-"version": "2.0.0",
-"description": "Authentication",
-"author": "Rachel Luxemburg",
+"name": "Console",
+"version": "1.0.0",
+"description": "Adobe I/O Console Developer's Guide",
+"author": "Matt Lusher",
 "view_type": "mdbook",
-"meta_keywords": "adobe i/o,console,authentication",
-"meta_description": "default description",
-"publish_date": "08/20/2018",
+"meta_keywords": "adobe i/o,console,integrations,plugins",
+"meta_description": "Documentation for features of the Adobe I/O Console for developers.",
+"publish_date": "03/22/2019",
 "show_edit_github_banner": false,
 "base_path": "https://raw.githubusercontent.com",
 "pages": [
 {
-"importedFileName": "gettingstarted",
+"importedFileName": "README",
 "pages": [
-    {
-      "importedFileName": "api_key_workflow",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/api_key_workflow.md",
-      "title": "API Key Integration"
-    },
-    {
-      "importedFileName": "oauth_workflow",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/oauth_workflow.md",
-      "title": "OAuth Integration"
-    },
-   {
-      "importedFileName": "jwt_workflow",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/jwt_workflow.md",
-      "title": "Service Account Integration"
-    },
 	{
-      "importedFileName": "createjwt",
+      "importedFileName": "integrations",
       "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/createjwt.md",
-      "title": "Creating a JSON Web Token"
-    },
-		{
-      "importedFileName": "createjwt",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/createjwt/jwt_java.md",
-      "title": "Creating a JWT for a Java App"
-    },
-		{
-      "importedFileName": "createjwt",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/createjwt/jwt_nodeJS.md",
-      "title": "Creating a JWT for a Node.js App"
-    },
+      "path": "adobedocs/adobeio-console/master/integrations.md",
+      "title": "Creating an Integration"
+	},
 	{
-      "importedFileName": "createcert",
+      "importedFileName": "plugins",
       "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/createcert.md",
-      "title": "Public Key Certificates for JWTs"
-    },
-	{
-      "importedFileName": "connect",
-      "pages": [],
-      "path": "adobeio/adobeio-documentation/master/console/connect.md",
-      "title": "JWT Authentication Reference"
+      "path": "adobedocs/adobeio-console/master/plugins.md",
+      "title": "Creating an Integration"
 	}
 	],
-	 "path": "adobeio/adobeio-documentation/master/console/gettingstarted.md",
-     "title": "Adobe I/O Authentication Overview"
+	 "path": "adobedocs/adobeio-console/master/README.md",
+     "title": "Adobe I/O Console Developer's Guide"
 	 }
 	 ]
 }
