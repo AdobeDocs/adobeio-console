@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-- [Why is the service I want to use grayed out?](#title-of-a-question)
+- [Why is the service I want to use grayed out?](#why-is-the-service-i-want-to-use-grayed-out)
 
 ### Why is the service I want to use grayed out?
 
