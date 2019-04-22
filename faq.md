@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 
 - [Why is the service I want to use grayed out?](#why-is-the-service-i-want-to-use-grayed-out)
-- [How do I generate a certificate for my integration?](
+- [How do I generate a certificate for my integration?](#how-do-i-generate-a-certificate-for-my-integration)
 
 ### Why is the service I want to use grayed out?
 
