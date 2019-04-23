@@ -10,9 +10,12 @@
 "show_edit_github_banner": false,
 "base_path": "https://raw.githubusercontent.com",
 "pages": [
-{
-"importedFileName": "README",
-"pages": [
+	{
+      "importedFileName": "overview",
+      "pages": [],
+			"path": "adobedocs/adobeio-console/master/README.md",
+			"title": "Overview"
+	},
 	{
       "importedFileName": "integrations",
       "pages": [],
@@ -25,9 +28,5 @@
       "path": "adobedocs/adobeio-console/master/plugins.md",
       "title": "Creating an Integration"
 	}
-	],
-	 "path": "adobedocs/adobeio-console/master/README.md",
-     "title": "Adobe I/O Console Developer's Guide"
-	 }
-	 ]
+]
 }
