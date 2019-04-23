@@ -13,20 +13,26 @@
     {
         "importedFileName": "overview",
         "pages": [],
-        "path": "adobedocs/adobeio-console/master/README.md",
+        "path": "AdobeDocs/adobeio-console/master/README.md",
         "title": "Overview"
     },
     {
         "importedFileName": "integrations",
         "pages": [],
-        "path": "adobedocs/adobeio-console/master/integrations.md",
+        "path": "AdobeDocs/adobeio-console/master/integrations.md",
         "title": "Creating an Integration"
     },
     {
         "importedFileName": "plugins",
         "pages": [],
-        "path": "adobedocs/adobeio-console/master/plugins.md",
+        "path": "AdobeDocs/adobeio-console/master/plugins.md",
         "title": "Creating an Integration"
+    },
+    {
+        "importedFileName": "faq",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/faq.md",
+        "title": "FAQ"
     }
   ]
 }
