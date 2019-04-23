@@ -33,6 +33,12 @@
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/faq.md",
         "title": "FAQ"
+    },
+    {
+        "importedFileName": "support",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/support.md",
+        "title": "Support"
     }
   ]
 }
