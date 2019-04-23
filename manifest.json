@@ -1,32 +1,32 @@
 {
-"name": "Console",
-"version": "1.0.0",
-"description": "Adobe I/O Console Developer's Guide",
-"author": "Matt Lusher",
-"view_type": "mdbook",
-"meta_keywords": "adobe i/o,console,integrations,plugins",
-"meta_description": "Documentation for features of the Adobe I/O Console for developers.",
-"publish_date": "03/22/2019",
-"show_edit_github_banner": false,
-"base_path": "https://raw.githubusercontent.com",
-"pages": [
-	{
-      "importedFileName": "overview",
-      "pages": [],
-			"path": "adobedocs/adobeio-console/master/README.md",
-			"title": "Overview"
-	},
-	{
-      "importedFileName": "integrations",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/integrations.md",
-      "title": "Creating an Integration"
-	},
-	{
-      "importedFileName": "plugins",
-      "pages": [],
-      "path": "adobedocs/adobeio-console/master/plugins.md",
-      "title": "Creating an Integration"
-	}
-]
+  "name": "Console",
+  "version": "1.0.0",
+  "description": "Adobe I/O Console Developer's Guide",
+  "author": "Matt Lusher",
+  "view_type": "mdbook",
+  "meta_keywords": "adobe i/o,console,integrations,plugins",
+  "meta_description": "Documentation for features of the Adobe I/O Console for developers.",
+  "publish_date": "03/22/2019",
+  "show_edit_github_banner": false,
+  "base_path": "https://raw.githubusercontent.com",
+  "pages": [
+    {
+        "importedFileName": "overview",
+        "pages": [],
+        "path": "adobedocs/adobeio-console/master/README.md",
+        "title": "Overview"
+    },
+    {
+        "importedFileName": "integrations",
+        "pages": [],
+        "path": "adobedocs/adobeio-console/master/integrations.md",
+        "title": "Creating an Integration"
+    },
+    {
+        "importedFileName": "plugins",
+        "pages": [],
+        "path": "adobedocs/adobeio-console/master/plugins.md",
+        "title": "Creating an Integration"
+    }
+  ]
 }
