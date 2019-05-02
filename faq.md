@@ -5,7 +5,7 @@
 
 ### Why is the service I want to use grayed out?
 
-In order to create an integration on I/O Console: 
+To create an integration on I/O Console: 
 
 1. You must be part of an Enterprise Organization.
 2. You must be a System Administrator within that Organization.
@@ -15,6 +15,4 @@ In order to create an integration on I/O Console:
 
 Using the openssl command line utility:
 
-```
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out test.crt
-```
+`openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt`
