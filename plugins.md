@@ -4,7 +4,7 @@ The Adode I/O Console enables you to create plugins for Adobe XD, Adobe's intera
 
 ## Create an XD plugin project
 
-To assist you in building your own Adobe XD plugins, Adobe provides a starter project containing a helpful model that you can adapt as your own. In order to access the starter project, you must first create a new plugin within Adobe I/O Console by competing the following steps:
+To assist you in building your own Adobe XD plugins, Adobe provides a starter project containing a helpful model that you can adapt as your own. In order to access the starter project, you must first create a new plugin within Adobe I/O Console by completing the following steps:
 
 1. Log in to [Adobe I/O Console](https://console.adobe.io) and select **Plugins** from the top navigation.
 
