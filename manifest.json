@@ -2,7 +2,7 @@
   "name": "Console",
   "version": "1.0.0",
   "description": "Adobe I/O Console Developer's Guide",
-  "author": "Matt Lusher",
+  "author": "Hiren Shah",
   "view_type": "mdbook",
   "meta_keywords": "adobe i/o,console,integrations,plugins",
   "meta_description": "Documentation for features of the Adobe I/O Console for developers.",
@@ -26,7 +26,7 @@
         "importedFileName": "plugins",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/plugins.md",
-        "title": "Creating an Integration"
+        "title": "Creating an XD Plugin"
     },
     {
         "importedFileName": "faq",
