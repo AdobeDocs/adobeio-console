@@ -68,7 +68,7 @@ When you have finished building your XD plugin, it is time to submit the plugin 
 
     ![Plugins](img/console_plugins_add_new_version_review.png)
 
-9. Your plugin submission is now being reviewed by the integrations team and you will receive a response within 10 business days. Once your plugin has been approved, it will be available for install in the XD plugin manager.
+9. Your plugin submission is now being reviewed by the integrations team and you will receive a response within 10 business days. Once your plugin has been approved, it will be available for installation in the XD plugin manager.
 
 <!-- 
 ## Add new plugin version
