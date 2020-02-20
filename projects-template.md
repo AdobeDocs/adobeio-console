@@ -62,7 +62,7 @@ Add Runtime automatically, means each workspace gets a unique runtime namespace 
   * Why not auto? Use case: just UI app, no runtime behind it, give option to not have runtime set up.
   * checked by default, most use cases will include it
 
-To learn more about Runtime, visit the [Adobe I/O Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)
+To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)
 
 ### Save the project
 

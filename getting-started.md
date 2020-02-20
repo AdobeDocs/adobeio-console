@@ -54,7 +54,7 @@ Each individual project is shown on a card that includes the title of the projec
 
 You can use the sort functionality to change the order in which projects are displayed, and you can begin working on a new project by selecting **Create new project**.
 
-For more information on projects, see the documentation on [creating a project](create-project.md).
+For more information on projects, see the documentation on [creating a project](projects.md).
 
 ![](images/projects.png)
 

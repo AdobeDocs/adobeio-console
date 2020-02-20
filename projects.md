@@ -10,10 +10,10 @@ Projects are a common framework within both personal and enterprise organization
 
 A blank project is
 
-To get started, follow the steps provided in the guide for [creating a blank project](blank-project.md)
+To get started, follow the steps provided in the guide for [creating a blank project](projects-blank.md)
 
 ## Templated projects
 
 In order to streamline the creation of projects, Adobe Developer Console provides templates that you can use to get up and running quickly.
 
-To get started, follow the steps provided in the guide for [creating a templated project](template-project.md).
+To get started, follow the steps provided in the guide for [creating a templated project](projects-template.md).
