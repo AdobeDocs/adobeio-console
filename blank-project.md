@@ -26,4 +26,4 @@ With the blank project created, you can begin to add services using the **Add Se
 
 ## Next Steps
 
-To begin working with services, including steps for adding APIs, events, and enabling Runtime, please start by reading the [services documentation](add-services.png).
+To begin working with services, including steps for adding APIs, events, and enabling Runtime, please start by reading the [services documentation](add-services.md).

@@ -76,7 +76,7 @@ From the project overview you can view and select all available workspaces, as w
 
 Now that the project is set up, you can begin to develop against it by adding services such as APIs and events.
 
-To begin working with services, please read the [services documentation](add-services.png).
+To begin working with services, please read the [services documentation](add-services.md).
 
 __
 
