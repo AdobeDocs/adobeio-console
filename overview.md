@@ -2,7 +2,7 @@
 
 Adobe developer console allows you and your team to flexibly and easily connect to Adobe services, enable Runtime, subscribe to event notifications, and manage your projects with new insights. Through console you can also build XD plugins and submit them for approval to be listed on the plugin marketplace.
 
-## What's new in Adobe Developer Console?
+## What's new in Adobe Developer Console
 
 If you are familiar with console, you may have noticed that several new features have been added and the navigation of console has changed. Here are some of the exciting changes that have happened to Adobe Developer Console:
 
