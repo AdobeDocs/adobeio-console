@@ -1,9 +1,9 @@
-# Adobe I/O Console Downloads
+# Adobe Developer Console Downloads
 
-Adobe I/O Console gives you access to the SDKs for many of Adobe's most powerful and popular products and technologies. Through Console, you can download SDKs, get supporting information, find the GitHub repositories for them, and track your download history. 
+Adobe Developer Console gives you access to the SDKs for many of Adobe's most powerful and popular products and technologies. Through console, you can download SDKs, get supporting information and find GitHub repositories for them, as well as track your download history. 
 
-![Downloads](img/console_dnl_1.png)
+![Downloads](images/downloads.png)
 
-Select any of the products or technologies you see to access its SDKs and other info:
+Select any of the products or technologies you see to access its SDK and other important information.
 
-![Selecting an SDK](img/console_dnl_2.png)
+![Selecting an SDK](images/download-details.png)
