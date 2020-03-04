@@ -6,10 +6,11 @@ Adobe developer console allows you and your team to flexibly and easily connect 
 
 If you are familiar with console, you may have noticed that several new features have been added and the navigation of console has changed. Here are some of the exciting changes that have happened to Adobe Developer Console:
 
-* Organizations: Through Developer Console, developers can belong to one or many organizations, including having a personal organization with which they can build and distribute integrations and plugins.
+* ***NEW* Organizations:** Through Developer Console, developers can belong to one or many organizations, including having a personal organization with which they can build and distribute integrations and plugins.
     * Enterprise: As a developer in an enterprise organization, you can quickly connect to Adobe services, get credentials, and view metrics related to the use of Adobe services.
     * Personal: As an independent developer on Console, not part of an Enterprise organization, you can connect to Adobe services, distribute what you develop, and view analytics of service usage.
-* Projects: All development work in Adobe Developer Console is now part of a project, including integrations and plugins. A project can be created that includes one or multiple products, and contains a combination of APIs, events, runtime, and XD plugins. Projects can be part of a personal or enterprise organization. Projects belonging to an enterprise organization are visible to all members of the organization.
+* ***NEW* Projects:** All development work in Adobe Developer Console is now part of a project, including integrations and plugins. A project can be created that includes one or multiple products, and contains a combination of APIs, events, runtime, and XD plugins. Projects can be part of a personal or enterprise organization. Projects belonging to an enterprise organization are visible to all members of the organization.
+* **Plugins Update:** Plugins are now created as part of a project and are available only within personal organizations. Other than changes to initiating a new Plugin, the development, submission, and approval process remail relatively unchanged. For more information, see the documentation on creating plugins.
 
 ![](images/welcome.png)
 

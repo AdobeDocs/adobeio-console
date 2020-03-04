@@ -6,9 +6,15 @@ This guide outlines the steps necessary to create a project using a template.
 
 If you do not wish to use a template and would like to create a blank project, please follow the steps in the [blank project guide](blank-project.md).
 
+## Select organization
+
+Before creating a project, ensure that you are working in the correct organization. To view and select an organization, use the organization switcher located in the top-right corner of the console.
+
+![Organization switcher in console](images/switch-organizations.png)
+
 ## Quick start
 
-To begin, select **Create project from template** from the _Quick start_ menu on the _Home_ screen.
+To create a new project, select **Create project from template** from the _Quick start_ menu on the _Home_ screen.
 
 ![](images/create-project-from-template.png)
 
@@ -40,27 +46,40 @@ This project title is internal only and can be changed later if required.
 
 It is recommended that if you are working in collaboration with multiple developers, you provide a project title that is meaningful and makes the project easy to distinguish from other projects in the organization.
 
+![](images/templated-project-title.png)
+
 ### App Name
 
 The app name is the public-facing name of the application and is used for setting up environments and **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
 
 **MISSING: Best Practices for App Names**
 
+![](images/templated-project-app-name.png)
+
 ### Workspaces
 
-Templated projects include multiple workspaces, which can be thought of as individual working sub-folders for each developer on the project.
+Templated projects include multiple workspaces, which can be thought of as individual working sub-folders for each developer on the project. Workspaces are where you will connect services and get the credential details needed to connect to Adobe APIs.
 
-Two workspaces are provided automatically: Production and Stage. These workspaces cannot be edited or deleted. Since you are creating a custom application for distribution, the Production workspace is the workspace that will be used for the submission and distribution flow. This means that the application that will be used by end-users is coming out of the Production workspace.
+Two workspaces are provided automatically: Production and Stage. These workspaces cannot be edited or deleted. 
 
-You can also create additional workspaces for each individual developer working on the project. These workspaces are editable and can be added or deleted as needed.
+Since most custom applications are created with the intent of being distributed, the Production workspace is the workspace that will be used for the submission and distribution flow. This means that the application that will be used by end-users is that which is built in the Production workspace. When you are ready to deploy your app, submit the Production workspace for approval.
 
-### Adobe I/O Runtime
+You can create additional workspaces for each individual developer working on the project. These workspaces are editable and can be added or deleted as needed.
 
-Add Runtime automatically, means each workspace gets a unique runtime namespace set up - each developer to work within their own runtime environment.  
-  * If don’t do auto, can do that later, individually.
-  * Can auto add and remove from each later, individually.
-  * Why not auto? Use case: just UI app, no runtime behind it, give option to not have runtime set up.
-  * checked by default, most use cases will include it
+![](images/templated-project-workspaces.png)
+
+### Adobe Runtime
+
+When setting up a new project, you can automatically include Runtime with each workspace. Runtime is a powerful, serverless way to quickly deploy custom code to respond to events and execute functions right in the cloud, allowing you to orchestrate custom workflows that meet your unique business needs.
+
+When the "Include Runtime with each workspace" checkbox is checked, each workspace that is created is automatically provision with a unique Runtime namespace allowing each developer to work within their own Runtime environment.  
+
+> **Note:** Most use cases require the use of Runtime, therefore the checkbox is checked by default.
+
+Notes on including Runtime in workspaces:
+  * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need enable it manually for each individual workspace. You cannot auto-include Runtime for all workspaces after the initial set up is complete.
+  * You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
+  * Example where Runtime may not be needed: If you are building an application that is UI-only, you may not require Runtime.
 
 To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)
 
@@ -72,42 +91,19 @@ From the project overview you can view and select all available workspaces, as w
 
 ![](images/project-overview.png)
 
+## Select a workspace
+
+Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work in.
+
+The _Workspace Overview_ appears, showing information regarding the selected workspace as well as any _Products & services_ added to the project. 
+
+> **Note:** If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here.
+
+![](images/workspace-get-started.png)
+
 ## Next Steps
 
-Now that the project is set up, you can begin to develop against it by adding services such as APIs and events.
+To begin adding services, you can use the _+ Add Service_ button in the left navigation or select one of the quick start buttons (_Add API_ or _Add Event_)
+under "Get started with your new workspace". 
 
-To begin working with services, please read the [services documentation](add-services.md).
-
-__
-
-
-
-* Project is set up, start developing against it
-    * add a service - API, Events (Runtime already enabled)
-* Workspaces
-    * ellipses - can edit and delete it
-    * toggle between workspaces 
-    * start typing and it will populate
-    * click on card
-* Custom apps need to go through approval process - this will show the STATUS of the project overall 
-    * production workspace - In Development
-    * Production workspace - drives the status for the overall project
-* Within workspace - add API, add event, see runtime namespace
-    * regular project view - what project looks like in other places
-    * important in “custom apps” (cloud native) is the approval flow
-* Make sure production workspace has code, APIs, etc that it needs and submit for approval
-* Approval:
-    * Production workspace, services connected
-    * fill in app details - project title and app name - from initial setup
-    * description will be public-facing - part of application
-    * who the main contact is - company administrators know who to go back to
-    * icon - dimensions required
-    * leave a note for internal reviewer - reviewer is customer enterprise admin
-        * custom apps - system admin getting approval request from developer who built the app
-        * different approval flow and XD go to ADOBE REVIEWERS
-        * for now, goes to company administrators for approval - for custom/cloud native apps
-    * Either Rejected or Approved.
-        * See note if rejected and go make changes
-        * STATUS: Published
-* How apps built in backend is runtime focused - just getting credentials in console
-    * container, runtime namespace, etc in GitHub — don’t doc this.
+For detailed information on working with services, please read the [services documentation](add-services.md).
