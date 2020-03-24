@@ -2,7 +2,7 @@
 
 This guide provides step-by-step instructions for creating a blank project in Adobe Developer Console.
 
-To create a project using a template, please follow the steps in the [templated project guide](template-project.md).
+If you were hoping to create a project using a template, please follow the steps in the [templated project guide](template-project.md).
 
 ## Select organization
 
