@@ -1,16 +1,32 @@
 # Adobe Developer Console overview
 
-Adobe developer console allows you and your team to flexibly and easily connect to Adobe services, enable Runtime, subscribe to event notifications, and manage your projects with new insights. Through console you can also build XD plugins and submit them for approval to be listed on the plugin marketplace.
+If you are familiar with console, you may have noticed that several new features have been added and the navigation of console has changed. 
 
-## What's new in Adobe Developer Console
+## Welcome to the new Adobe Developer Console
 
-If you are familiar with console, you may have noticed that several new features have been added and the navigation of console has changed. Here are some of the exciting changes that have happened to Adobe Developer Console:
+The new console allows you and your team to flexibly and easily connect to Adobe services, enable I/O Runtime, and manage your projects with new insights.
 
-* ***NEW* Organizations:** Through Developer Console, developers can belong to one or many organizations, including having a personal organization with which they can build and distribute integrations and plugins.
-    * Enterprise: As a developer in an enterprise organization, you can quickly connect to Adobe services, get credentials, and view metrics related to the use of Adobe services.
-    * Personal: As an independent developer on Console, not part of an Enterprise organization, you can connect to Adobe services, distribute what you develop, and view analytics of service usage.
-* ***NEW* Projects:** All development work in Adobe Developer Console is now part of a project, including integrations and plugins. A project can be created that includes one or multiple products, and contains a combination of APIs, events, runtime, and XD plugins. Projects can be part of a personal or enterprise organization. Projects belonging to an enterprise organization are visible to all members of the organization.
-* **Plugins Update:** Plugins are now created as part of a project and are available only within personal organizations. Other than changes to initiating a new Plugin, the development, submission, and approval process remail relatively unchanged. For more information, see the documentation on creating plugins.
+Here are some of the other exciting changes that have happened to Adobe Developer Console:
+
+### Integrations and plugins are now projects
+    
+Save time and effort by creating projects that help you organize your work (APIs, event-based integrations, runtime, and XD plugins) and quickly get your credentials. Read the [projects overview](projects.md) to learn more.
+
+### Create projects for you or your company  
+    
+Keep work and play separate. Quickly navigate between personal projects and your organization's projects through the "profile switcher" that is always available in the top right corner of Console.
+
+### Introducing templates
+
+Templated projects include everything you need to get to "hello, world" faster.
+
+### Deploy your project with the Project Firefly template
+
+The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. Collaborate with your team in dedicated workspaces and deploy to your organization seamlessly. 
+
+### New features for Adobe XD plugin distribution
+
+Plugin distribution is easier than ever. You can now save a draft of your submission and preview it in XD before submitting. Want approval but not ready to publish? You can now submit and delay the publishing until you are ready. To get started, read the [plugins overview](plugins.md).
 
 ![](images/welcome.png)
 

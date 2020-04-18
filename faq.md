@@ -4,24 +4,27 @@ This document provides answers to frequently asked questions about Adobe Develop
 
 ## Questions
 
-- [Why is the service I want to use grayed out?](#why-is-the-service-i-want-to-use-grayed-out)
-- [How do I generate a certificate for my integration?](#how-do-i-generate-a-certificate-for-my-integration)
-
+* [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
+* [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
+* [What is a workspace?](#what-is-a-workspace)
 
 ## Answers
 
-### Why is the service I want to use grayed out?
+### Why is the service I want to use greyed out?
 
-To create an integration on I/O Console: 
+Many services require a paid license or subscription to use. If you believe you should have access to a disabled service, please contact your Adobe sales representative.
 
-1. You must be part of an Enterprise Organization.
-2. You must be a System Administrator within that Organization.
-3. Your organization must be provisioned to use that particular service. Contact your Enterprise account representative to get your organization provisioned for additional services.
+If you are a member of an enterprise organization, please note that either System Admin or Developer permissions are required to access services.
 
-### How do I generate a certificate for my integration?
+### How do I delete Runtime from my project or workspace?
 
-Using the openssl command line utility:
+Currently it is not possible to remove Runtime from a project. Please create a new project instead.
 
-```
-openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
-```
+### What is a workspace?
+
+Workspaces are currently only available when building Project Firefly apps. Workspaces allow you to collaborate with other developers on your team as part of the same larger project, yet with your own dedicated Runtime namespace and credentials. Stage and a Production workspaces are provided out of the box, and you are able to add as many workspaces as you need. Please note that the Production workspace will be the one used for submission approval.
+
+
+
+
+
