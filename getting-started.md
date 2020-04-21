@@ -18,7 +18,7 @@ The _Home_ screen is where you can easily find information and quick links, incl
 
 Adobe Developer Console allows developers to access and work on projects within multiple enterprise organizations as well as create projects within their own personal organization. 
 
-Navigating between organizations is easily done using the organization switcher located in the top-right corner of the developer console UI. To switch organizations, simply select the down arrow ( &#709; ) and choose the organization you wish to use.
+Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, simply select the down arrow ( &#709; ) and choose the organization you wish to use.
 
 > **Note:** The "Role" will also update to reflect your role within the newly selected organization, or will disappear if you select a personal organization because they are not role-based.
 
@@ -26,7 +26,7 @@ Navigating between organizations is easily done using the organization switcher 
 
 ### Quick start
 
-The _Home_ screen also provides "quick start" links to help you get started with some of the most common console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and navigating to developer downloads.
+The _Home_ screen also provides "quick start" links to help you get started with some of the most common console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and downloading resources.
 
 ![](images/quick-start.png)
 
@@ -34,7 +34,7 @@ The _Home_ screen also provides "quick start" links to help you get started with
 
 If your organization has created projects, the most recent projects are displayed on the _Home_ screen, enabling you to easily continue working or see work that has been done.
 
-Only the three most recent projects will be shown, therefore to view additional projects for your organization, select **All projects** or choose _Projects_ in the top navigation.
+Only the three most recent projects will be shown, therefore to view additional projects for your organization, select **All projects** or choose _Projects_ in the top navigation. See the [Projects](#projects) section that follows for more information.
 
 ![](images/recent-projects.png)
 
@@ -60,7 +60,7 @@ For more information on projects, see the documentation on [creating a project](
 
 ## Downloads
 
-The _Downloads_ screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies.
+The _Downloads_ screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the *Quick start* menu or by selecting **Downloads** in the top navigation.
 
 To learn more about accessing downloads, visit the [downloads documentation](downloads.md).
 
