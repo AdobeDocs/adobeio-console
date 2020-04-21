@@ -22,7 +22,7 @@ To create a new project, select **Create project from template** from the _Quick
 
 When the _Browse Templates_ dialog opens, you will be able to select a template type.
 
-Currently three is one template type available: Adobe Custom Applications. This template supports you in creating a project that generates an Adobe Custom Application. 
+Currently three is one template type available: Project Firefly. The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. 
 
 > **Note:** Additional templates will be released in the future to support the streamlining of other workflows and creation of applications.
 
@@ -52,8 +52,6 @@ It is recommended that if you are working in collaboration with multiple develop
 
 The app name is the public-facing name of the application and is used for setting up environments and **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
 
-**MISSING: Best Practices for App Names**
-
 ![](images/templated-project-app-name.png)
 
 ### Workspaces
@@ -81,7 +79,7 @@ Notes on including Runtime in workspaces:
   * You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
   * Example where Runtime may not be needed: If you are building an application that is UI-only, you may not require Runtime.
 
-To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html)
+To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html).
 
 ### Save the project
 
@@ -104,6 +102,6 @@ The _Workspace Overview_ appears, showing information regarding the selected wor
 ## Next Steps
 
 To begin adding services, you can use the _+ Add Service_ button in the left navigation or select one of the quick start buttons (_Add API_ or _Add Event_)
-under "Get started with your new workspace". 
+under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](add-services.md).
 
-For detailed information on working with services, please read the [services documentation](add-services.md).
+![](images/workspace-add-service.png)
