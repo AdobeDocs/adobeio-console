@@ -26,7 +26,7 @@ Navigating between organizations is easily done using the organization switcher 
 
 ### Quick start
 
-The _Home_ screen also provides "quick start" links to help you get started with some of the most common console actions. _Quick start_ links are available for: creating a blank project, creating a project using a template, and navigating to developer downloads.
+The _Home_ screen also provides "quick start" links to help you get started with some of the most common console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and navigating to developer downloads.
 
 ![](images/quick-start.png)
 

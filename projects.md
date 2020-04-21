@@ -10,11 +10,11 @@ Use the organization switcher to view the organizations to which you belong and 
 
 ![Organization switcher on the console home screen.](images/switch-organizations.png)
 
-## Blank projects
+## Empty projects
 
-Think of a blank project as an open canvas or "blank slate" from which you can add events, runtime, plugins, APIs and more to create custom applications.
+Think of an empty project as an open canvas or "blank slate" from which you can add events, runtime, plugins, APIs and more to create custom applications.
 
-To get started, follow the steps provided in the guide for [creating a blank project](projects-blank.md).
+To get started, follow the steps provided in the guide for [creating an empty project](projects-empty.md).
 
 ## Templated projects
 

@@ -4,9 +4,9 @@ This guide provides step-by-step instructions for creating an XD Plugin in Adobe
 
 > **Note:** With the latest release of Adobe Developer Console, XD Plugins are now created as part of a project. XD Plugin Projects are only able to be made using your personal organization. This workflow is not available from within an enterprise organization.
 
-## Create a blank project
+## Create an empty project
 
-From within your personal organization, select the quick start button to **Create blank project**.
+From within your personal organization, select the quick start button to **Create an empty project**.
 
 ![](images/personal-org.png)
 
