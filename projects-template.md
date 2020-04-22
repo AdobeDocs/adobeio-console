@@ -81,27 +81,40 @@ Notes on including Runtime in workspaces:
 
 To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html).
 
-### Save the project
+## Project overview
 
-With all of the set up details complete, you can select **Save** to save your project. This opens the project overview, showing the details of your newly created project.
+With all of the set up details complete, you can select **Save** to save your project. This opens the *Project Overview*, showing the details of your newly created project.
 
-From the project overview you can view and select all available workspaces, as well as see the status, template, last modified date, created date, and description for the project.
+From here you can view and select all available workspaces, as well as see various details for the project related to the template, created and modified dates, and project description.
 
 ![](images/project-overview.png)
 
+## Add a workspace
+
+You can add additional workspaces to a project during creation, or after a project is created you can use the **Add workspace** button on the *Project Overview* screen. Multiple workspaces can be created to test features and functionality or to provide an individual workspace for each developer on the project. 
+
+These workspaces appear alongside the default Production and Stage workspaces as individual cards. These additional workspace cards include an ellipses button ("...") that, when selected, allows you to Edit or Delete the workspace. (Remember that the out-of-the-box Production and Stage workspaces cannot be deleted.)
+
+![](images/templated-project-add-workspace.png)
+
 ## Select a workspace
 
-Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work in.
-
-The _Workspace Overview_ appears, showing information regarding the selected workspace as well as any _Products & services_ added to the project. 
-
-> **Note:** If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here.
+Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work in and the *Workspace overview* will open.
 
 ![](images/workspace-get-started.png)
 
-## Next Steps
+The *Workspace overview* shows information regarding the selected workspace as well as any *Products & services* added to the project. If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here under *Products & Services*.
 
-To begin adding services, you can use the _+ Add Service_ button in the left navigation or select one of the quick start buttons (_Add API_ or _Add Event_)
-under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
+![](images/workspace-products-services.png)
+
+## Add services
+
+To begin adding services to your project, you can use the **Add Service** button in the left navigation or select one of the quick start buttons found under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
 
 ![](images/workspace-add-service.png)
+
+## Insights
+
+## Approval
+
+Once you have finished developing your project, you can begin the submission process. For more information, please read the [guide on project approval](approval.md).

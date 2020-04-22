@@ -24,5 +24,5 @@ The Project Firefly template provides all of the developer tools you need to bui
 
 Plugin distribution is easier than ever. You can now save a draft of your submission and preview it in XD before submitting. Want approval but not ready to publish? You can now submit and delay the publishing until you are ready. To get started, read the [plugins overview](plugins.md).
 
-![](images/welcome.png)
+![](images/developer-console-home.png)
 
