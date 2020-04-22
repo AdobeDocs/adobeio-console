@@ -1,4 +1,4 @@
-# Adobe Developer Console Projects overview
+# Projects overview
 
 All development work in Adobe Developer Console is done as part of a project. A project may include one or multiple products, as well as a combination of APIs, events, runtime, and XD plugins. 
 

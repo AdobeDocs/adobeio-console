@@ -50,7 +50,7 @@ It is recommended that if you are working in collaboration with multiple develop
 
 ### App Name
 
-The app name is the public-facing name of the application and is used for setting up environments and **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
+The app name is the public-facing name of the application and is used for setting up environments therefore it **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
 
 ![](images/templated-project-app-name.png)
 
@@ -75,9 +75,9 @@ When the "Include Runtime with each workspace" checkbox is checked, each workspa
 > **Note:** Most use cases require the use of Runtime, therefore the checkbox is checked by default.
 
 Notes on including Runtime in workspaces:
-  * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need enable it manually for each individual workspace. You cannot auto-include Runtime for all workspaces after the initial set up is complete.
+  * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
   * You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
-  * Example where Runtime may not be needed: If you are building an application that is UI-only, you may not require Runtime.
+  * ***Example where Runtime may not be needed:*** If you are building an application that is UI-only, you may not require Runtime.
 
 To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html).
 
@@ -102,6 +102,6 @@ The _Workspace Overview_ appears, showing information regarding the selected wor
 ## Next Steps
 
 To begin adding services, you can use the _+ Add Service_ button in the left navigation or select one of the quick start buttons (_Add API_ or _Add Event_)
-under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](add-services.md).
+under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
 
 ![](images/workspace-add-service.png)
