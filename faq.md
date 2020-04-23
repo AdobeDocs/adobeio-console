@@ -4,13 +4,13 @@ This document provides answers to frequently asked questions about Adobe Develop
 
 ## Questions
 
-
 * [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
 * [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
 * [What is a workspace?](#what-is-a-workspace)
 * [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-"project-title"-and-"app-name")
 * [What can I do with the Project Firefly template?](#what-can-i-do-with-the-project-firefly-template)
 * [What is required to build a Project Firefly app?](#what-is-required-to-build-a-project-firely-app)
+* [Why can't I create a project for my organization?](#why-cant-i-create-a-project-for-my-organization)
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
 * [I want to generate my own JWT. How do I do that?](#i-want-to-generate-my-own-jwt-how-do-i-do-that)
@@ -50,6 +50,12 @@ For more information, please see the [Project Firefly documentation](https://www
 ### What is required to build a Project Firefly app?
 
 Please see the latest [Project Firefly documentation](https://www.adobe.io/apis/experienceplatform/project-firefly/).
+
+### Why can't I create a project for my organization?
+
+For enterprise organizations, you must be a system administrator or developer in order to create projects for your organization. 
+
+For information on how to manage developers in the admin console, see the [managing developers documentation](https://helpx.adobe.com/enterprise/using/manage-developers.html). 
 
 ### Why can't I add an XD plugin to my project?
 

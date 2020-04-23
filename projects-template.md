@@ -99,11 +99,11 @@ These workspaces appear alongside the default Production and Stage workspaces as
 
 ## Select a workspace
 
-Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work in and the *Workspace overview* will open.
+Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work by either clicking the name of the workspace or selecting the workspace from the **Workspaces** dropdown on the left.
 
 ![](images/workspace-get-started.png)
 
-The *Workspace overview* shows information regarding the selected workspace as well as any *Products & services* added to the project. If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here under *Products & Services*.
+Once a workspace is selected, the *Workspace overview* opens showing information regarding the selected workspace as well as any *Products & services* added to the project. If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here under *Products & Services*.
 
 ![](images/workspace-products-services.png)
 
@@ -117,4 +117,4 @@ To begin adding services to your project, you can use the **Add Service** button
 
 ## Approval
 
-Once you have finished developing your project, you can begin the submission process. For more information, please read the [guide on project approval](approval.md).
+Once you have finished developing your project, you can begin the approval process to publish your app to production. For more information, please read the [guide on project approval](approval.md).
