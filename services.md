@@ -2,7 +2,7 @@
 
 After creating a project, it is time to begin adding services. These services include accessing Adobe APIs, adding events, and enabling runtime.
 
-If you are looking to build an XD Plugin, please begin by reading the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
+> **Note:** If you are looking for a guide on how to build an XD Plugin, please begin by reading the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
 
 ## Add a service
 
@@ -16,7 +16,7 @@ In an empty project, select **+Add to Project** in the left navigation of the *P
 
 ## Service-specific workflows
 
-To follow a specific workflow for adding each type of service, please select from the following guides.
+To follow a specific workflow for adding each type of service, please select from the following guides:
 
 ### Add API
 
@@ -40,4 +40,18 @@ Adobe I/O Events all you to receive notifications of real-time events taking pla
 
 
 * [Add Runtime](services-enable-runtime.md)
+
+## Credentials
+
+Once you have successfully added APIs to your project or workspace, you can return to the *Project overview* (or *Workspace overview* in a templated project) at any time to view the details for that API and any other project services you may have added. 
+
+You can select the specific API from the left navigation to view its details or remove the API using the **Remove API** button in the top-right corner.
+
+You can also select the specific credential type from the left navigation to view the *Credential details* and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, etc.) as needed. For more information on accessing credentials, please read the [credentials overview](credentials.md).
+
+## Next steps
+
+You can continue to add as many services as you need by following the various [workflow guides](#service-specific-workflows) found in this document.
+
+Once you have completed development on your project and are ready to submit your application for approval, please read the [project approval process guide](approval.md) to get started.
 

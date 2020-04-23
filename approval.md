@@ -2,6 +2,8 @@
 
 Once you have completed development on your project, your application is ready for approval. Not all apps require approval by your organizations administrators.
 
+> **Note:** If you are looking for instructions on how to submit an XD plugin for approval, please see the [distributing an XD plugin guide](plugin-distribution.md) to get started.
+
 Relies on Production environment - that is the workspace that will be submitted. 
 
 Production workspace drives the status for the overall project

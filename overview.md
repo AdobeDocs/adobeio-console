@@ -24,5 +24,9 @@ The Project Firefly template provides all of the developer tools you need to bui
 
 Plugin distribution is easier than ever. You can now save a draft of your submission and preview it in XD before submitting. Want approval but not ready to publish? You can now submit and delay the publishing until you are ready. To get started, read the [plugins overview](plugins.md).
 
+## Next steps
+
+Now that you're familiar with the new features in Adobe Developer Console, read the [getting started guide](getting-started.md) to begin creating your own projects and building your own apps and plugins.
+
 ![](images/developer-console-home.png)
 

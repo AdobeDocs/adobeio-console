@@ -54,7 +54,7 @@ Each individual project is shown on a card that includes the title of the projec
 
 You can use the sort functionality to change the order in which projects are displayed, and you can begin working on a new project by selecting **Create new project**.
 
-For more information on projects, see the documentation on [creating a project](projects.md).
+For more information on projects, being by reading the [projects overview](projects.md).
 
 ![](images/projects.png)
 
@@ -62,6 +62,6 @@ For more information on projects, see the documentation on [creating a project](
 
 The _Downloads_ screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the *Quick start* menu or by selecting **Downloads** in the top navigation.
 
-To learn more about accessing downloads, visit the [downloads documentation](downloads.md).
+To learn more about accessing downloads, read the [downloads overview](downloads.md).
 
 ![](images/downloads.png)

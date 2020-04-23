@@ -14,7 +14,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
 * [I want to generate my own JWT. How do I do that?](#i-want-to-generate-my-own-jwt-how-do-i-do-that)
-* [Why do I see a Read-only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
+* [Why do I see a Read Only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
 * [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
 * [Why can't I change the name of my Project Firefly app?](#why-cant-i-change-the-name-of-my-project-firefly-app)
 * [Where did my integrations and plugins go?](#where-did-my-integrations-and-plugins-go)
@@ -25,7 +25,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 
 Many services require a paid license or subscription to use. If you believe you should have access to a disabled service, please contact your Adobe sales representative.
 
-If you are a member of an enterprise organization, please note that either System Admin or Developer permissions are required to access services.
+If you are a member of an enterprise organization, please note that either System Admin or Developer permissions are required to access services. For information on how to manage developers in the admin console, see the [managing developers documentation](https://helpx.adobe.com/enterprise/using/manage-developers.html).  
 
 ### How do I delete Runtime from my project or workspace?
 
@@ -71,9 +71,9 @@ Adobe I/O Runtime is only available for enterprise customers and requires a lice
 
 Head to Service Account (JWT) in the Credentials section to see your credential details and generate the JWT.
 
-### Why do I see a Read-only label on some of my projects? Even some that I created?	
+### Why do I see a Read Only label on some of my projects? Even some that I created?	
 
-A project or workspace is set to *Read-only* if you have not been granted access to all services within the project or workspace. Work with your organization's administrators to determine which services and product profiles you should have access to.
+A project or workspace is set to *Read Only* if you have not been granted access to all services within the project or workspace. Work with your organization's administrators to determine which services and product profiles you should have access to.
 
 ### How do I know if I should use JWT or OAuth?	
 

@@ -29,3 +29,17 @@ Access to some APIs is based on licenses. Meaning either the licenses your compa
 ![](images/services-api-jwt-generate-token.png)
 
 ![](images/services-api-jwt-token.png)
+
+## Credentials
+
+Now that you have added an API, you can return to the *Project overview* (or *Workspace overview* in a templated project) at any time to view the details for that API and any other project services you may have added. 
+
+You can select the specific API from the left navigation to view its details or remove the API using the **Remove API** button in the top-right corner.
+
+You can also select the specific credential type from the left navigation to view the *Credential details* and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, etc.) as needed. For more information on accessing credentials, please read the [credentials overview](credentials.md).
+
+## Next steps
+
+With an API successfully added, you can follow the same workflow steps to add additional APIs, or return to the [services overview](services.md) to select another type of service to add to your project.
+
+If you have completed development on your project and are ready to submit your application for approval, please read the [project approval process guide](approval.md) to get started.
