@@ -21,169 +21,147 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Download workspace json file
-          content:
-            application/json:
-              schema:
+          schema:
+            type: object
+            properties:
+              project:
                 type: object
+                description: Root element
                 properties:
-                  project:
+                  id:
+                    type: string
+                    description: Project id
+                  name:
+                    type: string
+                    description: Project name
+                  title:
+                    type: string
+                    description: Project title
+                  description:
+                    type: string
+                    description: Project description
+                  org:
                     type: object
-                    description: Root element
+                    description: Organization info
                     properties:
                       id:
                         type: string
-                        description: Project id
+                        description: Organization id
                       name:
                         type: string
-                        description: Project name
-                      title:
+                        description: Organization name
+                      ims_org_id:
                         type: string
-                        description: Project title
-                      description:
-                        type: string
-                        description: Project description
-                      org:
+                        description: Ims organization id
+                      workspace:
                         type: object
-                        description: Organization info
+                        description: Workspace info
                         properties:
                           id:
                             type: string
-                            description: Organization id
+                            description: Workspace id
                           name:
                             type: string
-                            description: Organization name
-                          ims_org_id:
+                            description: Workspace name
+                          title:
                             type: string
-                            description: Ims organization id
-                          workspace:
+                            description: Workspace title
+                          description:
+                            type: string
+                            description: Workspace description
+                          details:
                             type: object
-                            description: Workspace info
+                            description: Workspace details
                             properties:
-                              id:
-                                type: string
-                                description: Workspace id
-                              name:
-                                type: string
-                                description: Workspace name
-                              title:
-                                type: string
-                                description: Workspace title
-                              description:
-                                type: string
-                                description: Workspace description
-                              details:
+                              credentials:
+                                type: array
+                                items:
+                                  type: object
+                                  properties:
+                                    id:
+                                      type: string
+                                      description: Credential id
+                                    name:
+                                      type: string
+                                      description: Credential name
+                                    integration_type:
+                                      type: string
+                                      description: >-
+                                        Credential type, possible values
+                                        (service, oauthweb, oauthandroid,
+                                        oauthios)
+                                    jwt:
+                                      type: object
+                                      description: jwt credential details
+                                      properties:
+                                        client_id:
+                                          type: string
+                                          description: Client id
+                                        client_secret:
+                                          type: string
+                                          description: Client secret
+                                        techacct:
+                                          type: string
+                                          description: Technical account id
+                                        meta_scopes:
+                                          type: array
+                                          items:
+                                            type: string
+                                            description: Credential meta scope
+                                    oauth2:
+                                      type: object
+                                      description: oauth2 credential details
+                                      properties:
+                                        client_id:
+                                          type: string
+                                          description: Client id
+                                        client_secret:
+                                          type: string
+                                          description: Client secret
+                                        redirect_uri:
+                                          type: array
+                                          description: Redirect urls list
+                                          items:
+                                            type: string
+                                            description: Redirect url
+                              services:
+                                type: array
+                                description: Workspace services
+                                items:
+                                  type: object
+                                  description: Service details
+                                  properties:
+                                    code:
+                                      type: string
+                                      description: Service code
+                                    name:
+                                      type: string
+                                      description: Service name
+                              runtime:
                                 type: object
-                                description: Workspace details
+                                description: Workspace runtime
                                 properties:
-                                  credentials:
+                                  namespaces:
                                     type: array
+                                    description: Runtime namespaces
                                     items:
                                       type: object
+                                      description: Runtime details
                                       properties:
-                                        id:
-                                          type: string
-                                          description: Credential id
                                         name:
                                           type: string
-                                          description: Credential name
-                                        integration_type:
+                                          description: Namespace name
+                                        auth:
                                           type: string
-                                          description: >-
-                                            Credential type, possible values
-                                            (service, oauthweb, oauthandroid,
-                                            oauthios)
-                                        jwt:
-                                          type: object
-                                          description: jwt credential details
-                                          properties:
-                                            client_id:
-                                              type: string
-                                              description: Client id
-                                            client_secret:
-                                              type: string
-                                              description: Client secret
-                                            techacct:
-                                              type: string
-                                              description: Technical account id
-                                            meta_scopes:
-                                              type: array
-                                              items:
-                                                type: string
-                                                description: Credential meta scope
-                                        oauth2:
-                                          type: object
-                                          description: oauth2 credential details
-                                          properties:
-                                            client_id:
-                                              type: string
-                                              description: Client id
-                                            client_secret:
-                                              type: string
-                                              description: Client secret
-                                            redirect_uri:
-                                              type: array
-                                              description: Redirect urls list
-                                              items:
-                                                type: string
-                                                description: Redirect url
-                                  services:
-                                    type: array
-                                    description: Workspace services
-                                    items:
-                                      type: object
-                                      description: Service details
-                                      properties:
-                                        code:
-                                          type: string
-                                          description: Service code
-                                        name:
-                                          type: string
-                                          description: Service name
-                                  runtime:
-                                    type: object
-                                    description: Workspace runtime
-                                    properties:
-                                      namespaces:
-                                        type: array
-                                        description: Runtime namespaces
-                                        items:
-                                          type: object
-                                          description: Runtime details
-                                          properties:
-                                            name:
-                                              type: string
-                                              description: Namespace name
-                                            auth:
-                                              type: string
-                                              description: Namespace auth token
+                                          description: Namespace auth token
         '500':
           description: Export workspace error
       x-code-samples:
@@ -316,38 +294,20 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/{appName}/validate':
     get:
-      summary: validate Application name
+      summary: Validate application name
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appName
-          description: Application name to be validated
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appType
-          description: Application type - use JGR
-          in: query
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appName'
+        - $ref: '#/parameters/appType'
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
-          type: boolean
-          description: boolean true/false
+          description: Returns a boolean value representing whether or not the application name is valid.
+          schema: 
+            type: boolean
+            example: true
         '400':
           description: Bad Request
         '401':
@@ -486,30 +446,10 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appId
-          description: Application id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appType
-          description: Application type - use JGR for Jaeger applications
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appId'
+        - $ref: '#/parameters/appType'
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -790,24 +730,9 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appId
-          description: Application id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appId'
+        - $ref: '#/parameters/authorization'
       requestBody:
         content:
           application/json:
@@ -1237,24 +1162,9 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appId
-          description: Application id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appId'
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: Application Deleted Successfully
@@ -1390,24 +1300,9 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appName
-          description: Application name
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appName'
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -1689,24 +1584,9 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appId
-          description: Application id
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appId'
+        - $ref: '#/parameters/authorization'
       requestBody:
         content:
           application/json:
@@ -1994,36 +1874,19 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appType
-          description: Application type - use JGR
-          in: query
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appType'
         - name: offset
           description: offset
           in: query
           required: true
-          schema:
-            type: integer
+          type: integer
         - name: pageSize
           description: pageSize
           in: query
           required: true
-          schema:
-            type: integer
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+          type: integer
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -2316,34 +2179,16 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: appId
-          description: AppRegistry Application ID
-          in: path
-          required: true
-          type: string
-        - name: appType
-          description: Application type - use JGR
-          in: query
-          required: true
-          type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/appId'
+        - $ref: '#/parameters/appType'
         - name: assetType
           description: Asset type - use ICON
           in: query
           required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+          type: string
+          default: ICON
+        - $ref: '#/parameters/authorization'
       requestBody:
         content:
           multipart/form-data:
@@ -2510,18 +2355,8 @@ paths:
       tags:
         - AppRegistry
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -2664,24 +2499,14 @@ paths:
       tags:
         - AtlasPolicyEngine
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
         - name: intId
           description: Integration ID
           in: path
           required: true
           schema:
             type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -2859,24 +2684,14 @@ paths:
       tags:
         - AtlasPolicyEngine
       parameters:
-        - name: orgId
-          description: AMS Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
         - name: intId
           description: Integration ID
           in: path
           required: true
           schema:
             type: string
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
@@ -3042,12 +2857,7 @@ paths:
       tags:
         - Organizations
       parameters:
-        - name: Authorization
-          description: Authorization
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
       requestBody:
         content:
           application/json:
@@ -3252,24 +3062,9 @@ paths:
       tags:
         - projects
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Found projects
@@ -3452,24 +3247,9 @@ paths:
       tags:
         - projects
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -3671,35 +3451,72 @@ paths:
 
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces':
+    get:
+      summary: List Workspaces
+      tags:
+        - projects
+      parameters:
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
+      responses:
+        '200':
+          description: Workspaces for project
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                      description: Workspace id
+                    name:
+                      type: string
+                      description: Workspace name
+                    title:
+                      type: string
+                      description: Workspace title
+                    description:
+                      type: string
+                      description: Workspace description
+                    quota_usage:
+                      type: string
+                      description: Quota usage for workspace
+                    enabled:
+                      type: boolean
+                      description: Is project enabled
+                    runtime_enabled:
+                      type: boolean
+                      description: Is runtime enabled
+                    date_created:
+                      type: string
+                      format: date
+                      description: Workspace create date
+                    date_last_modified:
+                      type: string
+                      format: date
+                      description: Workspace last modify date
+                    who_created:
+                      type: string
+                      description: Created by
+                    who_last_modified:
+                      type: string
+                      description: Last modified by
+        '500':
+          description: Error returning workspaces for project
+      x-code-samples:
     post:
       summary: Create workspace
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -3878,83 +3695,7 @@ paths:
             response = http.request(request)
 
             puts response.read_body
-    get:
-      summary: List Workspaces
-      tags:
-        - projects
-      parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Workspaces for project
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                      description: Workspace id
-                    name:
-                      type: string
-                      description: Workspace name
-                    title:
-                      type: string
-                      description: Workspace title
-                    description:
-                      type: string
-                      description: Workspace description
-                    quota_usage:
-                      type: string
-                      description: Quota usage for workspace
-                    enabled:
-                      type: boolean
-                      description: Is project enabled
-                    runtime_enabled:
-                      type: boolean
-                      description: Is runtime enabled
-                    date_created:
-                      type: string
-                      format: date
-                      description: Workspace create date
-                    date_last_modified:
-                      type: string
-                      format: date
-                      description: Workspace last modify date
-                    who_created:
-                      type: string
-                      description: Created by
-                    who_last_modified:
-                      type: string
-                      description: Last modified by
-        '500':
-          description: Error returning workspaces for project
-      x-code-samples:
+    
         - lang: shell
           source: |-
             curl --request GET \
@@ -4088,30 +3829,10 @@ paths:
       tags:
         - projects
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Delete project success
@@ -4250,30 +3971,10 @@ paths:
       tags:
         - projects
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -4448,30 +4149,10 @@ paths:
       tags:
         - projects
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Found project
@@ -4654,36 +4335,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -4864,36 +4520,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Found workspace
@@ -5072,36 +4703,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Delete workspace success
@@ -5241,36 +4847,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Return list of plugins
@@ -5423,36 +5004,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Return list of credentials
@@ -5611,36 +5167,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           multipart/form-data:
@@ -5838,36 +5369,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -6077,36 +5583,11 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -6316,23 +5797,9 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Org ID
-          in: path
-          required: true
-          type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
         - name: integrationType
           description: Integration Type
           in: path
@@ -6350,18 +5817,8 @@ paths:
           required: true
           schema:
             type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       requestBody:
         content:
           application/json:
@@ -6541,30 +5998,15 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
         - name: credentialId
           description: Credential ID
           in: path
           required: true
           schema:
             type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Project/workspace IDs
@@ -6722,30 +6164,10 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/workspaceId'
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Project ID
@@ -6900,24 +6322,9 @@ paths:
       tags:
         - workspaces
       parameters:
-        - name: orgId
-          description: Organization ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: projectId
-          description: Project ID
-          in: path
-          required: true
-          schema:
-            type: string
-        - name: workspaceId
-          description: Workspace ID
-          in: path
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/orgId'
+        - $ref: '#/parameters/projectId'
+        - $ref: '#/parameters/workspaceId'
         - name: credentialType
           description: 'Type of credentials (adobeid, analytics, entp)'
           in: path
@@ -6930,18 +6337,8 @@ paths:
           required: true
           schema:
             type: string
-        - name: Authorization
-          description: Access token
-          in: header
-          required: true
-          schema:
-            type: string
-        - name: x-api-key
-          description: API key
-          in: header
-          required: true
-          schema:
-            type: string
+        - $ref: '#/parameters/authorization'
+        - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Delete credentials success
@@ -7075,8 +6472,55 @@ paths:
             response = http.request(request)
 
             puts response.read_body
-servers:
-  - url: //developer-stage.adobe.io/console//
+parameters:
+  orgId:
+    name: orgId
+    description: Org ID
+    in: path
+    required: true
+    type: string
+  projectId:
+    name: projectId
+    description: Project ID
+    in: path
+    required: true
+    type: string
+  workspaceId:  
+    name: workspaceId
+    description: Workspace ID
+    in: path
+    required: true
+    type: string
+  appName:  
+    name: appName
+    description: Application name to be validated
+    in: path
+    required: true
+    type: string
+  appId:
+    name: appId
+    description: Application id
+    in: path
+    required: true
+    type: string
+  appType:
+    name: appType
+    description: Application type - use JGR
+    in: query
+    required: true
+    type: string  
+  authorization:
+    name: Authorization
+    description: Access token
+    in: header
+    required: true
+    type: string
+  x-api-key:  
+    name: x-api-key
+    description: API key
+    in: header
+    required: true
+    type: string
 components:
   schemas:
     components:
