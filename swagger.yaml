@@ -4,9 +4,9 @@ info:
   version: '1.0'
   description: This is the API layer for Adobe I/O Console.
 tags:
-  - name: projects
+  - name: Projects
     description: APIs for I/O Console Projects
-  - name: workspaces
+  - name: Workspaces
     description: APIs for I/O Console Workspaces
   - name: AppRegistry
     description: APIs for Exchange AppRegistry
@@ -19,7 +19,7 @@ paths:
     get:
       summary: Download workspace json
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -453,9 +453,7 @@ paths:
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   appId:
@@ -733,10 +731,11 @@ paths:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/appId'
         - $ref: '#/parameters/authorization'
-      requestBody:
-        content:
-          application/json:
-            schema:
+        - name: body
+          in: body
+          required: true
+          description: Application
+          schema:
               type: object
               properties:
                 appId:
@@ -749,8 +748,6 @@ paths:
                   type: object
                   description: activity log for application created
                   properties:
-                    type: object
-                    properties:
                       guid:
                         type: string
                         description: user guid
@@ -879,13 +876,10 @@ paths:
                                   type: string
                                 orgName:
                                   type: string
-        description: Application
       responses:
         '200':
           description: Application Updated Successfully
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   appId:
@@ -1306,9 +1300,7 @@ paths:
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   appId:
@@ -1587,18 +1579,16 @@ paths:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/appId'
         - $ref: '#/parameters/authorization'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: string
-        description: submitter notes
+        - name: body
+          in: body
+          required: true
+          description: submitter notes
+          schema:
+            type: string
       responses:
         '200':
           description: Application Submitted Successfully
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   appId:
@@ -1890,151 +1880,152 @@ paths:
       responses:
         '200':
           description: OK
-          type: array
-          items:
-            type: object
-            properties:
-              appId:
-                type: string
-                description: application id
-              appType:
-                type: string
-                description: application type - use JGR for Jaeger apps
-              created:
-                type: object
-                description: activity log for application created
-                properties:
-                  by:
-                    type: object
-                    properties:
-                      guid:
-                        type: string
-                        description: user guid
-                  'on':
-                    type: string
-                    description: created timestamp
-              description:
-                type: string
-                description: application description
-              icon:
-                type: string
-                description: URL for the icon
-              images:
-                type: object
-                properties:
-                  featuredImage1:
-                    type: string
-                  featuredImage2:
-                    type: string
-                  featuredImage3:
-                    type: string
-                  featuredImage4:
-                    type: string
-                  featuredImage5:
-                    type: string
-              lastModified:
-                type: object
-                description: activity log for application last modified
-                properties:
-                  by:
-                    type: object
-                    properties:
-                      guid:
-                        type: string
-                        description: user guid
-                  'on':
-                    type: string
-                    description: last modified timestamp
-              name:
-                type: string
-                description: application name
-              reviewed:
-                type: object
-                description: activity log for application reviewed
-                properties:
-                  by:
-                    type: object
-                    properties:
-                      guid:
-                        type: string
-                        description: user guid
-                  'on':
-                    type: string
-                    description: reviewed timestamp
-                  notes:
-                    type: string
-                    description: reviewer notes
-              status:
-                type: string
-                description: application status
-              submitted:
-                type: object
-                description: activity log for application submitted
-                properties:
-                  by:
-                    type: object
-                    properties:
-                      guid:
-                        type: string
-                        description: user guid
-                  'on':
-                    type: string
-                    description: submitted timestamp
-                  notes:
-                    type: string
-                    description: submitter notes
-              support:
-                type: object
-                description: support information for the application
-                properties:
-                  email:
-                    type: string
-                  contact:
-                    type: string
-                  website:
-                    type: string
-              title:
-                type: string
-              workspaces:
-                type: array
-                description: list of workspaces in the application
-                items:
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                appId:
+                  type: string
+                  description: application id
+                appType:
+                  type: string
+                  description: application type - use JGR for Jaeger apps
+                created:
+                  type: object
+                  description: activity log for application created
+                  properties:
+                    by:
+                      type: object
+                      properties:
+                        guid:
+                          type: string
+                          description: user guid
+                    'on':
+                      type: string
+                      description: created timestamp
+                description:
+                  type: string
+                  description: application description
+                icon:
+                  type: string
+                  description: URL for the icon
+                images:
                   type: object
                   properties:
-                    id:
+                    featuredImage1:
                       type: string
-                      description: workspace id
-                    name:
+                    featuredImage2:
                       type: string
-                      description: workspace name
-                    endPoint:
+                    featuredImage3:
                       type: string
-                    deepLink:
+                    featuredImage4:
                       type: string
-                    shellProps:
+                    featuredImage5:
                       type: string
-                    releaseNotes:
-                      type: string
-                    whitelist:
+                lastModified:
+                  type: object
+                  description: activity log for application last modified
+                  properties:
+                    by:
                       type: object
-                      description: list of whitelisted users & orgs
                       properties:
-                        users:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              guid:
-                                type: string
-                        orgs:
-                          type: array
-                          items:
-                            type: object
-                            properties:
-                              orgId:
-                                type: string
-                              orgName:
-                                type: string
+                        guid:
+                          type: string
+                          description: user guid
+                    'on':
+                      type: string
+                      description: last modified timestamp
+                name:
+                  type: string
+                  description: application name
+                reviewed:
+                  type: object
+                  description: activity log for application reviewed
+                  properties:
+                    by:
+                      type: object
+                      properties:
+                        guid:
+                          type: string
+                          description: user guid
+                    'on':
+                      type: string
+                      description: reviewed timestamp
+                    notes:
+                      type: string
+                      description: reviewer notes
+                status:
+                  type: string
+                  description: application status
+                submitted:
+                  type: object
+                  description: activity log for application submitted
+                  properties:
+                    by:
+                      type: object
+                      properties:
+                        guid:
+                          type: string
+                          description: user guid
+                    'on':
+                      type: string
+                      description: submitted timestamp
+                    notes:
+                      type: string
+                      description: submitter notes
+                support:
+                  type: object
+                  description: support information for the application
+                  properties:
+                    email:
+                      type: string
+                    contact:
+                      type: string
+                    website:
+                      type: string
+                title:
+                  type: string
+                workspaces:
+                  type: array
+                  description: list of workspaces in the application
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: string
+                        description: workspace id
+                      name:
+                        type: string
+                        description: workspace name
+                      endPoint:
+                        type: string
+                      deepLink:
+                        type: string
+                      shellProps:
+                        type: string
+                      releaseNotes:
+                        type: string
+                      whitelist:
+                        type: object
+                        description: list of whitelisted users & orgs
+                        properties:
+                          users:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                guid:
+                                  type: string
+                          orgs:
+                            type: array
+                            items:
+                              type: object
+                              properties:
+                                orgId:
+                                  type: string
+                                orgName:
+                                  type: string
         '400':
           description: Bad Request
         '401':
@@ -2178,6 +2169,8 @@ paths:
       summary: upload icon for the application
       tags:
         - AppRegistry
+      consumes: 
+        - multipart/form-data
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/appId'
@@ -2189,18 +2182,18 @@ paths:
           type: string
           default: ICON
         - $ref: '#/parameters/authorization'
-      requestBody:
-        content:
-          multipart/form-data:
-            schema:
-              type: object
-              properties:
-                file:
-                  description: icon file
-                  type: string
-                  format: binary
-              required:
-                - file
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              file:
+                description: icon file
+                type: string
+                format: binary
+            required:
+              - file
       responses:
         '200':
           description: OK
@@ -2354,15 +2347,15 @@ paths:
       summary: get AppRegistry Health
       tags:
         - AppRegistry
+      produces:
+        - application/json
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   status:
@@ -2498,21 +2491,20 @@ paths:
       summary: get Application Policy
       tags:
         - AtlasPolicyEngine
+      produces:
+        - application/json
       parameters:
         - $ref: '#/parameters/orgId'
         - name: intId
           description: Integration ID
           in: path
           required: true
-          schema:
-            type: string
+          type: string
         - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   orgCode:
@@ -2683,21 +2675,20 @@ paths:
       summary: get Quota Usage
       tags:
         - AtlasPolicyEngine
+      produces:
+        - application/json
       parameters:
         - $ref: '#/parameters/orgId'
         - name: intId
           description: Integration ID
           in: path
           required: true
-          schema:
-            type: string
+          type: string
         - $ref: '#/parameters/authorization'
       responses:
         '200':
           description: OK
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   policyCode:
@@ -2856,32 +2847,33 @@ paths:
       summary: create an IMS Org
       tags:
         - Organizations
+      consumes:
+        - application/json
+      produces:
+        - application/json
       parameters:
         - $ref: '#/parameters/authorization'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - type
-                - name
-              properties:
-                name:
-                  type: string
-                offer_id:
-                  type: string
-                org_id:
-                  type: string
-                locale:
-                  type: string
-        description: build org request
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+            properties:
+              name:
+                type: string
+              offer_id:
+                type: string
+              org_id:
+                type: string
+              locale:
+                type: string
+          description: build org request
       responses:
         '201':
           description: IMS Org Created Successfully
-          content:
-            application/json:
-              schema:
+          schema:
                 type: object
                 properties:
                   id:
@@ -2913,7 +2905,8 @@ paths:
                         targetType:
                           type: string
                         targetData:
-                          type: 'linkedHashMap<string, string>'
+                          type: string
+                          example: 'linkedHashMap<string, string>'
                   role:
                     type: string
         '400':
@@ -3060,7 +3053,7 @@ paths:
     get:
       summary: List Projects
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/authorization'
@@ -3068,9 +3061,7 @@ paths:
       responses:
         '200':
           description: Found projects
-          content:
-            application/json:
-              schema:
+          schema:
                 type: array
                 items:
                   type: object
@@ -3245,50 +3236,47 @@ paths:
     post:
       summary: Create project
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - name
-                - title
-                - type
-              properties:
-                name:
-                  type: string
-                title:
-                  type: string
-                who_created:
-                  type: string
-                description:
-                  type: string
-                type:
-                  type: string
-        description: New project info
-        required: true
+        - name: body
+          in: body
+          schema:
+            type: object
+            required:
+              - name
+              - title
+              - type
+            properties:
+              name:
+                type: string
+              title:
+                type: string
+              who_created:
+                type: string
+              description:
+                type: string
+              type:
+                type: string
+          description: New project info
+          required: true
       responses:
         '201':
           description: Create project success
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  projectId:
-                    type: string
-                    description: Project id
-                  projectType:
-                    type: string
-                    description: Project type
-                  workspaceId:
-                    type: string
-                    description: Workspace id
+          schema:
+            type: object
+            properties:
+              projectId:
+                type: string
+                description: Project id
+              projectType:
+                type: string
+                description: Project type
+              workspaceId:
+                type: string
+                description: Workspace id
         '400':
           description: Bad Request
         '401':
@@ -3454,7 +3442,7 @@ paths:
     get:
       summary: List Workspaces
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -3463,90 +3451,85 @@ paths:
       responses:
         '200':
           description: Workspaces for project
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                      description: Workspace id
-                    name:
-                      type: string
-                      description: Workspace name
-                    title:
-                      type: string
-                      description: Workspace title
-                    description:
-                      type: string
-                      description: Workspace description
-                    quota_usage:
-                      type: string
-                      description: Quota usage for workspace
-                    enabled:
-                      type: boolean
-                      description: Is project enabled
-                    runtime_enabled:
-                      type: boolean
-                      description: Is runtime enabled
-                    date_created:
-                      type: string
-                      format: date
-                      description: Workspace create date
-                    date_last_modified:
-                      type: string
-                      format: date
-                      description: Workspace last modify date
-                    who_created:
-                      type: string
-                      description: Created by
-                    who_last_modified:
-                      type: string
-                      description: Last modified by
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Workspace id
+                name:
+                  type: string
+                  description: Workspace name
+                title:
+                  type: string
+                  description: Workspace title
+                description:
+                  type: string
+                  description: Workspace description
+                quota_usage:
+                  type: string
+                  description: Quota usage for workspace
+                enabled:
+                  type: boolean
+                  description: Is project enabled
+                runtime_enabled:
+                  type: boolean
+                  description: Is runtime enabled
+                date_created:
+                  type: string
+                  format: date
+                  description: Workspace create date
+                date_last_modified:
+                  type: string
+                  format: date
+                  description: Workspace last modify date
+                who_created:
+                  type: string
+                  description: Created by
+                who_last_modified:
+                  type: string
+                  description: Last modified by
         '500':
           description: Error returning workspaces for project
       x-code-samples:
     post:
       summary: Create workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - name
-              properties:
-                name:
-                  type: string
-                title:
-                  type: string
-                description:
-                  type: string
-        description: New workspace info
-        required: true
+        - name: body
+          in: body
+          schema:
+            type: object
+            required:
+              - name
+            properties:
+              name:
+                type: string
+              title:
+                type: string
+              description:
+                type: string
+          description: New workspace info
+          required: true
       responses:
         '201':
           description: Create workspace success
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  projectId:
-                    type: string
-                    description: Project id
-                  workspaceId:
-                    type: string
-                    description: Workspace id
+          schema:
+            type: object
+            properties:
+              projectId:
+                type: string
+                description: Project id
+              workspaceId:
+                type: string
+                description: Workspace id
         '500':
           description: Error creating workspace
       x-code-samples:
@@ -3827,7 +3810,7 @@ paths:
     delete:
       summary: Delete Project
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -3969,28 +3952,28 @@ paths:
     patch:
       summary: Edit Project
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - name
-                - title
-              properties:
-                name:
-                  type: string
-                title:
-                  type: string
-                description:
-                  type: string
-        description: New project info
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+              - title
+            properties:
+              name:
+                type: string
+              title:
+                type: string
+              description:
+                type: string
+          description: New project info
       responses:
         '200':
           description: Edit project success
@@ -4147,7 +4130,7 @@ paths:
     get:
       summary: Get project by ID
       tags:
-        - projects
+        - Projects
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -4156,49 +4139,47 @@ paths:
       responses:
         '200':
           description: Found project
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  id:
-                    type: string
-                    description: Project id
-                  name:
-                    type: string
-                    description: Project name
-                  description:
-                    type: string
-                    description: Project description
-                  type:
-                    type: string
-                    description: Project type
-                  enabled:
-                    type: boolean
-                    description: Is project enabled
-                  deleted:
-                    type: boolean
-                    description: Is project deleted
-                  title:
-                    type: string
-                    description: Project title
-                  org_id:
-                    type: string
-                    description: Org id
-                  date_created:
-                    type: string
-                    format: date
-                    description: Project create date
-                  date_last_modified:
-                    type: string
-                    format: date
-                    description: Project last modify date
-                  who_created:
-                    type: string
-                    description: Created by
-                  who_last_modified:
-                    type: string
-                    description: Last modified by
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+                description: Project id
+              name:
+                type: string
+                description: Project name
+              description:
+                type: string
+                description: Project description
+              type:
+                type: string
+                description: Project type
+              enabled:
+                type: boolean
+                description: Is project enabled
+              deleted:
+                type: boolean
+                description: Is project deleted
+              title:
+                type: string
+                description: Project title
+              org_id:
+                type: string
+                description: Org id
+              date_created:
+                type: string
+                format: date
+                description: Project create date
+              date_last_modified:
+                type: string
+                format: date
+                description: Project last modify date
+              who_created:
+                type: string
+                description: Created by
+              who_last_modified:
+                type: string
+                description: Last modified by
         '500':
           description: Error getting project
       x-code-samples:
@@ -4333,30 +4314,30 @@ paths:
     patch:
       summary: Edit Workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/workspaceId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              type: object
-              required:
-                - name
-              properties:
-                name:
-                  type: string
-                title:
-                  type: string
-                whoLastModified:
-                  type: string
-                description:
-                  type: string
-        description: New workspace info
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            required:
+              - name
+            properties:
+              name:
+                type: string
+              title:
+                type: string
+              whoLastModified:
+                type: string
+              description:
+                type: string
+          description: New workspace info
       responses:
         '200':
           description: Edit workspace success
@@ -4518,7 +4499,7 @@ paths:
     get:
       summary: Get Workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -4528,46 +4509,44 @@ paths:
       responses:
         '200':
           description: Found workspace
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  id:
-                    type: string
-                    description: Workspace id
-                  name:
-                    type: string
-                    description: Workspace name
-                  title:
-                    type: string
-                    description: Workspace title
-                  description:
-                    type: string
-                    description: Workspace description
-                  quota_usage:
-                    type: string
-                    description: Quota usage for workspace
-                  enabled:
-                    type: boolean
-                    description: Is project enabled
-                  runtime_enabled:
-                    type: boolean
-                    description: Is runtime enabled
-                  date_created:
-                    type: string
-                    format: date
-                    description: Workspace create date
-                  date_last_modified:
-                    type: string
-                    format: date
-                    description: Workspace last modify date
-                  who_created:
-                    type: string
-                    description: Created by
-                  who_last_modified:
-                    type: string
-                    description: Last modified by
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+                description: Workspace id
+              name:
+                type: string
+                description: Workspace name
+              title:
+                type: string
+                description: Workspace title
+              description:
+                type: string
+                description: Workspace description
+              quota_usage:
+                type: string
+                description: Quota usage for workspace
+              enabled:
+                type: boolean
+                description: Is project enabled
+              runtime_enabled:
+                type: boolean
+                description: Is runtime enabled
+              date_created:
+                type: string
+                format: date
+                description: Workspace create date
+              date_last_modified:
+                type: string
+                format: date
+                description: Workspace last modify date
+              who_created:
+                type: string
+                description: Created by
+              who_last_modified:
+                type: string
+                description: Last modified by
         '500':
           description: Error getting workspace
       x-code-samples:
@@ -4701,7 +4680,7 @@ paths:
     delete:
       summary: Delete a workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -4845,7 +4824,7 @@ paths:
     get:
       summary: Get plugins for workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -4855,19 +4834,17 @@ paths:
       responses:
         '200':
           description: Return list of plugins
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id_workspace:
-                      type: string
-                      description: Workspace id
-                    id_plugin:
-                      type: string
-                      description: Plugin id
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id_workspace:
+                  type: string
+                  description: Workspace id
+                id_plugin:
+                  type: string
+                  description: Plugin id
         '500':
           description: Error getting plugins for workspace
       x-code-samples:
@@ -5002,7 +4979,7 @@ paths:
     get:
       summary: Get Credentials
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -5012,25 +4989,23 @@ paths:
       responses:
         '200':
           description: Return list of credentials
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id_workspace:
-                      type: string
-                      description: Workspace id
-                    id_credential:
-                      type: string
-                      description: Credential id
-                    flow_type:
-                      type: string
-                      description: Flow type
-                    credential_type:
-                      type: string
-                      description: Credential type
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id_workspace:
+                  type: string
+                  description: Workspace id
+                id_credential:
+                  type: string
+                  description: Credential id
+                flow_type:
+                  type: string
+                  description: Flow type
+                credential_type:
+                  type: string
+                  description: Credential type
         '500':
           description: Error getting credentials for workspace
       x-code-samples:
@@ -5165,45 +5140,45 @@ paths:
     post:
       summary: Create Enterprise Credential
       tags:
-        - workspaces
+        - Workspaces
+      consumes:
+        - multipart/form-data
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/workspaceId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          multipart/form-data:
-            schema:
-              type: object
-              properties:
-                certificate:
-                  description: Credential certificate
-                  type: string
-                  format: binary
-              required:
-                - certificate
-        x-s2o-overloaded: true
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              certificate:
+                description: Credential certificate
+                type: string
+                format: binary
+            required:
+              - certificate
+          x-s2o-overloaded: true
       responses:
         '200':
           description: Return enterprise credential details
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                      description: Credential id
-                    apiKey:
-                      type: string
-                      description: Credential API Key
-                    orgId:
-                      type: string
-                      description: IMS Org ID
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Credential id
+                apiKey:
+                  type: string
+                  description: Credential API Key
+                orgId:
+                  type: string
+                  description: IMS Org ID
         '500':
           description: Error creating enterprise credential for workspace
       x-code-samples:
@@ -5367,39 +5342,36 @@ paths:
     post:
       summary: Create Analytics Credential
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/workspaceId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/components/credentials/Adobeid'
-        description: Analytics credential object
-        required: true
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/Adobeid'
+          description: Analytics credential object
+          required: true
       responses:
         '200':
           description: Return analytics credential details
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                      description: Credential id
-                    apiKey:
-                      type: string
-                      description: Credential API Key
-                    orgId:
-                      type: string
-                      description: IMS Org ID
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Credential id
+                apiKey:
+                  type: string
+                  description: Credential API Key
+                orgId:
+                  type: string
+                  description: IMS Org ID
         '500':
           description: Error creating analytics credential for workspace
       x-code-samples:
@@ -5581,39 +5553,36 @@ paths:
     post:
       summary: Create AdobeId Credential
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/workspaceId'
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/components/credentials/Adobeid'
-        description: AdobeId credential object
-        required: true
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/Adobeid'
+          description: AdobeId credential object
+          required: true
       responses:
         '200':
           description: Return adobeid credential details
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: string
-                      description: Credential id
-                    apiKey:
-                      type: string
-                      description: Credential API Key
-                    orgId:
-                      type: string
-                      description: IMS Org ID
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                id:
+                  type: string
+                  description: Credential id
+                apiKey:
+                  type: string
+                  description: Credential API Key
+                orgId:
+                  type: string
+                  description: IMS Org ID
         '500':
           description: Error creating adobeId credential for workspace
       x-code-samples:
@@ -5795,7 +5764,7 @@ paths:
     put:
       summary: Subscribe Credential to Services
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
@@ -5805,39 +5774,29 @@ paths:
           in: path
           required: true
           type: string
-        - name: credentialType
-          description: 'Type of credential (adobeid, analytics, entp)'
-          in: path
-          required: true
-          schema:
-            type: string
         - name: credentialId
           description: ID of credential
           in: path
           required: true
-          schema:
-            type: string
+          type: string
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/components/services/SubscribeToServices'
-        description: SDK codes to add to credential
+        - name: body
+          in: body
+          schema:
+            $ref: '#/definitions/SubscribeToServices'
+          description: SDK codes to add to credential
       responses:
         '200':
           description: List of services credential is subscribed to
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    sdkList:
-                      type: string
-                      description: List of SDK codes associated with credential
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                sdkList:
+                  type: string
+                  description: List of SDK codes associated with credential
         '404':
           description: Credential not found
       x-code-samples:
@@ -5996,36 +5955,33 @@ paths:
     get:
       summary: Get project/workspace IDs for an credentials
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - name: credentialId
           description: Credential ID
           in: path
           required: true
-          schema:
-            type: string
+          type: string
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
       responses:
         '200':
           description: Project/workspace IDs
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    projectId:
-                      type: string
-                      description: Project id
-                    workspaceId:
-                      type: string
-                      description: Workspace id
-                    credentialId:
-                      type: string
-                      description: Credential id
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                projectId:
+                  type: string
+                  description: Project id
+                workspaceId:
+                  type: string
+                  description: Workspace id
+                credentialId:
+                  type: string
+                  description: Credential id
         '404':
           description: Credential not found / Project not found
         '500':
@@ -6162,7 +6118,7 @@ paths:
     get:
       summary: Get project ID for a workspace
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/workspaceId'
@@ -6171,19 +6127,17 @@ paths:
       responses:
         '200':
           description: Project ID
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    projectId:
-                      type: string
-                      description: Project id
-                    workspaceId:
-                      type: string
-                      description: Workspace id
+          schema:
+            type: array
+            items:
+              type: object
+              properties:
+                projectId:
+                  type: string
+                  description: Project id
+                workspaceId:
+                  type: string
+                  description: Workspace id
         '404':
           description: Project not found
         '500':
@@ -6320,23 +6274,16 @@ paths:
     delete:
       summary: Delete Credential
       tags:
-        - workspaces
+        - Workspaces
       parameters:
         - $ref: '#/parameters/orgId'
         - $ref: '#/parameters/projectId'
         - $ref: '#/parameters/workspaceId'
-        - name: credentialType
-          description: 'Type of credentials (adobeid, analytics, entp)'
-          in: path
-          required: true
-          schema:
-            type: string
         - name: credentialId
           description: ID of credential
           in: path
           required: true
-          schema:
-            type: string
+          type: string
         - $ref: '#/parameters/authorization'
         - $ref: '#/parameters/x-api-key'
       responses:
@@ -6521,110 +6468,106 @@ parameters:
     in: header
     required: true
     type: string
-components:
-  schemas:
-    components:
-      credentials:
-        Adobeid:
-          type: object
-          required:
-            - name
-            - description
-            - platform
-          properties:
-            name:
-              type: string
-            description:
-              type: string
-            platform:
-              type: string
-            urlScheme:
-              type: string
-            redirectUriList:
-              type: array
-              items:
-                type: string
-            defaultRedirectUri:
-              type: string
-            domain:
-              type: string
-            approvalInfo:
-              type: object
-              properties:
-                websiteUrl:
-                  type: string
-                companyWebsiteUrl:
-                  type: string
-                integrationWebsiteUrl:
-                  type: string
-                contactEmail:
-                  type: string
-                integrationDescription:
-                  type: string
-                descriptionTypekit:
-                  type: string
-                descriptionCCStorage:
-                  type: string
-                otherCreativeSDK:
-                  type: string
-                domain:
-                  type: string
-                sdkComponents:
-                  type: array
-                  items:
-                    type: string
-                requestState:
-                  type: string
-                requestStateList:
-                  type: array
-                  items:
-                    type: object
-                    properties:
-                      rejectReasons:
-                        type: string
-                      requestState:
-                        type: string
-                      created:
-                        type: string
-                      comments:
-                        type: string
-        Entp:
-          type: object
-          required:
-            - name
-            - description
-          properties:
-            name:
-              type: string
-            description:
-              type: string
-      services:
-        SubscribeToServices:
+definitions:
+  SubscribeToServices:
+    type: array
+    items:
+      type: object
+      properties:
+        sdkCode:
+          type: string
+        licenseConfigs:
           type: array
           items:
             type: object
             properties:
-              sdkCode:
+              productId:
                 type: string
-              licenseConfigs:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    productId:
-                      type: string
-                    id:
-                      type: string
-                    op:
-                      type: string
-              roles:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    id:
-                      type: integer
-                    code:
-                      type: string
-                    name:
-                      type: string
+              id:
+                type: string
+              op:
+                type: string
+  Adobeid:
+    type: object
+    required:
+      - name
+      - description
+      - platform
+    properties:
+      name:
+        type: string
+      description:
+        type: string
+      platform:
+        type: string
+      urlScheme:
+        type: string
+      redirectUriList:
+        type: array
+        items:
+          type: string
+      defaultRedirectUri:
+        type: string
+      domain:
+        type: string
+      approvalInfo:
+        type: object
+        properties:
+          websiteUrl:
+            type: string
+          companyWebsiteUrl:
+            type: string
+          integrationWebsiteUrl:
+            type: string
+          contactEmail:
+            type: string
+          integrationDescription:
+            type: string
+          descriptionTypekit:
+            type: string
+          descriptionCCStorage:
+            type: string
+          otherCreativeSDK:
+            type: string
+          domain:
+            type: string
+          sdkComponents:
+            type: array
+            items:
+              type: string
+          requestState:
+            type: string
+          requestStateList:
+            type: array
+            items:
+              type: object
+              properties:
+                rejectReasons:
+                  type: string
+                requestState:
+                  type: string
+                created:
+                  type: string
+                comments:
+                  type: string
+  Entp:
+    type: object
+    required:
+      - name
+      - description
+    properties:
+      name:
+        type: string
+      description:
+        type: string
+  roles:
+    type: array
+    items:
+      type: object
+      properties:
+        id:
+          type: integer
+        code:
+          type: string
+        name:
+          type: string
