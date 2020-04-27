@@ -4,20 +4,28 @@ This document provides answers to frequently asked questions about Adobe Develop
 
 ## Questions
 
-* [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
-* [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
-* [What is a workspace?](#what-is-a-workspace)
+### Projects
+
+* [Where did my integrations and plugins go?](#where-did-my-integrations-and-plugins-go)
+* [Why can't I create a project for my organization?](#why-cant-i-create-a-project-for-my-organization)
+* [Why do I see a Read Only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
 * [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-"project-title"-and-"app-name")
+* [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
+* [What is a workspace?](#what-is-a-workspace)
+
+### Project Firefly
+
 * [What can I do with the Project Firefly template?](#what-can-i-do-with-the-project-firefly-template)
 * [What is required to build a Project Firefly app?](#what-is-required-to-build-a-project-firely-app)
-* [Why can't I create a project for my organization?](#why-cant-i-create-a-project-for-my-organization)
-* [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
-* [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
-* [I want to generate my own JWT. How do I do that?](#i-want-to-generate-my-own-jwt-how-do-i-do-that)
-* [Why do I see a Read Only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
-* [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
 * [Why can't I change the name of my Project Firefly app?](#why-cant-i-change-the-name-of-my-project-firefly-app)
-* [Where did my integrations and plugins go?](#where-did-my-integrations-and-plugins-go)
+
+### Services
+
+* [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
+* [I want to generate my own JWT. How do I do that?](#i-want-to-generate-my-own-jwt-how-do-i-do-that)
+* [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
+* [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
+* [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
 
 ## Answers
 
@@ -33,7 +41,7 @@ Currently it is not possible to remove Runtime from a project. Please create a n
 
 ### What is a workspace?
 
-Workspaces are currently only available when building Project Firefly apps. Workspaces allow you to collaborate with other developers on your team as part of the same larger project, yet with your own dedicated Runtime namespace and credentials. Stage and a Production workspaces are provided out of the box, and you are able to add as many workspaces as you need. Please note that the Production workspace will be the one used for submission approval.
+Workspaces are currently only available when building Project Firefly apps using a templated project. Workspaces allow you to collaborate with other developers on your team as part of the same larger project, yet with your own dedicated Runtime namespace and credentials. Stage and Production workspaces are provided out of the box, and you are able to add as many workspaces as you need. Please note that the Production workspace will be the one used for submission approval.
 
 ### What is the difference between "Project title" and "App name"?
 
