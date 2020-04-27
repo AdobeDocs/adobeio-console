@@ -4,15 +4,15 @@ Adding an API to an empty project is the same whether you are working in a perso
 
 To begin adding an API from within a templated project, first select the appropriate workspace to open the *Workspace overview*. Then, select **+ Add Service** in the left navigation and choose **API** from the dropdown. 
 
-In an empty project, select **+Add to Project** in the left navigation of the *Project overview* or select from the quick start buttons.
+In an empty project, select **+Add to Project** in the left navigation of the *Project overview* and then choose **API**, or select **Add API** from the quick start buttons.
 
 ![](images/services-add-to-project.png)
 
+## Add an API
 
+Using REST APIs allows your application to make calls to Adobe services and products. The *Add an API* dialog shows a list of available services with the default *View by* setting to show only those services available to you.
 
-Using APIs allows your application to makes call to Adobe services by means of a REST API.
-
-Access to some APIs is based on licenses. Meaning either the licenses your company holds or your personal licenses if you are building a personal project. Due to this you may not have access to every API that you wish to use.
+> **Note:** Many services are only available through paid licenses or subscriptions. Licenses and subscriptions can refer to either your organization or your personal licenses if you are building a personal project. For this reason, if you select "All" from the *View by* dropdown, you may notice that several services appear greyed out in the list. If you believe that you should have access to one of these disabled services, please speak with your system administrator or Adobe sales representative.
 
 ![](images/services-add-api.png)
 
