@@ -12,21 +12,73 @@ In an empty project, select **+Add to Project** in the left navigation of the *P
 
 Using REST APIs allows your application to make calls to Adobe services and products. The *Add an API* dialog shows a list of available services with the default *View by* setting to show only those services available to you.
 
-> **Note:** Many services are only available through paid licenses or subscriptions. Licenses and subscriptions can refer to either your organization or your personal licenses if you are building a personal project. For this reason, if you select "All" from the *View by* dropdown, you may notice that several services appear greyed out in the list. If you believe that you should have access to one of these disabled services, please speak with your system administrator or Adobe sales representative.
+> **Note:** Many services are only available through paid licenses or subscriptions. Licenses and subscriptions can refer to either your organization or your personal licenses if you are building a personal project. 
+>
+> For this reason, if you select "All" from the *View by* dropdown, you may notice that several services appear greyed out in the list. If you believe that you should have access to one of these disabled services, please speak with your system administrator or Adobe sales representative.
 
 ![](images/services-add-api.png)
 
+Once you have found and chosen an API that you would like to add, select **Next** to begin configuring the API.
+
 ![](images/services-select-api-jwt.png)
+
+## Configure API
+
+A service account (JWT) integration lets your application call Adobe services on its own behalf, or on the behalf of an enterprise organization. For this type of integration, a JSON Web Token (JWT) must be created that includes your credentials. You will then begin each session by exchanging the JWT for an access token.
+
+There are two options for creating the necessary credentials:
+
+1. **Generate a key pair:** Adobe Developer Console generates a public/private key pair for you. This private key is not stored within console, but it is automatically downloaded to your device.  
+
+    In order to proceed with generating a key pair, choose option one and then select **Generate keypair**.
+
+2. **Upload your public key:** Create your own public/private key pair through terinal and upload your public key.
+
+    To upload your own public key, drag and drop a file from your computer or use *Select a File* to choose the file that you would like to use. Then select **Next** to proceed.
+
+The remainder of this documentation takes advantage of the functionality within console to generate a key pair automatically.
 
 ![](images/services-api-jwt-create.png)
 
+## Generate key pair
+
+Immediately upon selecting the **Generate keypair** button, a file is downloaded to your computer containing your private key, as well as all of your app settings.
+
+> **Note:** Adobe does not record your private key, therefore you must make sure to securely store the downloaded file.
+
+The public key is also visible, including an option to download they key, upload another public key, or generate another key pair. 
+
+If the selected API configuration is complete, a **Save configured API** button appears in the bottom right corner of the dialog. Selecting **Save configured API** will complete the configuration for the API. You can now proceed to the [API overview](#api-overview) section later in this guide.
+
+Otherwise, please proceed to the next section on [selecting product profiles](#select-product-profiles). 
+
 ![](images/services-api-jwt-keypair.png)
+
+## Select product profiles
+
+After a key pair has been generated, you can select **Next** to continue configuring the API and choose from a list of available product profiles. Your integration's service account will gain access to granular features of the Adobe product based on the product profiles that you select.
+
+As product profiles are selected, they appear in the left navigation under *Product Profiles*. Once you have selected at least one profile, the **Save configured API** button will become available.
+
+Continue selecting all required product profiles and, once complete, select **Save configured API** to complete the configuration.
 
 ![](images/services-api-jwt-choose-profiles.png)
 
+## API overview
+
+With the API configured, you are redirected to the API overview, providing links to documentation, the ability to download files in order to experiment with the API using Postman, and a dialog allowing you to generate an access token by providing your private key.
+
+You can also remove the API from this screen or, if the API includes product profiles, edit the profiles selected during configuration.
+
 ![](images/services-api-jwt-added.png)
 
+## Generate token
+
+To generate a token, copy and paste your private key into the *Private key* field and select **Generate token**.
+
 ![](images/services-api-jwt-generate-token.png)
+
+If the private key is correct, an access token will appear along with the ability to **Copy** the token for use.
 
 ![](images/services-api-jwt-token.png)
 
@@ -36,10 +88,16 @@ Now that you have added an API, you can return to the *Project overview* (or *Wo
 
 You can select the specific API from the left navigation to view its details or remove the API using the **Remove API** button in the top-right corner.
 
-You can also select the specific credential type from the left navigation to view the *Credential details* and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, etc.) as needed. For more information on accessing credentials, please read the [credentials overview](credentials.md).
+You can also select the specific credential type from under *Credentials* in the left navigation to view the *Credential details* and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, etc.) as needed. For more information on accessing credentials, please read the [credentials overview](credentials.md).
+
+## Insights
+
+Adobe Developer Console automatically generates valuable insights related to API usage for each enterprise project (or individual workspace when working in a templated project), as well as for each personal project, including XD Plugins.
+
+To learn more about insights, begin by reading the [insights overview](insights.md).
 
 ## Next steps
 
 With an API successfully added, you can follow the same workflow steps to add additional APIs, or return to the [services overview](services.md) to select another type of service to add to your project.
 
-If you have completed development on your project and are ready to submit your application for approval, please read the [project approval process guide](approval.md) to get started.
+If you have completed development on your project and are ready to submit your application for approval, please read the [project approval guide](approval.md) to get started.

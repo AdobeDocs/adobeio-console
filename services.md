@@ -2,7 +2,7 @@
 
 After creating a project, it is time to begin adding services. These services include accessing Adobe APIs, adding events, and enabling runtime.
 
-> **Note:** If you are looking for a guide on how to build an XD Plugin, please begin by reading the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
+> **Note:** If you are looking to build an XD Plugin, please visit the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
 
 ## Add a service
 
@@ -49,9 +49,19 @@ You can select the specific API from the left navigation to view its details or 
 
 You can also select the specific credential type from the left navigation to view the *Credential details* and perform other actions (generate JWT tokens, copy credential details, retrieve client secrets, etc.) as needed. For more information on accessing credentials, please read the [credentials overview](credentials.md).
 
+To view credentials for events, select the specific event registration from the left navigation and select the *Credentials* tab. For more information on working with events, including viewing event credentials, follow the [Add Events guide](services-add-events.md).
+
+## Insights
+
+Adobe Developer Console automatically generates valuable insights related to API and runtime usage for each enterprise project (or for each workspace when working in a templated project). 
+
+API insights are also generated for personal projects, however because Runtime cannot be added to personal projects, there are no runtime usage insights available.
+
+To learn more about insights, read the [insights overview](insights.md).
+
 ## Next steps
 
 You can continue to add as many services as you need by following the various [workflow guides](#service-specific-workflows) found in this document.
 
-Once you have completed development on your project and are ready to submit your application for approval, please read the [project approval process guide](approval.md) to get started.
+Once you have completed development on your project and are ready to submit your application for approval, please read the [project approval guide](approval.md) to get started.
 
