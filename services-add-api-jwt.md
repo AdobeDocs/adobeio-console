@@ -68,7 +68,7 @@ Continue selecting all required product profiles and, once complete, select **Sa
 
 With the API configured, you are redirected to the API overview, providing links to documentation, the ability to download files in order to experiment with the API using Postman, and a dialog allowing you to generate an access token by providing your private key.
 
-You can also remove the API from this screen or, if the API includes product profiles, edit the profiles selected during configuration.
+You can also elect to remove the API on this screen using the **Remove API** button or, if the API includes product profiles, edit the profiles selected during configuration.
 
 ![](images/services-api-jwt-added.png)
 
