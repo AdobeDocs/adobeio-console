@@ -13,12 +13,6 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [What is a workspace?](#what-is-a-workspace)
 
-### Project Firefly
-
-* [What can I do with the Project Firefly template?](#what-can-i-do-with-the-project-firefly-template)
-* [What is required to build a Project Firefly app?](#what-is-required-to-build-a-project-firely-app)
-* [Why can't I change the name of my Project Firefly app?](#why-cant-i-change-the-name-of-my-project-firefly-app)
-
 ### Services
 
 * [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
@@ -26,6 +20,14 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
 * [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
 * [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
+
+### Project Firefly
+
+* [What can I do with the Project Firefly template?](#what-can-i-do-with-the-project-firefly-template)
+* [What is required to build a Project Firefly app?](#what-is-required-to-build-a-project-firely-app)
+* [Why can't I change the name of my Project Firefly app?](#why-cant-i-change-the-name-of-my-project-firefly-app)
+
+
 
 ## Answers
 
