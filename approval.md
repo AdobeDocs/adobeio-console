@@ -1,8 +1,22 @@
-# Project approval process
+# Project approvals
 
-Once you have completed development on your project, your application is ready for approval. Not all apps require approval by your organizations administrators.
+Once you have completed development on your project, your application is ready for approval. 
 
-> **Note:** If you are looking for instructions on how to submit an XD plugin for approval, please see the [distributing an XD plugin guide](plugin-distribution.md) to get started.
+There are three different approval processes within Adobe Developer Console, depending on the type of application that you have built:
+
+1. Project Firefly applications: Projects built using the Project Firefly template are built by an organization for use within that organization. Therefore, Firefly applications require approvals by the System Administrators for your enterprise organization only. 
+    
+    Please follow the [Project Firefly approval process](#project-firefly-approval-process) outlined in this document.
+
+2. Applications for distribution: 
+
+3. XD Plugin distribution: Currently only available as personal projects, XD plugins must be submitted for review and approval before they can be published to the Adobe XD Plugin Marketplace. 
+
+    For detailed instructions on how to submit an XD plugin for approval, follow the steps provided in the [XD plugin distribution guide](plugin-distribution.md).
+
+## Project Firefly approval process
+
+Not all apps require approval by your organizations administrators.
 
 Relies on Production environment - that is the workspace that will be submitted. 
 

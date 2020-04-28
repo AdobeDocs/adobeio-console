@@ -1,6 +1,6 @@
 # Services overview
 
-After creating a project, it is time to begin adding services. These services include accessing Adobe APIs, adding events, and enabling runtime.
+After creating a project, it is time to begin adding services. These services include accessing Adobe APIs, adding events, and enabling Runtime.
 
 > **Note:** If you are looking to build an XD Plugin, please visit the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
 
@@ -34,12 +34,15 @@ APIs can be added in multiple ways, depending on API and/or the type of app you 
 
 Adobe I/O Events all you to receive notifications of real-time events taking place in Adobe services. To add this service to your project you must register a webhook, to which Adobe I/O Events sends HTTP POST requests containing the details of each event. Using Events, you can build event-driven applications that integrate with Adobe.
 
-* [Add Events](services-add-events.md)
+* [Add Event](services-add-events.md)
 
-### Enable runtime
+### Enable Runtime
 
+Adobe I/O Runtime is Adobe’s serverless computing platform. Runtime enables you to execute functions from the cloud without deploying or configuring a server. This ability provides a flexible, on-demand computing resource that lets you easily access Adobe content, data, and services, orchestrate custom workflows, and respond to events from Adobe I/O Events to create powerful event-driven applications.
 
-* [Add Runtime](services-enable-runtime.md)
+> **Note:** Adobe I/O Runtime is only available for enterprise customers and requires a license. Please contact your Adobe sales representative for more details.
+
+* [Add Runtime](services-enable-Runtime.md)
 
 ## Credentials
 
@@ -53,9 +56,9 @@ To view credentials for events, select the specific event registration from the 
 
 ## Insights
 
-Adobe Developer Console automatically generates valuable insights related to API and runtime usage for each enterprise project (or for each workspace when working in a templated project). 
+Adobe Developer Console automatically generates valuable insights related to API and Runtime usage for each enterprise project (or for each workspace when working in a templated project). 
 
-API insights are also generated for personal projects, however because Runtime cannot be added to personal projects, there are no runtime usage insights available.
+API insights are also generated for personal projects, however because Runtime cannot be added to personal projects, there are no Runtime usage insights available.
 
 To learn more about insights, read the [insights overview](insights.md).
 

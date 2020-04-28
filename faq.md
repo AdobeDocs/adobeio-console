@@ -18,8 +18,9 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [Why is the service I want to use greyed out?](#why-is-the-service-i-want-to-use-greyed-out)
 * [I want to generate my own JWT. How do I do that?](#i-want-to-generate-my-own-jwt-how-do-i-do-that)
 * [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
-* [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
 * [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
+* [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
+
 
 ### Project Firefly
 

@@ -10,7 +10,7 @@ From within the *Project overview* (or individual *Workspace overview*), select 
 
 This opens the *Overview* tab showing graphs displaying *API calls over time* and *Total runtime activations over time*. 
 
-> **Note:** Even in enterprise projects, if Runtime has not been enabled for the project or workspace, runtime data will not appear.
+> **Note:** If Runtime has not been enabled for the project or workspace, runtime data will not appear.
 
 Also on the *Overview* tab, the **View by** dropdown allows you to select a preferred timeframe by which to view this information. The date and time of the last refresh of the data is provided in the top-right corner of the console, and you can trigger a data refresh by selecting the **Refresh** button.
 
@@ -20,7 +20,7 @@ By default, the information shown on the *Overview* tab is for all APIs that hav
 
 ![](images/insights-overview.png)
 
-## APIs insights
+## API insights
 
 Selecting **APIs** from the insights navigation opens the *APIs* tab, showing *API calls over time*, as well as *Total API calls by service*, and a graph that breaks down the *Response codes* from those calls.
 

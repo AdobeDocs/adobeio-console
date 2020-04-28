@@ -97,23 +97,27 @@ These workspaces appear alongside the default Production and Stage workspaces as
 
 ![](images/templated-project-add-workspace.png)
 
+Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work by either clicking the name of the workspace or selecting the workspace from the **Workspaces** dropdown on the left.
+
 ## Select a workspace
 
-Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work by either clicking the name of the workspace or selecting the workspace from the **Workspaces** dropdown on the left.
+Once a workspace is selected, the *Workspace overview* opens showing information regarding the selected workspace as well as any *Products & services* added to the project. 
 
 ![](images/workspace-get-started.png)
 
-Once a workspace is selected, the *Workspace overview* opens showing information regarding the selected workspace as well as any *Products & services* added to the project. If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed here under *Products & Services*.
+If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed under *Products & Services*.
 
 ![](images/workspace-products-services.png)
 
 ## Add services
 
-To begin adding services to your project, you can use the **Add Service** button in the left navigation or select one of the quick start buttons found under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
+To begin adding services to your project, you can use the **Add service** button in the left navigation or select one of the quick start buttons found under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
 
 ![](images/workspace-add-service.png)
 
 ## Insights
+
+Adobe Developer Console automatically generates valuable insights related to API and runtime usage for each workspace within a templated project. To learn more about accessing insights, read the [insights overview](insights.md).
 
 ## Approval
 
