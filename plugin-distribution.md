@@ -1,10 +1,10 @@
 # Distribute an XD Plugin
 
-This guide provides step-by-step instructions for distributing an approved XD Plugin in Adobe Developer Console.
+This guide provides step-by-step instructions for distributing an XD Plugin created in Adobe Developer Console.
 
-For information on how to begin creating a plugin, please see the [Create an XD Plugin](plugin-project.md) guide.
+For information on how to begin building a plugin, please see the [Create an XD Plugin](plugin-project.md) guide.
 
-> **Note:** With the latest release of Adobe Developer Console, XD Plugins are now created as part of a project. You can only create an XD Plugin project using your personal organization. This workflow is not available from within an enterprise organization.
+> **Note:** XD plugins are currently only available to create as personal projects. This feature will be available to enterprise organizations soon.
 
 ## Select project
 
@@ -20,13 +20,13 @@ Under *Products & services* you can confirm that this is an Adobe XD plugin and 
 
 ![](images/plugin-project-overview.png)
 
-## Distribute landing page
+## Distribute
 
-To begin the distribution process, select **Distribute** from the left navigation in order to open the *Distribute* landing page.
+To begin the distribution process, select **Distribute** from the left navigation in order to open the *Distribute* tab.
 
 ![](images/plugin-distribute-steps.png)
 
-The *Distribute* landing page includes *Resources* to help you with the distribution process, as well as an overview of the steps required to publish your XD Plugin. These steps include:
+This tab includes *Resources* to help you with the distribution process, as well as an overview of the steps required to publish your XD Plugin. These steps include:
 
 1. **Gather your files.** Ensure that you have all of the information and files needed for submitting your plugin before beginning the publishing process. You are also strongly encouraged to read the [Submission Checklist](https://adobexdplatform.com/plugin-docs/distribution/submission-checklist.html) and follow the [Submission Guidelines](https://adobexdplatform.com/plugin-docs/distribution/how-to-submit-to-plugin-manager.html) to make the process as smooth as possible.
 2. **Create your listing.** During the submission process you will be asked to outline important information about your plugin, including metadata.
@@ -99,8 +99,6 @@ Upon successful submission on your Plugin, you will return to the **Distribute**
 
 Plugin submissions are reviewed by Adobe and a response is provided within 10 business days. Once your plugin has been approved, it will be published and available for installation in the XD plugin manager (unless you selected to publish your plugin manually at a later date). 
 
-Now that you have successfully created and distributed an XD plugin, you can repeat the creation and distribution steps to create additional plugins or [connect with the Adobe Developer community](https://adobexdplatform.com/plugin-docs/community.html) to see what others are making.
+Now that you have successfully created and distributed an XD plugin, you can repeat the creation and distribution steps to create additional plugins or you can update an existing plugin by submitting a new version for review. To learn more, refer to the documentation for [updating an existing plugin](plugin-update.md).
 
-You can also update an existing plugin by submitting a new version for review. To learn more, refer to the documentation for [updating an existing plugin](plugin-update.md).
-
-For additional information such as resources and best practices for marketing your XD plugins, please visit the [Adobe XD Plugin Documentation](https://adobexdplatform.com/plugin-docs/).
+For additional information such as resources and best practices for marketing your XD plugins, please refer to this [Adobe XD Plugin Documentation](https://adobexdplatform.com/plugin-docs/).
