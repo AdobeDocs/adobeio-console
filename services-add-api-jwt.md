@@ -28,7 +28,7 @@ A service account (JWT) integration lets your application call Adobe services on
 
 There are two options for creating the necessary credentials:
 
-1. **Generate a key pair:** Adobe Developer Console generates a public/private key pair for you. This private key is not stored within console, but it is automatically downloaded to your device.  
+1. **Generate a key pair:** Adobe Developer Console generates a public/private key pair for you. This private key is not stored within Console, but it is automatically downloaded to your device.  
 
     In order to proceed with generating a key pair, choose option one and then select **Generate keypair**.
 
@@ -36,7 +36,7 @@ There are two options for creating the necessary credentials:
 
     To upload your own public key, drag and drop a file from your computer or use *Select a File* to choose the file that you would like to use. Then select **Next** to proceed.
 
-The remainder of this documentation takes advantage of the functionality within console to generate a key pair automatically.
+The remainder of this documentation takes advantage of the functionality within Console to generate a key pair automatically.
 
 ![](images/services-api-jwt-create.png)
 

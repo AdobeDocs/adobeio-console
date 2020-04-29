@@ -8,9 +8,9 @@ This guide outlines the steps necessary to create a project using a template.
 
 ## Select organization
 
-Before creating a project, ensure that you are working in the correct organization. To view and select an organization, use the organization switcher located in the top-right corner of the console.
+Before creating a project, ensure that you are working in the correct organization. To view and select an organization, use the organization switcher located in the top-right corner of Console.
 
-![Organization switcher in console](images/switch-organizations.png)
+![Organization switcher in Console](images/switch-organizations.png)
 
 ## Quick start
 

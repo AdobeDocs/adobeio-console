@@ -22,7 +22,7 @@ Once you have completed development on a Project Firefly application, it is time
 
 The final app is based on the *Production* workspace, therefore it is important to ensure that the production workspace contains all of the necessary APIs, Events, and Runtime code that it needs before submitting for approval.
 
-To begin the approval process, navigate to the *Production* workspace and select **Submit for approval** in the top-right corner of the console or select **Approval** in the left navigation.
+To begin the approval process, navigate to the *Production* workspace and select **Submit for approval** in the top-right corner of the screen or select **Approval** in the left navigation.
 
 ![](images/approval-production-overview.png)
 

@@ -54,7 +54,7 @@ The *App name* is the public-facing name of the application and is used for sett
 
 ### What can I do with the Project Firefly template?
 
-The Project Firefly template provides all  ofthe developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. Collaborate with your team in dedicated workspaces and deploy to your organization seamlessly. Project Firefly apps need to be approved by your organization's administrators before they can be published.
+The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. Collaborate with your team in dedicated workspaces and deploy to your organization seamlessly. Project Firefly apps need to be approved by your organization's administrators before they can be published.
 
 For more information, please see the [Project Firefly documentation](https://www.adobe.io/apis/experienceplatform/project-firefly/).
 
@@ -72,7 +72,7 @@ For information on how to manage developers in the admin console, see the [manag
 
 XD plugins are currently only available to create as personal projects. This feature will be available to enterprise organizations soon. To begin building an XD plugin, visit the [plugins overview](plugins.md). 
 
-Quickly navigate between personal projects and your organization’s projects through the “org switcher” in the top-right corner of the console. For a walk through of Console UI elements, see the [getting started guide](getting-started.md).
+Quickly navigate between personal projects and your organization’s projects through the “org switcher” in the top-right corner of Console. For a walk through of Console UI elements, see the [getting started guide](getting-started.md).
 
 ### Why can't I add Adobe I/O Runtime to my project?	
 

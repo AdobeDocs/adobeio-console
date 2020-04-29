@@ -12,7 +12,7 @@ This opens the *Overview* tab showing graphs displaying *API calls over time* an
 
 > **Note:** If Runtime has not been enabled for the project or workspace, runtime data will not appear.
 
-Also on the *Overview* tab, the **View by** dropdown allows you to select a preferred timeframe by which to view this information. The date and time of the last refresh of the data is provided in the top-right corner of the console, and you can trigger a data refresh by selecting the **Refresh** button.
+Also on the *Overview* tab, the **View by** dropdown allows you to select a preferred timeframe by which to view this information. The date and time of the last refresh of the data is provided in the top-right corner of Console, and you can trigger a data refresh by selecting the **Refresh** button.
 
 > **Note:** There is a 10 minute delay on all data shown.
 
@@ -40,7 +40,7 @@ Selecting **Runtime** from the insights navigation allows you to view specific i
 
 The *Runtime* tab also provides default insights such as counts showing *Total Usage*, *Total Activations*, and *Total Error Activations*. The tab also displays graphs showing *Activations over time*, *Error activations over time*, and *Duration over time* broken down by actions.
 
-You can use the **View by** dropdown to select the timeframe you wish to review. You can also see the last refresh of the data in the top-right corner of the console and trigger a data refresh by selecting the **Refresh** button.
+You can use the **View by** dropdown to select the timeframe you wish to review. You can also see the last refresh of the data in the top-right corner of Console and trigger a data refresh by selecting the **Refresh** button.
 
 > **Note:** There is a 10 minute delay on all data shown.
 

@@ -6,15 +6,15 @@ This guide provides step-by-step instructions for creating an empty project in A
 
 ## Select organization
 
-Before creating a project, ensure that you are working in the correct organization. To view and select an organization, use the organization switcher located in the top-right corner of the console.
+Before creating a project, ensure that you are working in the correct organization. To view and select an organization, use the organization switcher located in the top-right corner of Console.
 
-![Organization switcher in console](images/switch-organizations.png)
+![Organization switcher in Console](images/switch-organizations.png)
 
 ## Quick start
 
 Next, select **Create empty project** from the _Quick start_ menu on the _Home_ screen.
 
-> **Note:** When accessing console using a personal organization, only two Quick start options appear: "Create empty project" and "Developer downloads".
+> **Note:** When accessing Console using a personal organization, only two Quick start options appear: "Create empty project" and "Developer downloads".
 
 ![](images/create-empty-project.png)
 

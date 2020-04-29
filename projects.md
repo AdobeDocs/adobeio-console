@@ -10,7 +10,7 @@ Use the organization switcher to view the organizations to which you belong and 
 
 > **Note:** For enterprise organizations, you must be a system administrator or developer in order to create projects for your organization. For information on how to manage developers in the admin console, see the [managing developers documentation](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
-![Organization switcher on the console home screen.](images/switch-organizations.png)
+![Organization switcher on the Console home screen.](images/switch-organizations.png)
 
 ## Empty projects
 

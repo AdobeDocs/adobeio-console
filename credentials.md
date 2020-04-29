@@ -34,7 +34,7 @@ By selecting **OAuth** under *Credentials*, you will be shown all products and s
 
 From here, you can view and copy the *Client ID*, retrieve the client secret, and view the *Platform* type as well as the *Redirect URL*. 
 
-Within the *Credential details* screen you can also choose to download the OAuth JSON file, edit the credential, or delete the credential using the buttons provided in the top-right corner of console.
+Within the *Credential details* screen you can also choose to download the OAuth JSON file, edit the credential, or delete the credential using the buttons provided in the top-right corner of the screen.
 
 ![](images/credentials-oauth-web.png)
 

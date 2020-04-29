@@ -30,7 +30,7 @@ Once the plugin is created, you will be taken to the landing page for your plugi
 
 ### Download starter project
 
-To begin development for your plugin, select **Download starter project** from the top-right corner of the console. 
+To begin development for your plugin, select **Download starter project** from the top-right corner of Console. 
 
 The starter project includes the basic folder structure for a plugin as well as a manifest file that is pre-configured with the correct plugin ID and project name.
 

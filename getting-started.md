@@ -8,7 +8,7 @@ In order to begin creating projects quickly and easily, this overview document i
 
 ## Home
 
-After successfully logging in to Adobe Developer Console, you will arrive at the _Home_ screen. 
+After successfully logging in to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui), you will arrive at the _Home_ screen. 
 
 The _Home_ screen is where you can easily find information and quick links, including top-navigation links to Projects and Downloads.
 
@@ -26,7 +26,7 @@ Navigating between organizations is easily done using the organization switcher 
 
 ### Quick start
 
-The _Home_ screen also provides "quick start" links to help you get started with some of the most common console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and downloading resources.
+The _Home_ screen also provides "quick start" links to help you get started with some of the most common Console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and downloading resources.
 
 ![](images/quick-start.png)
 

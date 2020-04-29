@@ -8,7 +8,7 @@ To submit a new version of your XD plugin for review, return to the *Project ove
 
 On the *Distribute* tab, you will see details pertaining to your current plugin, including *Version Number*, *Status*, and *Published* date.
 
-To begin adding a new version, select **Add new version** in the top-right corner of the console screen.
+To begin adding a new version, select **Add new version** in the top-right corner of the screen.
 
 ![](images/plugin-add-new-version.png)
 
@@ -62,6 +62,6 @@ Upon successful submission on your Plugin, you will return to the **Distribute**
 
 Plugin submissions are reviewed by Adobe and a response is provided within 10 business days. Once your plugin has been approved, it will be published and available for installation in the XD plugin manager (unless you selected to publish your plugin manually at a later date). 
 
-Now that you have successfully created and distributed an XD plugin, you can repeat the creation and distribution steps to create additional plugins or create other applications using Adobe Developer Console. To learn more about creating projects within console, please begin by reading the [projects overview](projects.md).
+Now that you have successfully created and distributed an XD plugin, you can repeat the creation and distribution steps to create additional plugins or create other applications using Adobe Developer Console. To learn more about creating projects within Console, please begin by reading the [projects overview](projects.md).
 
 For additional information such as resources and best practices for marketing your XD plugins, please refer to this [Adobe XD Plugin Documentation](https://adobexdplatform.com/plugin-docs/).
