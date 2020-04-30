@@ -26,7 +26,7 @@ Access to some APIs is based on licenses. Meaning either the licenses your compa
 
 APIs can be connected to your app in multiple ways, depending on the API or the type of app that you are building. Occasionally APIs will provide multiple connection options, allowing you to choose the type of connection that works best for your application. To learn more about each of these authentication methods or API connections, read the [authentication documentation](https://www.adobe.com/go/devs_authentication).
 
-* [Add an API using JWT authentication](services-add-api-jwt.md)
+* [Add an API using Service Account (JWT) authentication](services-add-api-jwt.md)
 * [Add an API using OAuth authentication](services-add-api-oauth.md)
 * [Add an API using API Key authentication](services-add-api-key.md)
 

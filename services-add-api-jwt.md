@@ -1,4 +1,4 @@
-# Add API to project using JWT
+# Add API to project using Service Account (JWT)
 
 Adding an API to an empty project is the same whether you are working in a personal or enterprise project. Adding an API to a templated project is similar, with one small variation: APIs are added to individual workspaces, not to the project as a whole.
 
