@@ -1,11 +1,15 @@
-# Support
+# Adobe Developer Console Support
 
-Learn where to ask questions, report bugs, make feature requests, and spark discussions.
+If you have questions about how to use Adobe Developer Console or you are looking to report bugs, make feature requests, and more, Console provides multiple resources that can help.
 
-## [FAQ](faq.md)
+## Frequently Asked Questions
 
-A knowledge base of frequently asked questions. This is a great starting place to find an answer before asking your question.
+Access a knowledge base of frequently asked questions and find answers to some of the most common questions asked by Adobe Developer Console users. This is a great place to start when needing answer to questions. 
 
-## [Adobe Forums](https://forums.adobe.com/community/adobe-io/adobe-io-console)
+Visit the [Adobe Developer Console FAQ](faq.md) to learn more.
 
-This is the place to report bugs, ask questions, make feature requests, or start a discussion. You'll find official Adobe developers and community members available to help you out.
+## Adobe Experience League
+
+To report bugs, ask questions, make feature requests, or start a discussion, visit the [Adobe Developer Console Community](https://www.adobe.com/go/devs_console_exl) on Experience League. 
+
+In Experience League you will find official Adobe developers and knowledgeable community members who are ready and available to help you find the information you need.
