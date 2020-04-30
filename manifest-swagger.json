@@ -1,0 +1,19 @@
+{
+  "name": "Adobe Developer Console API Reference",
+  "version": "1.0.0",
+  "description": "Adobe Developer Console API Reference",
+  "author": "Wendy Braun",
+  "view_type": "swaggerbook",
+  "meta_keywords": "Adobe, Adobe Developer Console, Console, API, Swagger, API Reference, developer, data",
+  "meta_description": "Swagger API reference documentation for Adobe Developer Console.",
+  "publish_date": "30/04/2020",
+  "show_edit_github_banner": false,
+  "base_path": "https://raw.githubusercontent.com",
+  "pages": [
+    {
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/stage/swagger.yaml",
+        "title": "Console API Reference"
+    }
+  ]
+}

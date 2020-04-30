@@ -1,32 +1,119 @@
 {
   "name": "Console",
   "version": "1.0.0",
-  "description": "Adobe I/O Console Developer's Guide",
+  "description": "Adobe Developer Console",
   "author": "Hiren Shah",
   "view_type": "mdbook",
   "meta_keywords": "adobe i/o,console,integrations,plugins",
-  "meta_description": "Documentation for features of the Adobe I/O Console for developers.",
-  "publish_date": "10/29/2019",
+  "meta_description": "Documentation for features of the Adobe Developer Console.",
+  "publish_date": "03/22/2019",
   "show_edit_github_banner": false,
   "base_path": "https://raw.githubusercontent.com",
   "pages": [
     {
         "importedFileName": "overview",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/master/README.md",
-        "title": "Overview"
+        "path": "AdobeDocs/adobeio-console/master/overview.md",
+        "title": "Console Overview"
     },
     {
-        "importedFileName": "integrations",
+        "importedFileName": "getting-started",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/master/integrations.md",
-        "title": "Creating an Integration"
+        "path": "AdobeDocs/adobeio-console/master/getting-started.md",
+        "title": "Getting Started"
+    },
+    {
+        "importedFileName": "projects",
+        "path": "AdobeDocs/adobeio-console/master/projects.md",
+        "title": "Projects",
+        "pages": [
+            {
+                "importedFileName": "projects-empty",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/projects-empty.md",
+                "title": "Create an Empty Project"
+            },
+            {
+                "importedFileName": "projects-template",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/projects-template.md",
+                "title": "Create a Templated Project"
+            }
+        ]
     },
     {
         "importedFileName": "plugins",
+        "path": "AdobeDocs/adobeio-console/master/plugin-project.md",
+        "title": "Plugins",
+        "pages": [
+            {
+                "importedFileName": "plugin-distribution",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/plugin-distribution.md",
+                "title": "Distribute a Plugin"
+            },
+            {
+                "importedFileName": "plugin-update",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/plugin-update.md",
+                "title": "Update a Plugin"
+            }
+        ]
+    },
+    {
+        "importedFileName": "services",
+        "path": "AdobeDocs/adobeio-console/master/services.md",
+        "title": "Services",
+        "pages": [
+            {
+                "importedFileName": "services-add-api-jwt",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-jwt.md",
+                "title": "Add API using Service Account (JWT)"
+            },
+            {
+                "importedFileName": "services-add-api-key",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-key.md",
+                "title": "Add API using API Key"
+            },
+            {
+                "importedFileName": "services-add-api-oauth",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-oauth.md",
+                "title": "Add API using Oauth"
+            },
+            {
+                "importedFileName": "services-add-event",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/services-add-event.md",
+                "title": "Add Events"
+            },
+            {
+                "importedFileName": "services-enable-runtime",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/services-enable-runtime.md",
+                "title": "Enable Runtime"
+            }
+        ]
+    },
+    {
+        "importedFileName": "credentials",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/master/plugins.md",
-        "title": "Creating an XD Plugin"
+        "path": "AdobeDocs/adobeio-console/master/credentials.md",
+        "title": "Credentials"
+    },
+    {
+        "importedFileName": "insights",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/insights.md",
+        "title": "Insights"
+    },
+    {
+        "importedFileName": "downloads",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/downloads.md",
+        "title": "Downloads"
     },
     {
         "importedFileName": "faq",
