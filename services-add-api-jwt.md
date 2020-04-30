@@ -32,7 +32,7 @@ There are two options for creating the necessary credentials:
 
     In order to proceed with generating a key pair, choose option one and then select **Generate keypair**.
 
-2. **Upload your public key:** Create your own public/private key pair through terinal and upload your public key.
+2. **Upload your public key:** Create your own public/private key pair through terminal and upload your public key.
 
     To upload your own public key, drag and drop a file from your computer or use *Select a File* to choose the file that you would like to use. Then select **Next** to proceed.
 

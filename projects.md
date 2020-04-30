@@ -4,7 +4,7 @@ All development work in Adobe Developer Console is done as part of a project. A 
 
 ## Personal vs enterprise projects
 
-Projects are a common framework within both personal and enterprise organizations. Projects belonging to an enterprise organization are visible to other members of the organization, whereas projects belonging to a personal organization are visible only to individual to whom the organization belongs.
+Projects are a common framework within both personal and enterprise organizations. Projects belonging to an enterprise organization are visible to other members of the organization, whereas projects belonging to a personal organization are visible only to the individual to whom the organization belongs.
 
 Use the organization switcher to view the organizations to which you belong and easily switch between them.
 

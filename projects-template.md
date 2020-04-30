@@ -58,11 +58,11 @@ The app name is the public-facing name of the application and is used for settin
 
 Templated projects include multiple workspaces, which can be thought of as individual working sub-folders for each developer on the project. Workspaces are where you will connect services and get the credential details needed to connect to Adobe APIs.
 
-Two workspaces are provided automatically: Production and Stage. These workspaces cannot be edited or deleted. 
+Two workspaces are provided automatically: Production and Stage. 
 
 Since most custom applications are created with the intent of being distributed, the Production workspace is the workspace that will be used for the submission and distribution flow. This means that the application that will be used by end-users is that which is built in the Production workspace. When you are ready to deploy your app, submit the Production workspace for approval.
 
-You can create additional workspaces for each individual developer working on the project. These workspaces are editable and can be added or deleted as needed.
+You can create additional workspaces for each individual developer working on the project. These workspaces are editable and can be added as needed.
 
 ![](images/templated-project-workspaces.png)
 
@@ -70,12 +70,12 @@ You can create additional workspaces for each individual developer working on th
 
 When setting up a new project, you can automatically include Runtime with each workspace. Runtime is a powerful, serverless way to quickly deploy custom code to respond to events and execute functions right in the cloud, allowing you to orchestrate custom workflows that meet your unique business needs.
 
-When the "Include Runtime with each workspace" checkbox is checked, each workspace that is created is automatically provision with a unique Runtime namespace allowing each developer to work within their own Runtime environment.  
+When the "Include Runtime with each workspace" checkbox is checked, each workspace that is created is automatically provisioned with a unique Runtime namespace allowing each developer to work within their own Runtime environment.  
 
 > **Note:** Most use cases require the use of Runtime, therefore the checkbox is checked by default.
 
 Notes on including Runtime in workspaces:
-  * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
+  * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need to enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
   * You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
   * ***Example where Runtime may not be needed:*** If you are building an application that is UI-only, you may not require Runtime.
 
@@ -93,7 +93,7 @@ From here you can view and select all available workspaces, as well as see vario
 
 You can add additional workspaces to a project during creation, or after a project is created you can use the **Add workspace** button on the *Project Overview* screen. Multiple workspaces can be created to test features and functionality or to provide an individual workspace for each developer on the project. 
 
-These workspaces appear alongside the default Production and Stage workspaces as individual cards. These additional workspace cards include an ellipses button ("...") that, when selected, allows you to Edit or Delete the workspace. (Remember that the out-of-the-box Production and Stage workspaces cannot be deleted.)
+These workspaces appear alongside the default Production and Stage workspaces as individual cards. These additional workspace cards include an ellipses button ("...") that, when selected, allows you to Edit the workspace.
 
 ![](images/templated-project-add-workspace.png)
 

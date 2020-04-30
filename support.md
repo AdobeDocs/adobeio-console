@@ -8,8 +8,8 @@ Access a knowledge base of frequently asked questions and find answers to some o
 
 Visit the [Adobe Developer Console FAQ](faq.md) to learn more.
 
-## Adobe Forums
+## Adobe Experience League
 
-To report bugs, ask questions, make feature requests, or start a discussion, visit the [Adobe Forums](https://forums.adobe.com/community/adobe-io/adobe-io-console). 
+To report bugs, ask questions, make feature requests, or start a discussion, visit the [Adobe Developer Console Community](https://www.adobe.com/go/devs_console_exl) on Experience League. 
 
-In the forums you will find official Adobe developers and knowledgeable community members who are read and available to help you find the information you need.
+In Experience League you will find official Adobe developers and knowledgeable community members who are ready and available to help you find the information you need.

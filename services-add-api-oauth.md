@@ -26,15 +26,21 @@ Once you have found and chosen an API that you would like to add, select **Next*
 
 User authentication using OAuth allows your end users to sign in to your integration with an Adobe ID. With an OAuth token, your integration will be able to access Adobe services and content on behalf of the logged in user.
 
-To configure an API using OAuth 2.0 authentication and authorization, you must first select the platform where you want to use this integration: Web, iOS, or Android. 
+To configure an API using OAuth 2.0 authentication and authorization, you must first select the platforms where you want to use this integration: Web, iOS, or Android. 
 
 ![](images/services-api-oauth-configure.png)
 
-Once you have selected a platform, you will be required to provide a *Redirect URI*, which is a fallback URI to be used if the authorization request contains a redirect URI which doesn't match the Redirect URI list or doesn't contain a `redirect_uri` parameter.
+Depending on the platform(s) you select, you may be required to provide additional configuration information:
 
-> **Note:** The *Redirect URI* must use HTTPS (for example, `https://redirect.com/uri/etc`) and cannot be a regular expression.
+* **Web:** You are required to provide a *Redirect URI*, which is a fallback URI to be used if the authorization request contains a redirect URI which doesn't match the Redirect URI list or doesn't contain a `redirect_uri` parameter.
 
-After entering a redirect that matches the appropriate formatting, you can then select **Save configured API** to complete the configuration.
+  > **Note:** The *Redirect URI* must use HTTPS (for example, `https://redirect.com/uri/etc`) and cannot be a regular expression.
+
+* **iOS:** You are required to provide a *URL Scheme*. This is a custom iOS URL scheme that allows external apps and websites to link to your app.
+
+* **Android:** No additional configuration is required.
+
+After completing any necessary configuration, you can then select **Save configured API** to complete the configuration.
 
 ![](images/services-api-oauth-web.png)
 

@@ -10,7 +10,7 @@ To add events to your application, begin by navigating to the *Project overview*
 
 ![](images/events-get-started.png)
 
-The *Add events* dialog opens, providing a listing of events that can be filtered based on the products that are available to your organization.
+The *Add events* dialog opens, providing a listing of Adobe event providers that can be filtered based on the products that are available to your organization.
 
 ![](images/events-add.png)
 

@@ -18,7 +18,7 @@ Templated projects include everything you need to get to "hello, world" faster. 
 
 ## Deploy your project with the Project Firefly template
 
-The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. Collaborate with your team in dedicated workspaces and deploy to your organization seamlessly. 
+The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. Collaborate with your team in dedicated workspaces and deploy to your organization seamlessly. For more information, read the [Project Firefly documentation](https://www.adobe.io/apis/experienceplatform/project-firefly/).
 
 ## New features for Adobe XD plugin distribution
 

@@ -24,7 +24,7 @@ Select **Add XD Plugin** to add a new plugin to your project.
 
 ![](images/personal-project-add-plugin.png)
 
-Once the plugin is created, you will be taken to the landing page for your plugin. This landing page includes the *Status*, *Plugin ID*, *Last modified*, and *Created* date for your plugin, as well as navigation options to return to the *Project Overview*, view *Insights*, or *Distribute* your completed plugin.
+Once the plugin ID is created, you will be taken to the landing page for your plugin. This landing page includes the *Status*, *Plugin ID*, *Last modified*, and *Created* date for your plugin, as well as navigation options to return to the *Project Overview*, view *Insights*, or *Distribute* your completed plugin.
 
 ![](images/plugin-created.png)
 
