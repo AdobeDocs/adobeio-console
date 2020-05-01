@@ -38,6 +38,12 @@
                 "pages": [],
                 "path": "AdobeDocs/adobeio-console/master/projects-template.md",
                 "title": "Create a Templated Project"
+            },
+            {
+                "importedFileName": "approval",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/approval.md",
+                "title": "Approval Process"
             }
         ]
     },
