@@ -2,22 +2,22 @@ swagger: '2.0'
 info:
   title: Transporter API
   version: '1.0'
-  description: This is the API layer for Adobe I/O Console.
+  description: This is the API layer for Adobe Developer Console.
 tags:
   - name: Projects
-    description: APIs for I/O Console Projects
+    description: APIs for Console Projects
   - name: Workspaces
-    description: APIs for I/O Console Workspaces
+    description: APIs for Console Workspaces
   - name: AppRegistry
     description: APIs for Exchange AppRegistry
   - name: Organizations
     description: APIs for Organizations
-  - name: AtlasPolicyEngine
+  - name: Atlas Policy Engine
     description: APIs for Atlas Policy Engine
 paths:
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/download':
     get:
-      summary: Download workspace json
+      summary: Download workspace as a JSON file
       tags:
         - Workspaces
       parameters:
@@ -28,7 +28,7 @@ paths:
         - $ref: '#/parameters/x-api-key'
       responses:
         '200':
-          description: Download workspace json file
+          description: Download workspace JSON file
           schema:
             type: object
             properties:
@@ -442,7 +442,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/{appId}':
     get:
-      summary: get Application by Id
+      summary: View an application by its ID
       tags:
         - AppRegistry
       parameters:
@@ -724,7 +724,7 @@ paths:
 
             puts response.read_body
     patch:
-      summary: update Application
+      summary: Update an application
       tags:
         - AppRegistry
       parameters:
@@ -1152,7 +1152,7 @@ paths:
 
             puts response.read_body
     delete:
-      summary: delete an Application
+      summary: Delete an application
       tags:
         - AppRegistry
       parameters:
@@ -1290,7 +1290,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/searchName/{appName}':
     get:
-      summary: get Application by Name
+      summary: View an application by its name
       tags:
         - AppRegistry
       parameters:
@@ -1572,7 +1572,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/{appId}/submit':
     post:
-      summary: submit an Application
+      summary: Submit an application
       tags:
         - AppRegistry
       parameters:
@@ -1860,7 +1860,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps':
     get:
-      summary: get all Applications for a user
+      summary: List all applications for a user
       tags:
         - AppRegistry
       parameters:
@@ -2166,7 +2166,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/{appId}/upload':
     post:
-      summary: upload icon for the application
+      summary: Upload application icon
       tags:
         - AppRegistry
       consumes: 
@@ -2344,7 +2344,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/apps/health':
     get:
-      summary: get AppRegistry Health
+      summary: View AppRegistry health
       tags:
         - AppRegistry
       produces:
@@ -2488,9 +2488,9 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/policy/{intId}':
     get:
-      summary: get Application Policy
+      summary: Get application policy
       tags:
-        - AtlasPolicyEngine
+        - Atlas Policy Engine
       produces:
         - application/json
       parameters:
@@ -2672,9 +2672,9 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/policy/{intId}/usage':
     get:
-      summary: get Quota Usage
+      summary: View quota usage
       tags:
-        - AtlasPolicyEngine
+        - Atlas Policy Engine
       produces:
         - application/json
       parameters:
@@ -2844,7 +2844,7 @@ paths:
             puts response.read_body
   '/api/organizations':
     post:
-      summary: create an IMS Org
+      summary: Create an IMS Org
       tags:
         - Organizations
       consumes:
@@ -3051,7 +3051,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects':
     get:
-      summary: List Projects
+      summary: List all projects
       tags:
         - Projects
       parameters:
@@ -3234,7 +3234,7 @@ paths:
 
             puts response.read_body
     post:
-      summary: Create project
+      summary: Create a project
       tags:
         - Projects
       parameters:
@@ -3440,7 +3440,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces':
     get:
-      summary: List Workspaces
+      summary: List all workspaces in a project
       tags:
         - Projects
       parameters:
@@ -3495,7 +3495,7 @@ paths:
           description: Error returning workspaces for project
       x-code-samples:
     post:
-      summary: Create workspace
+      summary: Create a workspace in a project
       tags:
         - Workspaces
       parameters:
@@ -3808,7 +3808,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}':
     delete:
-      summary: Delete Project
+      summary: Delete a project
       tags:
         - Projects
       parameters:
@@ -3950,7 +3950,7 @@ paths:
 
             puts response.read_body
     patch:
-      summary: Edit Project
+      summary: Edit a project
       tags:
         - Projects
       parameters:
@@ -4128,7 +4128,7 @@ paths:
 
             puts response.read_body
     get:
-      summary: Get project by ID
+      summary: View a project by its ID
       tags:
         - Projects
       parameters:
@@ -4312,7 +4312,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}':
     patch:
-      summary: Edit Workspace
+      summary: Edit a workspace
       tags:
         - Workspaces
       parameters:
@@ -4497,7 +4497,7 @@ paths:
 
             puts response.read_body
     get:
-      summary: Get Workspace
+      summary: View workspace details by ID
       tags:
         - Workspaces
       parameters:
@@ -4822,7 +4822,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/plugins':
     get:
-      summary: Get plugins for workspace
+      summary: List plugins for a workspace
       tags:
         - Workspaces
       parameters:
@@ -4977,7 +4977,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials':
     get:
-      summary: Get Credentials
+      summary: List credentials for a workspace
       tags:
         - Workspaces
       parameters:
@@ -5138,7 +5138,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials/entp':
     post:
-      summary: Create Enterprise Credential
+      summary: Create enterprise credential
       tags:
         - Workspaces
       consumes:
@@ -5340,7 +5340,7 @@ paths:
         has multiple requestBodies
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials/analytics':
     post:
-      summary: Create Analytics Credential
+      summary: Create analytics credential
       tags:
         - Workspaces
       parameters:
@@ -5551,7 +5551,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials/adobeId':
     post:
-      summary: Create AdobeId Credential
+      summary: Create AdobeId credential
       tags:
         - Workspaces
       parameters:
@@ -5762,7 +5762,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials/{integrationType}/{credentialId}/services':
     put:
-      summary: Subscribe Credential to Services
+      summary: Subscribe credential to services
       tags:
         - Workspaces
       parameters:
@@ -5953,7 +5953,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects_workspaces/credentials/{credentialId}':
     get:
-      summary: Get project/workspace IDs for an credentials
+      summary: View project/workspace IDs for a credential
       tags:
         - Workspaces
       parameters:
@@ -6116,7 +6116,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects_workspaces/workspaces/{workspaceId}':
     get:
-      summary: Get project ID for a workspace
+      summary: View project ID for a workspace
       tags:
         - Workspaces
       parameters:
@@ -6272,7 +6272,7 @@ paths:
             puts response.read_body
   '/api/organizations/{orgId}/projects/{projectId}/workspaces/{workspaceId}/credentials/{credentialId}':
     delete:
-      summary: Delete Credential
+      summary: Delete a credential
       tags:
         - Workspaces
       parameters:
