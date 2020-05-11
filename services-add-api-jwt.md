@@ -24,29 +24,29 @@ Once you have found and chosen an API that you would like to add, select **Next*
 
 ## Configure API
 
-A service account (JWT) integration lets your application call Adobe services on its own behalf, or on the behalf of an enterprise organization. For this type of integration, a JSON Web Token (JWT) must be created that includes your credentials. You will then begin each session by exchanging the JWT for an access token.
+A service account (JWT) integration lets your application call Adobe services on its own behalf, or on the behalf of an enterprise organization. For this type of integration, a JSON Web Token (JWT) must be created that includes your credentials. You will then begin each session by exchanging the JWT for an access token. For more information, please read the [JWT Authentication documentation](https://www.adobe.com/go/devs_jwt).
+
+### Create a new service account (JWT) credential
 
 There are two options for creating the necessary credentials:
 
 1. **Generate a key pair:** Adobe Developer Console generates a public/private key pair for you. This private key is not stored within Console, but it is automatically downloaded to your device.  
 
-    In order to proceed with generating a key pair, choose option one and then select **Generate keypair**.
+    In order to proceed with generating a key pair, choose Option 1 and then select **Generate keypair**.
 
-2. **Upload your public key:** Create your own public/private key pair through terminal and upload your public key.
+2. **Upload your public key:** Create your own public/private key pair through terminal and upload your public key. To learn more, see the documentation on [creating a private key and public certificate](https://www.adobe.com/go/devs_key_pair).
 
     To upload your own public key, drag and drop a file from your computer or use *Select a File* to choose the file that you would like to use. Then select **Next** to proceed.
 
-The remainder of this documentation takes advantage of the functionality within Console to generate a key pair automatically.
-
 ![](images/services-api-jwt-create.png)
 
-## Generate key pair
+If you select Option 1 to **Generate a key pair**, immediately upon selecting the **Generate keypair** button, a file is downloaded to your computer containing your private key, as well as all of your app settings. 
 
-Immediately upon selecting the **Generate keypair** button, a file is downloaded to your computer containing your private key, as well as all of your app settings.
+If you select Option 2, you will be required to drag and drop or select your public certificate from your computer.
 
-> **Note:** Adobe does not record your private key, therefore you must make sure to securely store the downloaded file.
+> **Note:** Adobe does not record your private key, therefore you must make sure to securely store it. This includes downloaded private key files from Console or files generated elsewhere.
 
-The public key is also visible, including an option to download they key, upload another public key, or generate another key pair. 
+The public key is now visible, including an option to download the key, upload another public key, or generate another key pair. 
 
 If the selected API configuration is complete, a **Save configured API** button appears in the bottom right corner of the dialog. Selecting **Save configured API** will complete the configuration for the API. You can now proceed to the [API overview](#api-overview) section later in this guide.
 
@@ -56,7 +56,7 @@ Otherwise, please proceed to the next section on [selecting product profiles](#s
 
 ## Select product profiles
 
-After a key pair has been generated, you can select **Next** to continue configuring the API and choose from a list of available product profiles. Your integration's service account will gain access to granular features of the Adobe product based on the product profiles that you select.
+If necessary, you will continue configuring the API by choosing from a list of available product profiles. Your integration's service account will gain access to granular features of the Adobe product based on the product profiles that you select.
 
 As product profiles are selected, they appear in the left navigation under *Product Profiles*. Once you have selected at least one profile, the **Save configured API** button will become available.
 
