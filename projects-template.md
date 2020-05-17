@@ -22,7 +22,7 @@ To create a new project, select **Create project from template** from the _Quick
 
 When the _Browse Templates_ dialog opens, you will be able to select a template type.
 
-Currently three is one template type available: Project Firefly. The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. 
+Currently three is one template type available: Project Firefly. The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. For more information, read the [Project Firefly documentation](https://www.adobe.com/go/devs_cna).
 
 > **Note:** Additional templates will be released in the future to support the streamlining of other workflows and creation of applications.
 
