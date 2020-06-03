@@ -9,7 +9,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [Where did my integrations and plugins go?](#where-did-my-integrations-and-plugins-go)
 * [Why can't I create a project for my organization?](#why-cant-i-create-a-project-for-my-organization)
 * [Why do I see a Read Only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
-* [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-"project-title"-and-"app-name")
+* [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-project-title-and-app-name)
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [What is a workspace?](#what-is-a-workspace)
 
@@ -20,6 +20,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [How do I know if I should use JWT or OAuth?](#how-do-i-know-if-i-should-use-jwt-or-oauth)
 * [Why can't I add Adobe I/O Runtime to my project?](#why-cant-i-add-adobe-io-runtime-to-my-project)
 * [How do I delete Runtime from my project or workspace?](#how-do-i-delete-runtime-from-my-project-or-workspace)
+* [What does "Quota usage" mean?](#what-does-quota-usage-mean)
 
 
 ### Project Firefly
@@ -98,4 +99,6 @@ The app name is used to generate the URL for your project. We also leverage the 
 
 Integrations and plugins are now projects. Go to **Projects** in the UI to find all of your existing integrations & plugins. To learn more about projects, read the [projects overview](projects.md).
 
+### What does "Quota usage" mean?
 
+Select APIs specify a quota, or fixed allowance, for usage. Often this is tied to trial programs for testing out a service. For APIs that provide a quota, a *Quota usage* section will appear at the top of the API overview when the API is selected in the left navigation. For more information on quota usage, read the [quota usage overview](quota.md).

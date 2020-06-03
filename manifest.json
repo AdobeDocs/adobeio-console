@@ -104,6 +104,12 @@
         ]
     },
     {
+        "importedFileName": "quota",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/quota.md",
+        "title": "Quota usage"
+    },
+    {
         "importedFileName": "credentials",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/credentials.md",
