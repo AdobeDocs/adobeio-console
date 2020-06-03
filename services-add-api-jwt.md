@@ -72,6 +72,16 @@ You can also elect to remove the API on this screen using the **Remove API** but
 
 ![](images/services-api-jwt-added.png)
 
+## Quota usage
+
+Select APIs specify a quota, or fixed allowance, for usage. Often this is tied to trial programs that provide free credentials in order to test out a service. These trials provide a quota that is generous enough to get you up and running. Quota may also be tied to a specific agreement, outlining the amount of quota available and timelines for its use.
+
+For APIs that provide a quota, a *Quota usage* section will appear at the top of the API overview, when the API is selected in the left navigation.
+
+For more information on quota usage, please visit the [quota usage overview](quota.md).
+
+![](images/quota-usage.png)
+
 ## Generate token
 
 To generate a token, copy and paste your private key into the *Private key* field and select **Generate token**.
