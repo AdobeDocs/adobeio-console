@@ -56,7 +56,7 @@ For detailed instructions on installing and configuring the tools you will need 
 
 ## Remove Runtime from project or workspace
 
-Currently it is not possible to remove Runtime from a project or workspace within a project. Please create a new project if you no longer require Runtime for your application.
+Currently it is not possible to remove Runtime from a project or workspace within a project. Please create a new project if you no longer require Runtime.
 
 ## Insights
 

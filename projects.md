@@ -14,7 +14,7 @@ Use the organization switcher to view the organizations to which you belong and 
 
 ## Empty projects
 
-Think of an empty project as an open canvas or "blank slate" from which you can add events, runtime, plugins, APIs and more to create custom applications.
+Think of an empty project as an open canvas or "blank slate" from which you can add events, runtime, plugins, APIs, and more to create custom applications.
 
 > **Note:** XD Plugins are currently only able to be created as personal projects.
 
@@ -37,3 +37,9 @@ Projects or workspaces marked as *Read Only* are still visible to you, but certa
 If you believe you are seeing a *Read Only* tag in error, or would like to gain access to certain services and product profiles, please work with your organization's administrators for access.
 
 ![](images/projects-read-only.png)
+
+## Deleting a project
+
+Projects cannot be deleted at this time. If needed, you can create a new project and start again but you cannot delete a project once it has been created. 
+
+You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete the project overall. For more information on working with services within a project, please begin by reading the [services overview](services.md).
