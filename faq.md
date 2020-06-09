@@ -12,6 +12,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-project-title-and-app-name)
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [What is a workspace?](#what-is-a-workspace)
+* [Can I delete a project?](#can-i-delete-a-project)
 
 ### Services
 
@@ -68,6 +69,10 @@ Please see the latest [Project Firefly documentation](https://www.adobe.com/go/d
 For enterprise organizations, you must be a system administrator or developer in order to create projects for your organization. 
 
 For information on how to manage developers in the admin console, see the [managing developers documentation](https://helpx.adobe.com/enterprise/using/manage-developers.html). 
+
+### Can I delete a project?
+
+Currently it is not possible to delete a project or a workspace within a project, even ones that you have created. You can edit a project or workspace to remove APIs or events registrations that you have added, but you cannot delete the project. You also cannot disable Runtime from projects or workspaces. If necessary, you must create a new project and start again. To learn more about adding and removing services, including APIs, events, and Runtime, please start by reading the [services overview](services.md).
 
 ### Why can't I add an XD plugin to my project?
 

@@ -48,6 +48,14 @@ For more information about Adobe I/O Runtime, read the [Runtime documentation](h
 
 * [Enable Runtime for your project or workspace](services-enable-Runtime.md)
 
+## Remove a service
+
+Occasionally you may need to remove a service once it has been added to your project or workspace. This can be done from within the project overview or workspace overview by selecting the service that you wish to remove.
+
+> **Note:** Currently you cannot delete Runtime once it has been enabled for a project or workspace. If you no longer required Runtime, please create a new project and do not enable Runtime.
+
+Please use the links above to access documentation specific to the type of service that you have added to your project (API or events), as this documentation also includes screenshots and instructions for removing the service.
+
 ## Credentials
 
 Once you have successfully added APIs to your project or workspace, you can return to the *Project overview* (or *Workspace overview* in a templated project) at any time to view the details for that API and any other project services you may have added. 

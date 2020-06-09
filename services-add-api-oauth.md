@@ -16,8 +16,6 @@ Using REST APIs allows your application to make calls to Adobe services and prod
 >
 > For this reason, if you select "All" from the *View by* dropdown, you may notice that several services appear greyed out in the list. If you believe that you should have access to one of these disabled services, please speak with your system administrator or Adobe sales representative.
 
-![](images/services-add-api.png)
-
 Once you have found and chosen an API that you would like to add, select **Next** to begin configuring the API.
 
 ![](images/services-api-oauth-select.png)
@@ -28,13 +26,19 @@ User authentication using OAuth allows your end users to sign in to your integra
 
 To configure an API using OAuth 2.0 authentication and authorization, you must first select the platforms where you want to use this integration: Web, iOS, or Android. 
 
+> **Note:** If more than one platform is available for the chosen API, you can select all necessary platforms and configure them all at the same time.
+
 ![](images/services-api-oauth-configure.png)
 
 Depending on the platform(s) you select, you may be required to provide additional configuration information:
 
-* **Web:** You are required to provide a *Redirect URI*, which is a fallback URI to be used if the authorization request contains a redirect URI which doesn't match the Redirect URI list or doesn't contain a `redirect_uri` parameter.
+* **Web:** You are required to provide a *Default redirect URI*, which is the URL of the page or script (usually at the root of your web app) that Adobe will access during the authentication process. It can contain a maximum of 256 characters and cannot be a regular expression.
 
-  > **Note:** The *Redirect URI* must use HTTPS (for example, `https://redirect.com/uri/etc`) and cannot be a regular expression.
+  > **Note:** The *Default redirect URI* must be hosted on a secure server (HTTPS), even if it is only a localhost instance. For example, `https://redirect.com/uri/etc`. 
+
+  For the Web platform, you must also provide a *Redirect URI pattern*. This is a URI path (or comma-separated list of paths) to which Adobe will attempt to redirect when the login flow is complete. It must be within your application domain, and is typically the root. It can contain a maximum of 512 characters.
+  
+  > **Note:** You must escape periods (`.`) with `\\`. For example, `https://example\\.com/`.
 
 * **iOS:** You are required to provide a *URL Scheme*. This is a custom iOS URL scheme that allows external apps and websites to link to your app.
 

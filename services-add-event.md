@@ -56,6 +56,8 @@ After completing the *Event registration details* select **Save configured event
 
 Once events have been successfully configured, you will be taken to the event overview with tabs providing information regarding the *Registration Details*, *Credentials*, and *Debug Tracing*.
 
+You can also remove an event registration from the event overview by selecting **Delete Events Registration** in the top-right corner.
+
 ![](images/events-registration-details.png)
 
 ## Credentials
