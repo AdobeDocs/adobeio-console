@@ -16,8 +16,6 @@ Using REST APIs allows your application to make calls to Adobe services and prod
 >
 > For this reason, if you select "All" from the *View by* dropdown, you may notice that several services appear greyed out in the list. If you believe that you should have access to one of these disabled services, please speak with your system administrator or Adobe sales representative.
 
-![](images/services-add-api.png)
-
 Once you have found and chosen an API that you would like to add, select **Next** to begin configuring the API.
 
 ![](images/services-api-oauth-select.png)
