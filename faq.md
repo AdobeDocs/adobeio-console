@@ -72,7 +72,9 @@ For information on how to manage developers in the admin console, see the [manag
 
 ### Can I delete a project?
 
-Currently it is not possible to delete a project or a workspace within a project, even ones that you have created. You can edit a project or workspace to remove APIs or events registrations that you have added, but you cannot delete the project. You also cannot disable Runtime from projects or workspaces. If necessary, you must create a new project and start again. To learn more about adding and removing services, including APIs, events, and Runtime, please start by reading the [services overview](services.md).
+You can delete a project as long as it does not contain a Runtime namespace. In other words, projects (or projects with workspaces) that contain Runtime namespaces cannot be deleted at this time. 
+
+You can edit a project or workspace to remove APIs or events registrations that you have added, but you cannot delete the project if it contains a Runtime namespace. You also cannot disable Runtime from projects or workspaces. If necessary, you must create a new project and start again. To learn more about services, including APIs, events, and Runtime, please start by reading the [services overview](services.md).
 
 ### Why can't I add an XD plugin to my project?
 

@@ -40,6 +40,6 @@ If you believe you are seeing a *Read Only* tag in error, or would like to gain 
 
 ## Deleting a project
 
-Projects cannot be deleted at this time. If needed, you can create a new project and start again but you cannot delete a project once it has been created. 
+Projects can only be deleted if they do not contain a Runtime namespace. If needed, you can create a new project and start again but you cannot delete a project once Runtime has been added to it. 
 
-You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete the project overall. For more information on working with services within a project, please begin by reading the [services overview](services.md).
+You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete Runtime namespaces therefore you cannot delete projects containing a Runtime namespace. For more information on working with services within a project, please begin by reading the [services overview](services.md).
