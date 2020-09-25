@@ -1,27 +1,27 @@
 # Adobe Developer Console Downloads
 
-Adobe Developer Console gives you access to the SDKs for many of Adobe's most powerful and popular products and technologies. Through Console, you can download SDKs, get supporting information (such as GitHub repositories) related to specific SDKs, as well as track your download history. 
+Adobe Developer Console provides access to SDKs for many of Adobe's most powerful and popular products and technologies. Through Console, you can download SDKs, find supporting information related to specific SDKs (such as GitHub repositories), and track your download history. 
 
 ## Select an SDK
 
-The *Downloads* tab shows a listing of available SDKs for Adobe products and technologies. As new SDKs become available, the list is automatically updated.
+The **Downloads** page provides an **Available downloads** tab which provides a list of all downloads available to developers including Adobe fonts, SDKs specific to different Creative Cloud products, and scripting resources. As new SDKs become available, the **Available downloads** tab is updated automatically. 
 
-![Downloads](images/downloads.png)
+To see a full list of services available to developers, visit the [Adobe developer website](https://www.adobe.io/). 
 
-When you select one of the product or technology cards, details regarding that SDK appear, including a brief description, links to documentation (where available), and configuration details.
+![Available downloads list](images/downloads-and-SDKs.png)
 
-To begin using an SDK, select the appropriate values from the options provided in order to configure the SDK for your needs. Note that the possible configuration values vary by SDK.
+To choose an SDK, select **View downloads** on one of the product or technology cards. This opens a dialog showing the details for the SDK, including a brief description, links to documentation (where available), configuration details, and the last updated date for the SDK.
 
-![Selecting an SDK](images/download-details.png)
+Select the appropriate operating system (where applicable), as well as the App Version and Download Version from the options provided in the dropdowns. Note that the possible configuration values vary by SDK.
 
-Once you have finished configuring the SDK, you will need to review the Terms & Conditions before you can start using it. After reading the terms and conditions, select **I Agree** if you agree and wish to use the SDK.
+![Selecting an SDK](images/downloads-details.png)
 
-After agreeing, the appropriate files for the specific SDK will begin to download automatically.
+After selecting the configuration that meets your needs, select **Download** to begin downloading the SDK. The appropriate files for the specific SDK will begin to download automatically.
 
-![Accept the Terms & Conditions](images/download-terms-conditions.png)
+![Download begins automatically](images/downloads-download-started.png)
 
 ## SDK history
 
-Also within the *Downloads* tab, you can view the *History* of SDKs that you have downloaded, as well as information related to the SDK configuration and the date of download.
+The **Downloads** page also provides a **Download history** tab where you can view a list of product SDKs that you have downloaded, as well as information related to the SDK configuration and the date of download.
 
-![](images/download-sdk-history.png)
+![](images/downloads-history.png)
