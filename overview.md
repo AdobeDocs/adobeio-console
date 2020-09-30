@@ -4,7 +4,7 @@ Adobe Developer Console allows you and your team to flexibly and easily connect 
 
 Here are some of the exciting updates to Adobe Developer Console:
 
-## Introducting developer orgs and unified public profile
+## Introducing developer orgs and unified public profile
     
 All Adobe ID accounts now have access to advanced developer features, such as building service-to-service integrations, journaling for event subscriptions, and access to I/O Runtime (license permitting).
 

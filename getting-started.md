@@ -8,39 +8,37 @@ In order to begin creating projects quickly and easily, this overview document i
 
 ## Home
 
-After successfully logging in to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui), you will arrive at the _Home_ screen. 
-
-The _Home_ screen is where you can easily find information and quick links, including top-navigation links to Projects and Downloads.
+After successfully logging in to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui), you arrive at the **Home** screen. This is where you can find quick start links to create a project or download resources, view and edit your public profile, and access the **Projects** and **Downloads** screens using the top navigation.
 
 ![](images/developer-console-home.png)
 
 ### Switch Organizations
 
-Adobe Developer Console allows developers to access and work on projects within multiple enterprise organizations as well as create projects within their own personal organization. 
+Adobe Developer Console allows developers to access and work on projects within multiple enterprise organizations as well as create projects within their own developer organization. 
 
-Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, simply select the down arrow ( &#709; ) and choose the organization you wish to use.
+Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, select the down arrow ( &#709; ) and choose the organization you wish to use.
 
-> **Note:** The "Role" will also update to reflect your role within the newly selected organization, or will disappear if you select a personal organization because they are not role-based.
+> **Note:** The "Role" will also update to reflect your role within the newly selected organization.
 
 ![](images/switch-organizations.png)
 
 ### Quick start
 
-The _Home_ screen also provides "quick start" links to help you get started with some of the most common Console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and downloading resources.
+The home screen also provides "quick start" links to help you get started with some of the most common Console actions. Quick start links are available for: creating a new project, creating a project using a template, and downloading resources.
 
 ![](images/quick-start.png)
 
 ### Recent projects
 
-If your organization has created projects, the most recent projects are displayed on the _Home_ screen, enabling you to easily continue working or see work that has been done.
+Your organization's most recent projects are displayed on the home screen, enabling you to easily continue working or see work that has been done.
 
-Only the three most recent projects will be shown, therefore to view additional projects for your organization, select **All projects** or choose _Projects_ in the top navigation. See the [Projects](#projects) section that follows for more information.
+The three most recent projects are shown, but to view additional projects for your organization, select **All projects** or choose **Projects** in the top navigation. See the [Projects](#projects) section that follows for more information.
 
 ![](images/recent-projects.png)
 
 ### Resources
 
-The _Resources_ section provides helpful links to related documentation, guides, and services to support you in your work.
+The **Resources** section provides helpful links to related documentation, guides, and services to support you in your work.
 
 The resources that appear are influenced by where you are in your workflow, updating to ensure you are provided with the most relevant information at the most appropriate time.
 
@@ -48,7 +46,7 @@ The resources that appear are influenced by where you are in your workflow, upda
 
 ## Projects
 
-The _Projects_ screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
+The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
 
 Each individual project is shown on a card that includes the title of the project, the last modified date, the products included in the project and whether the project includes APIs, events, runtime, or a combination.
 
@@ -60,8 +58,8 @@ For more information on projects, being by reading the [projects overview](proje
 
 ## Downloads
 
-The _Downloads_ screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the *Quick start* menu or by selecting **Downloads** in the top navigation.
+The **Downloads** screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the **Quick start** menu or by selecting **Downloads** in the top navigation.
 
-To learn more about accessing downloads, read the [downloads overview](downloads.md).
+To learn more about downloading resources, read the [downloads overview](downloads.md).
 
-![](images/downloads.png)
+![](images/downloads-and-SDKs.png)
