@@ -42,7 +42,7 @@ If you are a member of an enterprise organization, please note that either Syste
 
 ### How do I delete Runtime from my project or workspace?
 
-Currently it is not possible to remove Runtime from a project. Please create a new project instead.
+Currently it is not possible to remove Runtime from a project or workspace within a project. Please create a new project instead.
 
 ### What is a workspace?
 
