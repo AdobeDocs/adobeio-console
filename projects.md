@@ -1,22 +1,20 @@
 # Projects overview
 
-All development work in Adobe Developer Console is done as part of a project. A project may include one or multiple products, as well as a combination of APIs, events, runtime, and XD plugins. 
+All development work in Adobe Developer Console is done as part of a project. A project may include one or multiple products, as well as a combination of APIs, events, runtime, and plugins. 
 
-## Personal vs enterprise projects
+## Developer vs enterprise projects
 
-Projects are a common framework within both personal and enterprise organizations. Projects belonging to an enterprise organization are visible to other members of the organization, whereas projects belonging to a personal organization are visible only to the individual to whom the organization belongs.
+Projects are a common framework within both developer and enterprise organizations. Projects belonging to an enterprise organization are visible to other members of the organization, whereas projects belonging to a developer organization are visible only to the individual to whom the organization belongs.
 
-Use the organization switcher to view the organizations to which you belong and easily switch between them.
+Use the org switcher to view the organizations to which you belong and easily switch between them.
 
-> **Note:** For enterprise organizations, you must be a system administrator or developer in order to create projects for your organization. For information on how to manage developers in the admin console, see the [managing developers documentation](https://helpx.adobe.com/enterprise/using/manage-developers.html).
+> **Note:** For enterprise organizations, you must be a system administrator or developer in order to create projects for your organization. For information on how to manage developers in the admin console, see the documentation on [managing developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 ![Organization switcher on the Console home screen.](images/switch-organizations.png)
 
-## Empty projects
+## Empty Projects
 
-Think of an empty project as an open canvas or "blank slate" from which you can add events, runtime, plugins, APIs, and more to create custom applications.
-
-> **Note:** XD Plugins are currently only able to be created as personal projects.
+Think of an empty project as an open canvas or "blank slate" into which you can add events, runtime, plugins, APIs, and more to create custom applications.
 
 To get started, follow the steps provided in the guide for [creating an empty project](projects-empty.md).
 
@@ -42,4 +40,4 @@ If you believe you are seeing a *Read Only* tag in error, or would like to gain 
 
 Projects can only be deleted if they do not contain a Runtime namespace. If needed, you can create a new project and start again but you cannot delete a project once Runtime has been added to it. 
 
-You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete Runtime namespaces therefore you cannot delete projects containing a Runtime namespace. For more information on working with services within a project, please begin by reading the [services overview](services.md).
+You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete Runtime namespaces. Therefore, you can only delete a project that does not contain a Runtime namespace. For more information on working with services within a project, please begin by reading the [services overview](services.md).

@@ -28,10 +28,10 @@
         "title": "Projects",
         "pages": [
             {
-                "importedFileName": "projects-empty",
+                "importedFileName": "projects-new",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/master/projects-empty.md",
-                "title": "Create an Empty Project"
+                "path": "AdobeDocs/adobeio-console/master/projects-new.md",
+                "title": "Create a New Project"
             },
             {
                 "importedFileName": "projects-template",

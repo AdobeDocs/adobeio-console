@@ -14,15 +14,15 @@ Before creating a project, ensure that you are working in the correct organizati
 
 ## Quick start
 
-To create a new project, select **Create project from template** from the _Quick start_ menu on the _Home_ screen.
+To create a new project, select **Create project from template** from the **Quick start** menu on the **Home** screen.
 
 ![](images/create-project-from-template.png)
 
 ## Select template type
 
-When the _Browse Templates_ dialog opens, you will be able to select a template type.
+Next, select the template type that you would like to use from the **Browse templates** dialog.
 
-Currently three is one template type available: Project Firefly. The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. For more information, read the [Project Firefly documentation](https://www.adobe.com/go/devs_cna).
+Currently there is only one template type available: **Project Firefly**. The Project Firefly template provides all of the developer tools you need to build Single Page Applications with Adobe's UI toolkit, create microservices, and orchestrate APIs in Adobe Experience Cloud. For more information, read the [Project Firefly documentation](https://www.adobe.com/go/devs_cna).
 
 > **Note:** Additional templates will be released in the future to support the streamlining of other workflows and creation of applications.
 
@@ -30,9 +30,7 @@ Currently three is one template type available: Project Firefly. The Project Fir
 
 ## Set up templated project
 
-After a template has been selected, it is time to set up the project.
-
-The following sections provide detailed information and best practices for setting up a new templated project.
+After a template has been selected, it is time to set up the project. The following sections provide detailed information and best practices for setting up a new templated project.
 
 > **Note:** Please pay special attention to the [App Name](#app-name) as this value cannot be changed once project set up is complete.
 
@@ -42,7 +40,7 @@ The following sections provide detailed information and best practices for setti
 
 A project title is generated automatically ("Project 01"), but you can change the title by deleting the auto-generated title and providing a new one. 
 
-This project title is internal only and can be changed later if required.
+> **Note**: This project title is only visible internally and can be changed later if required.
 
 It is recommended that if you are working in collaboration with multiple developers, you provide a project title that is meaningful and makes the project easy to distinguish from other projects in the organization.
 
@@ -50,7 +48,9 @@ It is recommended that if you are working in collaboration with multiple develop
 
 ### App Name
 
-The app name is the public-facing name of the application and is used for setting up environments therefore it **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
+The app name is the public-facing name of the application and is used for setting up environments and determining the app URL, therefore it **cannot be changed once the project is created**. It is important to consider the name of the application as it cannot be altered beyond the set up screen.
+
+> **Note:** The app name is publicly visible, will be submitted for approval, and must be unique. You cannot change your app's name after creating the project.
 
 ![](images/templated-project-app-name.png)
 
@@ -76,49 +76,66 @@ When the "Include Runtime with each workspace" checkbox is checked, each workspa
 
 Notes on including Runtime in workspaces:
   * If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you can enable it later. The downside is that you will need to enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
-  * You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
+  * You cannot remove Runtime from workspaces once enabled nor can you delete a workspace containing a Runtime namespace.
+  * You cannot delete a project once Runtime has been enabled. You must create a new project without Runtime.
   * ***Example where Runtime may not be needed:*** If you are building an application that is UI-only, you may not require Runtime.
 
 To learn more about Adobe Runtime, visit the [Runtime documentation](https://www.adobe.io/apis/experienceplatform/runtime/docs.html).
 
 ## Project overview
 
-With all of the set up details complete, you can select **Save** to save your project. This opens the *Project Overview*, showing the details of your newly created project.
+With all of the set up details complete, you can select **Save** to save your project. This opens the **Project Overview**, showing the details of your newly created project.
 
 From here you can view and select all available workspaces, as well as see various details for the project related to the template, created and modified dates, and project description.
+
+> **Note:** Because we elected to "Include Runtime with each workspace", the "Delete project" button is disabled.
 
 ![](images/project-overview.png)
 
 ## Add a workspace
 
-You can add additional workspaces to a project during creation, or after a project is created you can use the **Add workspace** button on the *Project Overview* screen. Multiple workspaces can be created to test features and functionality or to provide an individual workspace for each developer on the project. 
+You can add additional workspaces to a project during creation, or after a project is created you can use the **Add workspace** button on the project overview screen. Multiple workspaces can be created to test features and functionality or to provide an individual workspace for each developer on the project. 
 
 These workspaces appear alongside the default Production and Stage workspaces as individual cards. These additional workspace cards include an ellipses button ("...") that, when selected, allows you to Edit the workspace.
 
 ![](images/templated-project-add-workspace.png)
 
-Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work by either clicking the name of the workspace or selecting the workspace from the **Workspaces** dropdown on the left.
-
 ## Select a workspace
 
-Once a workspace is selected, the *Workspace overview* opens showing information regarding the selected workspace as well as any *Products & services* added to the project. 
+Now that your templated project is set up, you can begin to develop against it by adding services such as APIs and events. To begin development, select the workspace you wish to work on by either clicking the name of the workspace in the center of the project overview or selecting the workspace from the **Workspaces** dropdown on the left-hand side of the project overview.
 
-![](images/workspace-get-started.png)
+Once a workspace is selected, the **Workspace overview** opens showing information regarding the selected workspace as well as any **Products & services** added to the project. 
 
-If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed under *Products & Services*.
+> **Note:** If you selected to "Include Runtime with each workspace" during set up, you will see the unique Runtime namespace for the workspace listed under *Products & Services*.
 
 ![](images/workspace-products-services.png)
 
 ## Add services
 
-To begin adding services to your project, you can use the **Add service** button in the left navigation or select one of the quick start buttons found under "Get started with your new workspace". For detailed information on working with services, please read the [services documentation](services.md).
+To begin adding services to your project, you can use the **Add service** button in the left navigation or select one of the quick start buttons. (If you have added Runtime to your workspace, the Runtime option will appear greyed out in the dropdown and the quick start buttons will not be shown.) 
+
+For detailed information on working with services, please read the [services documentation](services.md).
 
 ![](images/workspace-add-service.png)
 
 ## Insights
 
-Adobe Developer Console automatically generates valuable insights related to API and runtime usage for each workspace within a templated project. To learn more about accessing insights, read the [insights overview](insights.md).
+Adobe Developer Console automatically generates valuable insights related to API and runtime usage for each workspace within a templated project. 
+
+To learn more about accessing insights, read the [insights overview](insights.md).
 
 ## Approval
 
-Once you have finished developing your project, you can begin the approval process to publish your app to production. For more information, please read the [guide on project approval](approval.md).
+Once you have finished developing your project, you can begin the approval process to publish your app to production. 
+
+For more information, please read the [guide on project approval](approval.md).
+
+## Delete project
+
+You can delete a project from the project overview screen by selecting **Delete project** in the top-right corner. In order to confirm that you wish to delete the project, you must type the project name exactly as shown in the top-left corner of the overview (in the example shown below, *"Project 12"* without quotation marks). Once the project name has been entered, select **Delete project** to delete the project.
+
+After the project has been deleted, you are returned to the project list and an alert appears confirming that the project has been successfully deleted.
+
+> **Note:** If Runtime has been enabled for a project, or a workspace within a project, the project can no longer be deleted and the **Delete project** button will not appear in the project overview. You can select to start over with a new project or edit your existing project, but you cannot remove Runtime nor can you delete a project containing a Runtime namespace.
+
+![](images/project-delete.png)
