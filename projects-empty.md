@@ -36,7 +36,7 @@ From the project overview, you can download a JSON file containing project infor
 
 ## Delete project
 
-You can delete a project from the project overview screen by selecting **Delete project** in the top-right corner. In order to confirm that you wish to delete the project, you must type the project name exactly as shown in the top-left corner of the overview (in this example, *Project 12*). Once the project name has been entered, select **Delete project** to delete the project.
+You can delete a project from the project overview screen by selecting **Delete project** in the top-right corner. In order to confirm that you wish to delete the project, you must type the project name exactly as shown in the top-left corner of the overview (in this example, *"Project 12"* without quotation marks). Once the project name has been entered, select **Delete project** to delete the project.
 
 Once the project has been deleted, you are returned to the project list and an alert appears confirming that the project has been successfully deleted.
 
