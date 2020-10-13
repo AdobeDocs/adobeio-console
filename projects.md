@@ -26,6 +26,20 @@ In order to streamline the creation of projects, Adobe Developer Console provide
 
 To get started, follow the steps provided in the guide for [creating a templated project](projects-template.md).
 
+## View all Projects
+
+The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
+
+Each project is shown on a card that includes the title of the project, the last modified date, and the number of workspaces, where applicable.
+
+![](images/projects-card-view.png)
+
+You can use the sort functionality to change the order in which projects are displayed or select the list view to see your projects in a list rather than displayed as cards.
+
+![](images/projects-list-view.png)
+
+From the **Projects** screen, you can also begin working on a new project by selecting **Create new project**.
+
 ## Read Only view
 
 As a member of an enterprise organization, you may not have been granted access to all of the services licensed by your organization. For this reason, you may see a *Read Only* tag on certain projects or workspaces within a templated project.
@@ -33,8 +47,6 @@ As a member of an enterprise organization, you may not have been granted access 
 Projects or workspaces marked as *Read Only* are still visible to you, but certain actions, such as downloading, editing, copying client secrets, or initiating the approval workflow will be greyed out and inaccessible to you.
 
 If you believe you are seeing a *Read Only* tag in error, or would like to gain access to certain services and product profiles, please work with your organization's administrators for access.
-
-![](images/projects-read-only.png)
 
 ## Deleting a project
 

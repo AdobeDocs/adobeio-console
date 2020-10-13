@@ -48,13 +48,11 @@ The resources that appear are influenced by where you are in your workflow, upda
 
 The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
 
-Each individual project is shown on a card that includes the title of the project, the last modified date, the products included in the project and whether the project includes APIs, events, runtime, or a combination.
+From the Projects screen, you can also begin working on a new project by selecting **Create new project**.
 
-You can use the sort functionality to change the order in which projects are displayed, and you can begin working on a new project by selecting **Create new project**.
+For more information on projects, read the [projects overview](projects.md).
 
-For more information on projects, being by reading the [projects overview](projects.md).
-
-![](images/projects.png)
+![](images/projects-card-view.png)
 
 ## Downloads
 
