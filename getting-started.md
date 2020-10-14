@@ -18,7 +18,7 @@ Adobe Developer Console allows developers to access and work on projects within 
 
 Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, select the down arrow ( &#709; ) and choose the organization you wish to use.
 
-> **Note:** The "Role" will also update to reflect your role within the newly selected organization.
+**Note:** The "Role" will also update to reflect your role within the newly selected organization.
 
 ![](images/switch-organizations.png)
 
@@ -26,7 +26,7 @@ Navigating between organizations is easily done using the organization switcher 
 
 All organizations are required to create a public profile that is included as part of any app approval or plugin listing submission. The information provided in the profile is shown to users viewing distributed plugins or a consent screen when installing your apps.
 
-To learn more about creating and editing your public profile, please read the [public profile overview](public-profile.md)
+To learn more about creating and editing your public profile, please read the [public profile overview](public-profile.md).
 
 ![](images/public-profile-button.png)
 

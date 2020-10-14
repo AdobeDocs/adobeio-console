@@ -37,7 +37,7 @@ If you do not plan to submit paid plugin listings, you are not required to compl
 
 ![](images/public-profile-commerce.png)
 
-## Edit public profile
+## Edit your public profile
 
 After your public profile has been created, you can update the profile information by selecting **Edit public profile** on the home screen.
 
