@@ -23,6 +23,12 @@
         "title": "Getting Started"
     },
     {
+        "importedFileName": "public-profile",
+        "pages": [],
+        "path": "AdobeDocs/adobeio-console/master/public-profile.md",
+        "title": "Public profile"
+    },
+    {
         "importedFileName": "projects",
         "path": "AdobeDocs/adobeio-console/master/projects.md",
         "title": "Projects",

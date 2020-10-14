@@ -22,6 +22,14 @@ Navigating between organizations is easily done using the organization switcher 
 
 ![](images/switch-organizations.png)
 
+### Public profile
+
+All organizations are required to create a public profile that is included as part of any app approval or plugin listing submission. The information provided in the profile is shown to users viewing distributed plugins or a consent screen when installing your apps.
+
+To learn more about creating and editing your public profile, please read the [public profile overview](public-profile.md)
+
+![](images/public-profile-button.png)
+
 ### Quick start
 
 The home screen also provides "quick start" links to help you get started with some of the most common Console actions. Quick start links are available for: creating a new project, creating a project using a template, and downloading resources.
