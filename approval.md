@@ -12,9 +12,9 @@ There are three different approval processes within Adobe Developer Console, dep
 
     Please refer to the [applications for publication](#applications-for-publication) approval process outlined in this document.
 
-3. **XD Plugin distribution:** Currently only available as personal projects, XD plugins must be submitted for review and approval before they can be published to the Adobe XD Plugin Marketplace. 
+3. **Plugin distribution:** Plugins must be submitted for review and approval before they can be published to the plugin marketplace. 
 
-    For detailed instructions on how to submit an XD plugin for approval, follow the steps provided in the [XD plugin distribution guide](plugin-distribution.md).
+    For detailed instructions on how to submit a plugin for approval, follow the steps provided in the [plugin distribution guide](plugin-distribution.md).
 
 ## Project Firefly applications approval process
 
@@ -44,7 +44,7 @@ If your application is approved, you are ready to move on to the [next steps](#n
 
 ## Applications for publication
 
-In order for an application to be available for public users, it must first be approved by the Adobe Review team. To begin, navigate to the *Project overview* for the project containing the application that you wish to publish.
+In order for an application to be available to public users, it must first be approved by the Adobe Review team. To begin, navigate to the **Project overview** for the project containing the application that you wish to publish.
 
 ![](images/approval-empty-project.png)
 
@@ -54,12 +54,12 @@ Once the submission details have been completed, select **Submit** to begin the 
 
 ![](images/approval-personal-app-submission-details.png)
 
-At that time your application *Status* will be updated to "In Review" and the **App Submission Details** that you filled in previously will be visible, however they will be greyed out and you will be unable to edit them. 
+At that time, your application status will be updated to "In Review" and the **App Submission Details** that you filled in previously will be visible, however they will be greyed out and you will be unable to edit them. 
 
 ![](images/approval-personal-app-in-review.png)
 
 ## Next steps
 
-Once an application has been approved, either by internal reviewers or the Adobe Review team, its *Status* will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for Project Firefly applications) or for the general public through Adobe Exchange.
+Once an application has been approved, either by internal reviewers or the Adobe Review team, its status will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for Project Firefly applications) or for the general public through Adobe Exchange.
 
 ![](images/approval-published.png)
