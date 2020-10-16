@@ -2,7 +2,7 @@
 
 After creating a project, it is time to begin adding services. These services include accessing Adobe APIs, adding events, and enabling Runtime.
 
-> **Note:** If you are looking to build Plugin, please visit the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
+**Note:** For information on building a Plugin, please visit the [plugins overview](plugin-project.md) for a complete guide to creating, updating, and distributing plugins.
 
 ## Add a service
 
