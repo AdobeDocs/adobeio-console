@@ -2,7 +2,7 @@
 
 This guide provides step-by-step instructions for creating an empty project in Adobe Developer Console.
 
-> **Note:** If you were hoping to create a project using a template, please follow the steps in the guide for [creating a project using a template](template-project.md).
+**Note:** To create a project using a template, please follow the steps in the guide for [creating a project using a template](template-project.md).
 
 ## Select organization
 
@@ -14,7 +14,7 @@ Before creating a project, ensure that you are working in the correct organizati
 
 Next, select **Create new project** from the **Quick start** menu on the **Home** screen.
 
-> **Note:** When accessing Console using a developer organization, only two Quick start options appear: "Create new project" and "Developer downloads".
+**Note:** When accessing Console using a developer organization, only two Quick start options appear: "Create new project" and "Developer downloads".
 
 ![](images/create-new-project-quick-start.png)
 
@@ -24,7 +24,7 @@ After selecting to create a new project, the **Project overview** opens, showing
 
 A project name is automatically generated for your project ("Project 12" in the top-left corner of the screen) and is an internal name that can be edited using the **Edit project** button.
 
-> **Note:** When creating multiple projects within an organization or working collaboratively with other developers, it is best practice to choose a project name that is descriptive and makes it easy to distinguish your project from others.
+**Note:** When creating multiple projects within an organization or working collaboratively with other developers, it is best practice to choose a project name that is descriptive and makes it easy to distinguish your project from others.
 
 The project overview screen also includes the last modified date of the project, the project created date, and the project description.
 
@@ -40,7 +40,7 @@ You can delete a project from the project overview screen by selecting **Delete 
 
 Once the project has been deleted, you are returned to the project list and an alert appears confirming that the project has been successfully deleted.
 
-> **Note:** Once Runtime has been enabled for a project, the project can no longer be deleted and the **Delete project** button will not appear in the project overview. You can select to start over with a new project or edit your existing project, but you cannot remove Runtime nor can you delete a project containing a Runtime namespace.
+**Note:** Once Runtime has been enabled for a project, the project can no longer be deleted and the **Delete project** button will not appear in the project overview. You can select to start over with a new project or edit your existing project, but you cannot remove Runtime nor can you delete a project containing a Runtime namespace.
 
 ![](images/project-delete.png)
 

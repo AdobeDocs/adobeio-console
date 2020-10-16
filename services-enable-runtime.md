@@ -2,13 +2,11 @@
 
 Adobe I/O Runtime is Adobe’s serverless computing platform. Runtime enables you to execute functions from the cloud without deploying or configuring a server. This ability provides a flexible, on-demand computing resource that lets you easily access Adobe content, data, and services, orchestrate custom workflows, and respond to events from Adobe I/O Events to create powerful event-driven applications.
 
-> **Note:** Adobe I/O Runtime is only available for enterprise customers and requires a license. Please contact your Adobe sales representative for more details.
+> **Note:** Adobe I/O Runtime requires a license. Please contact your Adobe sales representative for more details.
 
 ## Enable Runtime for an empty project
 
-Runtime can be enabled for an empty project from the *Project overview*. You can select *Runtime* from the **Add to Project** dropdown menu in the left navigation, or select **Enable runtime** from the quick start menu in the center or the screen.
-
-After selecting Runtime from one of these options, you will be taken to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
+Runtime can be enabled for an empty project from the **Project overview**. You can select **Runtime** from the **Add to Project** dropdown menu in the left navigation, or select **Enable runtime** from the quick start menu in the center or the screen. After selecting Runtime using one of these options, you will be taken to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
 
 For more information on creating an empty project, please begin by reading the [projects overview](projects.md).
 
@@ -22,27 +20,27 @@ To automatically add Runtime during set up, ensure that the checkbox to "Include
 
 ![](images/set-up-templated-project.png)
 
-Once your project has been saved, the *Project overview* will be visible, showing the project workspaces and that Runtime has been enabled for each. 
+Once your project has been saved, the **Project overview** will be visible, showing the project workspaces and that Runtime has been enabled for each. 
 
 ![](images/Runtime-workspaces.png)
 
-When you select a workspace you will be taken to the *Workspace overview* which will show the newly created Runtime instance. Selecting the Runtime instance will take you to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
+When you select a workspace you will be taken to the **Workspace overview** which will show the newly created Runtime instance. Selecting the Runtime instance will take you to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
 
 For more information on creating a templated project, please begin by reading the [projects overview](projects.md).
 
 ## Enable Runtime for a workspace
 
-When working on a templated project, you can add multiple workspaces depending on your project needs. Additional workspaces can be added during project set up, or can be added at any time by selecting **Add workspace** on the *Project overview*.
+When working on a templated project, you can add multiple workspaces depending on your project needs. Additional workspaces can be added during project set up, or can be added at any time by selecting **Add workspace** on the **Project overview**.
 
-If you would like to enable Runtime for an additional workspace, ensure that **Include Runtime namespace** is checked before selecting **Save** on the *Add workspace to project* dialog.
+If you would like to enable Runtime for an additional workspace, ensure that **Include Runtime namespace** is checked before selecting **Save** on the **Add workspace to project** dialog.
 
-For more information on adding workspaces to a templated project, please read the [creating a templated project guide](projects-template.md).
+For more information on adding workspaces to a templated project, please read the guide for [creating a templated project](projects-template.md).
 
 ![](images/Runtime-add-workspace.png)
 
-Once added, the *Project overview* will display the new workspace, along with an indication that Runtime has been enabled. You can now select the workspace by choosing the card or using the **Workspaces** dropdown in the left navigation. 
+Once added, the **Project overview** will display the new workspace, along with an indication that Runtime has been enabled. You can now select the workspace by choosing the card or using the **Workspaces** dropdown in the left navigation. 
 
-This will open the *Workspace overview* which will show the newly created Runtime instance. Selecting the Runtime instance will take you to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
+This will open the **Workspace overview** which will show the newly created Runtime instance. Selecting the Runtime instance will take you to the Runtime overview where you can begin to configure Runtime, as shown in the [Get started with Runtime](#get-started-with-runtime) section found later in this document.
 
 ![](images/Runtime-new-workspace.png)
 
@@ -56,11 +54,11 @@ For detailed instructions on installing and configuring the tools you will need 
 
 ## Remove Runtime from project or workspace
 
-Currently it is not possible to remove Runtime from a project or workspace within a project. Please create a new project if you no longer require Runtime.
+Currently it is not possible to remove Runtime from a project or workspace within a project. Please create a new project or workspace if you no longer require Runtime.
 
 ## Insights
 
-Adobe Developer Console automatically generates valuable insights related to Runtime usage for each enterprise project or individual workspace within a templated project.
+Adobe Developer Console automatically generates valuable insights related to Runtime usage for each project or individual workspace within a templated project.
 
 To learn more about insights, begin by reading the [insights overview](insights.md).
 
