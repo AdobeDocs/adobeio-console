@@ -39,14 +39,20 @@ If you do not plan to submit paid plugin listings, you are not required to compl
 
 ## Edit your public profile
 
-After your public profile has been created, you can update the profile information by selecting **Edit public profile** on the home screen.
+After your public profile has been created, you can update the profile information by selecting **Edit public profile** on the home screen. Editing can only be done if you have not submitted your public profile as part of an app approval or plugin listing submission.
 
 ![](images/public-profile-button.png)
 
-The **Developer account management** screen opens to the **Public profile** tab allowing you to update the information that you have provided for your organization.
-
-**Note:** If you have submitted your public profile as part of an app approval or plugin listing submission, you will need to contact Adobe directly to make any changes or updates.
-
-If you have not made a submission for an app approval or profile listing, you can update any of the required fields: Profile name, Marketing website, Description, and Logo. Remember when updating your profile name, that it is required to be a unique value and will display an error if you attempt to change your profile name to something that is not unique.
+When the **Developer account management** screen opens to the **Public profile** tab, you can update the information that you have provided for your organization, including: Profile name, Marketing website, Description, and Logo. Remember when updating your profile name, that it is required to be a unique value and will display an error if you attempt to change your profile name to something that is not unique.
 
 ![](images/public-profile-edit.png)
+
+If you have submitted your public profile as part of an app approval or plugin listing submission, you will need to contact Adobe directly to make any changes or updates. You will no longer see **Edit public profile** and will see **View public profile** instead. 
+
+![](images/public-profile-view-only.png)
+
+After selecting to view your public profile, the fields on the **Public profile** tab appear greyed out and the **Save** button has been replaced with **Contact us to update**. 
+
+**Note:** You will still be able to add or update your FastSpring account information on the **Commerce** tab.
+
+![](images/public-profile-contact-to-update.png)

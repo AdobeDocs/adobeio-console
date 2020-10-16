@@ -38,9 +38,9 @@ The home screen also provides "quick start" links to help you get started with s
 
 ### Recent projects
 
-Your organization's most recent projects are displayed on the home screen, enabling you to easily continue working or see work that has been done.
+Your organization's three most recent projects are displayed on the home screen, enabling you to easily continue working or see work that has been done. To see the most recent projects for a different organization to which you belong, use the org switcher.
 
-The three most recent projects are shown, but to view additional projects for your organization, select **All projects** or choose **Projects** in the top navigation. See the [Projects](#projects) section that follows for more information.
+To view additional projects for your organization, select **All projects** or choose **Projects** in the top navigation. See the [Projects](#projects) section that follows for more information.
 
 ![](images/recent-projects.png)
 
@@ -56,9 +56,9 @@ The resources that appear are influenced by where you are in your workflow, upda
 
 The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
 
-From the Projects screen, you can also begin working on a new project by selecting **Create new project**.
+From the projects screen, you can also begin working on a new project by selecting **Create new project**.
 
-For more information on projects, read the [projects overview](projects.md).
+To learn more about projects, begin by reading the [projects overview](projects.md).
 
 ![](images/projects-card-view.png)
 
