@@ -4,25 +4,17 @@ Once you have completed development on your project, your application is ready f
 
 There are three different approval processes within Adobe Developer Console, depending on the type of application that you have built:
 
-1. **Project Firefly applications:** Projects built using the Project Firefly template are built by an organization for use within that organization. Therefore, Firefly applications require approvals by the enterprise organization administrator only. 
-    
-    Please follow the approval process for [Project Firefly applications](#project-firefly-applications) outlined in this document.
+1. **Project Firefly applications:** Projects built using the Project Firefly template are built by an organization for use within that organization. Therefore, Firefly applications require approvals by the enterprise organization administrator only. Please follow the approval process for [Project Firefly applications](#project-firefly-applications) outlined in this document.
 
-2. **Applications for publication:** Building an application for distribution to general users on the Adobe Exchange requires approval from the Adobe Review team before it can be published.
+2. **Applications for publication:** Building an application for distribution to general users on the Adobe Exchange requires approval from the Adobe Review team before it can be published. Please refer to the [applications for publication](#applications-for-publication) approval process outlined in this document.
 
-    Please refer to the [applications for publication](#applications-for-publication) approval process outlined in this document.
-
-3. **Plugin distribution:** Plugins must be submitted for review and approval before they can be published to the plugin marketplace. 
-
-    For detailed instructions on how to submit a plugin for approval, follow the steps provided in the [plugin distribution guide](plugin-distribution.md).
+3. **Plugin distribution:** Plugins must be submitted for review and approval before they can be published to the plugin marketplace. For detailed instructions on how to submit a plugin for approval, follow the steps provided in the [plugin distribution guide](plugin-distribution.md).
 
 ## Project Firefly applications approval process
 
-Once you have completed development on a Project Firefly application, it is time to submit the application to your administrators for review and approval.
+Once you have completed development on a Project Firefly application, it is time to submit the application to your administrators for review and approval. The final app is based on the **Production** workspace, therefore it is important to ensure that the production workspace contains all of the necessary APIs, Events, and Runtime code that it needs before submitting for approval.
 
-The final app is based on the *Production* workspace, therefore it is important to ensure that the production workspace contains all of the necessary APIs, Events, and Runtime code that it needs before submitting for approval.
-
-To begin the approval process, navigate to the *Production* workspace and select **Submit for approval** in the top-right corner of the screen or select **Approval** in the left navigation.
+To begin the approval process, navigate to the **Production** workspace and select **Submit for approval** in the top-right corner of the screen or select **Approval** in the left navigation.
 
 ![](images/approval-production-overview.png)
 
@@ -44,11 +36,11 @@ If your application is approved, you are ready to move on to the [next steps](#n
 
 ## Applications for publication
 
-In order for an application to be available to public users, it must first be approved by the Adobe Review team. To begin, navigate to the **Project overview** for the project containing the application that you wish to publish.
+In order for an application to be available to public users, it must first be approved by the Adobe Review team. To begin, navigate to the **Project overview** for the project containing the application that you want to publish.
 
 ![](images/approval-empty-project.png)
 
-Select **Approval** from the left navigation to view the **App Submission Details**. These details include information about the application that will be shown to end users and the Adobe Review team.
+Select **Approval** from the left navigation to view the **App Submission Details**. These details include information about the application that will be shown to end users and the Adobe Review team. Your public profile will be shown with 
 
 Once the submission details have been completed, select **Submit** to begin the approval process.
 
