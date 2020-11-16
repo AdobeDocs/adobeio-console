@@ -40,18 +40,20 @@ In order for an application to be available to public users, it must first be ap
 
 ![](images/approval-empty-project.png)
 
-Select **Approval** from the left navigation to view the **App Submission Details**. These details include information about the application that will be shown to end users and the Adobe Review team. Your public profile will be shown with 
+Select **Approval** from the left navigation to view the submission details. These details include information about the application that will be shown to end users and the Adobe Review team. 
 
-Once the submission details have been completed, select **Submit** to begin the approval process.
+**Note:** You will need to complete a public profile before you can submit your app or integration for approval. If you have not already completed a public profile, you will be prompted to do so before completing the approval process. The information from this profile will appear on the consent screen that users will view when using your app. To learn more about creating a public profile, please visit the [public profile overview](public-profile.md).
 
-![](images/approval-personal-app-submission-details.png)
+Once the submission details have been completed, select **Submit for approval** to continue the approval process.
 
-At that time, your application status will be updated to "In Review" and the **App Submission Details** that you filled in previously will be visible, however they will be greyed out and you will be unable to edit them. 
+![](images/approval-submit-for-approval.png)
 
-![](images/approval-personal-app-in-review.png)
+After submitting, your application status will be updated to **In Review** and the details that you filled in previously will be visible, however they will be greyed out and you will not be able to edit them. 
+
+![](images/approval-public-profile-in-review.png)
 
 ## Next steps
 
-Once an application has been approved, either by internal reviewers or the Adobe Review team, its status will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for Project Firefly applications) or for the general public through Adobe Exchange.
+Once an application has been approved, either by internal reviewers or the Adobe Review team, its status will be updated to **Published** and the application will be available for use either by employees within your enterprise organization (for Project Firefly applications) or for the general public through Adobe Exchange.
 
-![](images/approval-published.png)
+![](images/approval-public-profile-published.png)

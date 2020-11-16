@@ -12,7 +12,7 @@ All Adobe ID accounts now have access to advanced developer features, such as bu
     
 Adobe is making the Photoshop host app APIs more modern and introducing UXP, our new cross-app API platform. Add a Photoshop plugin to your project, download the starter template, then return to the Developer Console when you’re ready to distribute it.
 
-## Add beta users (Coming Soon!)
+## Add beta users
 
 Soon you will be able to select and manage a group of beta users who will have access to your integration while it’s still in development.
 
