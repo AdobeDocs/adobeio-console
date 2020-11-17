@@ -26,12 +26,12 @@
         "importedFileName": "public-profile",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/public-profile.md",
-        "title": "Public profile"
+        "title": "Public Profile"
     },
     {
         "importedFileName": "projects",
         "path": "AdobeDocs/adobeio-console/master/projects.md",
-        "title": "Projects overview",
+        "title": "Projects Overview",
         "pages": [
             {
                 "importedFileName": "projects-empty",
@@ -62,7 +62,7 @@
     {
         "importedFileName": "plugins",
         "path": "AdobeDocs/adobeio-console/master/plugin-project.md",
-        "title": "Plugins overview",
+        "title": "Plugins Overview",
         "pages": [
             {
                 "importedFileName": "plugin-distribution",
@@ -81,7 +81,7 @@
     {
         "importedFileName": "services",
         "path": "AdobeDocs/adobeio-console/master/services.md",
-        "title": "Services overview",
+        "title": "Services Overview",
         "pages": [
             {
                 "importedFileName": "services-add-api-jwt",
@@ -119,7 +119,7 @@
         "importedFileName": "quota",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/quota.md",
-        "title": "Quota usage"
+        "title": "Quota Usage"
     },
     {
         "importedFileName": "credentials",
