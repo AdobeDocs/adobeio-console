@@ -40,7 +40,6 @@ After locating the file you wish to use, select **Open** to open the file and yo
 
 If the list of email addresses looks correct, select **Save list** to save your changes.
 
-
 After you save the list, the count (`0/25`) will update to show the current number of beta users.
 
 ![](images/beta-users-list-saved.png)
