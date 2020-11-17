@@ -16,7 +16,7 @@ To begin working with beta users, visit the **Project overview** of the project 
 
 The **Beta users** screen displays the status of your project as well as a text field where you can enter email addresses for your beta users.
 
-If your project status is **In Development** (or if your project has been **Rejected** and requires further development work), you can add up to 25 beta users and provide them with access to test your application. Beta users are identified by their email addresses and can either be [added manually](#add-users-manually) using the text box or [uploaded via CSV](#upload-csv) file. Both methods are described in the following sections.
+If your project status is **In Development** or **In Review** (or if your project has been **Rejected** and requires further development work), you can add up to 25 beta users and provide them with access to test your application. Beta users are identified by their email addresses and can either be [added manually](#add-users-manually) using the text box or [uploaded via CSV](#upload-csv) file. Both methods are described in the following sections.
 
 ### Add users manually
 
