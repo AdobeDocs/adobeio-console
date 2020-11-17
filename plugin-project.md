@@ -1,6 +1,6 @@
 # Plugins overview
 
-Adode Developer Console enables you to create plugins for Adobe XD, Adobe's interactive prototyping tool, and Photoshop, the industry standard in digital imaging. 
+Adobe Developer Console enables you to create plugins for Adobe XD, Adobe's interactive prototyping tool, and Photoshop, the industry standard in digital imaging. 
 
 Plugins extend the capabilities of Adobe products by adding new features to the app, automating workflows, connecting the app to external services, and more.
 

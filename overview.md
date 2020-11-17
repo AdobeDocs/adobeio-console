@@ -14,7 +14,7 @@ Adobe is making the Photoshop host app APIs more modern and introducing UXP, our
 
 ## Add beta users
 
-Soon you will be able to select and manage a group of beta users who will have access to your integration while it’s still in development.
+Select and manage a group of beta users who will have access to your integration while it’s still in development.
 
 ## Next steps
 
