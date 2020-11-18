@@ -26,12 +26,12 @@
         "importedFileName": "public-profile",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/public-profile.md",
-        "title": "Public profile"
+        "title": "Public Profile"
     },
     {
         "importedFileName": "projects",
         "path": "AdobeDocs/adobeio-console/master/projects.md",
-        "title": "Projects",
+        "title": "Projects Overview",
         "pages": [
             {
                 "importedFileName": "projects-empty",
@@ -46,6 +46,12 @@
                 "title": "Create a Templated Project"
             },
             {
+                "importedFileName": "beta-users",
+                "pages": [],
+                "path": "AdobeDocs/adobeio-console/master/beta-users.md",
+                "title": "Beta Users"
+            },
+            {
                 "importedFileName": "approval",
                 "pages": [],
                 "path": "AdobeDocs/adobeio-console/master/approval.md",
@@ -56,7 +62,7 @@
     {
         "importedFileName": "plugins",
         "path": "AdobeDocs/adobeio-console/master/plugin-project.md",
-        "title": "Plugins",
+        "title": "Plugins Overview",
         "pages": [
             {
                 "importedFileName": "plugin-distribution",
@@ -75,7 +81,7 @@
     {
         "importedFileName": "services",
         "path": "AdobeDocs/adobeio-console/master/services.md",
-        "title": "Services",
+        "title": "Services Overview",
         "pages": [
             {
                 "importedFileName": "services-add-api-jwt",
@@ -113,7 +119,7 @@
         "importedFileName": "quota",
         "pages": [],
         "path": "AdobeDocs/adobeio-console/master/quota.md",
-        "title": "Quota usage"
+        "title": "Quota Usage"
     },
     {
         "importedFileName": "credentials",

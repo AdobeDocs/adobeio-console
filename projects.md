@@ -40,7 +40,7 @@ You can use the sort functionality to change the order in which projects are dis
 
 From the **Projects** screen, you can also begin working on a new project by selecting **Create new project**.
 
-## Read Only view
+### Read Only view
 
 As a member of an enterprise organization, you may not have been granted access to all of the services licensed by your organization. For this reason, you may see a *Read Only* tag on certain projects or workspaces within a templated project.
 
@@ -53,3 +53,12 @@ If you believe you are seeing a *Read Only* tag in error, or would like to gain 
 Projects can only be deleted if they do not contain a Runtime namespace. If needed, you can create a new project and start again but you cannot delete a project once Runtime has been added to it. 
 
 You can make edits to an existing project, including removing APIs and event registrations, but you cannot delete Runtime namespaces. Therefore, you can only delete a project that does not contain a Runtime namespace. For more information on working with services within a project, please begin by reading the [services overview](services.md).
+
+## Beta users
+
+When building a project containing certain APIs, Console enables you to select and manage a group of beta users, giving them access to your integration while it is still in development. To learn more, read the [beta users overview](beta-users.md).
+
+## Project approval
+
+Once you have completed development on your project, your application is ready for approval. There are three different approval processes within Adobe Developer Console, depending on the type of application that you have built. To get started with the approval process, visit the [project approvals](approval.md) documentation.
+

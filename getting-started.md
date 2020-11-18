@@ -56,7 +56,7 @@ The resources that appear are influenced by where you are in your workflow, upda
 
 The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
 
-From the projects screen, you can also begin working on a new project by selecting **Create new project**.
+From the projects screen, you can also begin working on a new project by selecting **Create new project** and choosing either an **Empty project** or **Project from template**.
 
 To learn more about projects, begin by reading the [projects overview](projects.md).
 
