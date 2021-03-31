@@ -9,6 +9,7 @@ This document provides answers to frequently asked questions about Adobe Develop
 * [Where did my integrations and plugins go?](#where-did-my-integrations-and-plugins-go)
 * [Why can't I create a project for my organization?](#why-cant-i-create-a-project-for-my-organization)
 * [Why do I see a Read Only label on some of my projects? Even some that I created?](#why-do-i-see-a-read-only-label-on-some-of-my-projects-even-some-that-i-created)
+* [Why do I see an Auto-generated label on some of my projects?](#why-do-i-see-an-auto-generated-label-on-some-of-my-projects)
 * [What is the difference between "Project title" and "App name"?](#what-is-the-difference-between-"project-title"-and-"app-name")
 * [Why can't I add an XD plugin to my project?](#why-cant-i-add-an-xd-plugin-to-my-project)
 * [What is a workspace?](#what-is-a-workspace)
@@ -85,6 +86,10 @@ Head to Service Account (JWT) in the Credentials section to see your credential 
 ### Why do I see a Read Only label on some of my projects? Even some that I created?	
 
 A project or workspace is set to *Read Only* if you have not been granted access to all services within the project or workspace. Work with your organization's administrators to determine which services and product profiles you should have access to.
+
+### Why do I see an Auto-generated label on some of my projects?
+
+Certain Adobe products may need to create projects in Developer Console inside your organization. These auto-generated projects are visible, but cannot be edited, by normal organization users. 
 
 ### How do I know if I should use JWT or OAuth?	
 
