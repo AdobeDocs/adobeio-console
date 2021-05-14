@@ -4,7 +4,7 @@ In order to begin creating projects quickly and easily, this overview document i
 
 * [Home](#home)
 * [Projects](#projects)
-* [Downloads](#downloads) 
+* [APIs and services](#apisandservices) 
 
 ## Home
 
@@ -16,7 +16,7 @@ The _Home_ screen is where you can easily find information and quick links, incl
 
 ### Switch Organizations
 
-Adobe Developer Console allows developers to access and work on projects within multiple enterprise organizations as well as create projects within their own personal organization. 
+Adobe Developer Console allows developers to access and work on projects within multiple organizations.
 
 Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, simply select the down arrow ( &#709; ) and choose the organization you wish to use.
 
@@ -58,10 +58,10 @@ For more information on projects, being by reading the [projects overview](proje
 
 ![](images/projects.png)
 
-## Downloads
+## APIs and services
 
-The _Downloads_ screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the *Quick start* menu or by selecting **Downloads** in the top navigation.
+The _API and services_ screen provides access to all available APIs, Events and services for Adobe products and technologies, with which you can develop applications. It can be accessed by selecting selecting **APIs and services** in the top navigation.
 
-To learn more about accessing downloads, read the [downloads overview](downloads.md).
+To learn more about available APIs and services, read the [APIs and services overview](apis-and-services.md).
 
-![](images/downloads.png)
+![APIs and services](images/apis-and-services.png)
