@@ -1,6 +1,8 @@
 # APIs and services
 
-Adobe Developer Console gives you access to a variety of APIs, Events, SDKs and other services for many of Adobe's most powerful and popular products and technologies. Through Console, you can download SDKs, get supporting information (such as GitHub repositories) related to specific SDKs, as well as track your download history. 
+Adobe Developer Console gives you access to a variety of APIs, Events, SDKs and other services for many of Adobe's most powerful and popular products and technologies. The *APIs and services* pages provides an easy way to browse all available services and create a project. 
+
+![APIS_and_services](images/apis-and-services.png)
 
 ## APIs
 
