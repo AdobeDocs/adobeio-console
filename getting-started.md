@@ -4,7 +4,7 @@ In order to begin creating projects quickly and easily, this overview document i
 
 * [Home](#home)
 * [Projects](#projects)
-* [APIs and services](#apis and services) 
+* [APIs and services](#apisandservices) 
 
 ## Home
 
