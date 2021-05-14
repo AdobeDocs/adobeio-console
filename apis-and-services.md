@@ -35,6 +35,6 @@ To begin using an SDK, select the appropriate values from the options provided i
 
 ## Download history
 
-In the *Download historys* tab, you can view the *History* of SDKs that you have downloaded, as well as information related to the SDK configuration and the date of download.
+In the *Download history* tab, you can view the history of SDKs that you have downloaded, as well as information related to the SDK configuration and the date of download.
 
 ![Download history](images/download-sdk-history.png)
