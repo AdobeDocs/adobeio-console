@@ -5,7 +5,7 @@ In order to begin creating projects quickly and easily, this overview document i
 * [Access](#access)
 * [Home](#home)
 * [Projects](#projects)
-* [APIs and services](#apis_and_services) 
+* [APIs and services](#apis-and-services) 
 
 ## Access
 
