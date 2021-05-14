@@ -6,7 +6,9 @@ Adobe Developer Console gives you access to a variety of APIs, Events, SDKs and 
 
 ## APIs
 
-The *APIs* tab shows all currently available Adobe APIs. This list is updated on a regular basis, so keep an eye out for new offerings. Use Search, Filter by Product or View to narrow down the options. Many services require a license to use. If the option to add the service to a project is not available, you either do not have an active license or permissions to access to that service. Contact your system administrator to request access.
+The *APIs* tab shows all currently available Adobe APIs. This list is updated on a regular basis, so keep an eye out for new offerings. Use Search, Filter by Product or View to narrow down the options. 
+
+Many services require a license to use. If the option to add the service to a project is not available, you either do not have an active license or permissions to access to that service. Contact your system administrator to request access.
 
 ## Events
 
@@ -24,8 +26,6 @@ Adobe I/O Runtime is Adobe’s serverless computing platform. Adobe I/O Runtime 
 
 The *Downloads* tab shows a listing of available SDKs for Adobe products and technologies. As new SDKs become available, the list is automatically updated.
 
-![Downloads](images/downloads.png)
-
 When you select one of the product or technology cards, details regarding that SDK appear, including a brief description, links to documentation (where available), and configuration details.
 
 To begin using an SDK, select the appropriate values from the options provided in order to configure the SDK for your needs. Note that the possible configuration values vary by SDK.
@@ -37,4 +37,4 @@ To begin using an SDK, select the appropriate values from the options provided i
 
 In the *Download historys* tab, you can view the *History* of SDKs that you have downloaded, as well as information related to the SDK configuration and the date of download.
 
-![](images/download-sdk-history.png)
+![Download history](images/download-sdk-history.png)
