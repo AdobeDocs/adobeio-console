@@ -2,51 +2,52 @@
 
 In order to begin creating projects quickly and easily, this overview document introduces key areas of the Adobe Developer Console user interface (UI), broken down by tab:
 
+* [Access](#access)
 * [Home](#home)
 * [Projects](#projects)
-* [Downloads](#downloads) 
+* [APIs and services](#apis-and-services) 
+
+## Access
+
+Users who already belong to an Adobe enterprise or team organization, require either System Administrator or Developer permissions in order to access the Adobe Developer Console. More information about user management can be found in the [Adobe Admin Console guide](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html).
+
+For users who do not belong to an Adobe enterprise or team organization, we will automatically create your own personal Developer organization during sign-up. 
 
 ## Home
 
-After successfully logging in to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui), you arrive at the **Home** screen. This is where you can find quick start links to create a project or download resources, view and edit your public profile, and access the **Projects** and **Downloads** screens using the top navigation.
+After successfully logging in to [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui), you will arrive at the _Home_ screen. 
+
+The _Home_ screen is where you can easily find information and quick links, including top-navigation links to Projects and Downloads.
 
 ![](images/developer-console-home.png)
 
 ### Switch Organizations
 
-Adobe Developer Console allows developers to access and work on projects within multiple enterprise organizations as well as create projects within their own developer organization. 
+Adobe Developer Console allows developers to access and work on projects within multiple organizations.
 
-Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, select the down arrow ( &#709; ) and choose the organization you wish to use.
+Navigating between organizations is easily done using the organization switcher ("org switcher") located in the top-right corner of the UI. To switch organizations, simply select the down arrow ( &#709; ) and choose the organization you wish to use.
 
-**Note:** The "Role" will also update to reflect your role within the newly selected organization.
+> **Note:** The "Role" will also update to reflect your role within the newly selected organization, or will disappear if you select a personal organization because they are not role-based.
 
 ![](images/switch-organizations.png)
 
-### Public profile
-
-All organizations are required to create a public profile that is included as part of any app approval or plugin listing submission. The information provided in the profile is shown to users viewing distributed plugins or a consent screen when installing your apps.
-
-To learn more about creating and editing your public profile, please read the [public profile overview](public-profile.md).
-
-![](images/public-profile-button.png)
-
 ### Quick start
 
-The home screen also provides "quick start" links to help you get started with some of the most common Console actions. Quick start links are available for: creating a new project, creating a project using a template, and downloading resources.
+The _Home_ screen also provides "quick start" links to help you get started with some of the most common Console actions. _Quick start_ links are available for: creating an empty project, creating a project using a template, and downloading resources.
 
 ![](images/quick-start.png)
 
 ### Recent projects
 
-Your organization's three most recent projects are displayed on the home screen, enabling you to easily continue working or see work that has been done. To see the most recent projects for a different organization to which you belong, use the org switcher.
+If your organization has created projects, the most recent projects are displayed on the _Home_ screen, enabling you to easily continue working or see work that has been done.
 
-To view additional projects for your organization, select **All projects** or choose **Projects** in the top navigation. See the [Projects](#projects) section that follows for more information.
+Only the three most recent projects will be shown, therefore to view additional projects for your organization, select **All projects** or choose _Projects_ in the top navigation. See the [Projects](#projects) section that follows for more information.
 
 ![](images/recent-projects.png)
 
 ### Resources
 
-The **Resources** section provides helpful links to related documentation, guides, and services to support you in your work.
+The _Resources_ section provides helpful links to related documentation, guides, and services to support you in your work.
 
 The resources that appear are influenced by where you are in your workflow, updating to ensure you are provided with the most relevant information at the most appropriate time.
 
@@ -54,18 +55,20 @@ The resources that appear are influenced by where you are in your workflow, upda
 
 ## Projects
 
-The **Projects** screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
+The _Projects_ screen provides an overview of the projects that have been created by your organization. If you are part of an enterprise organization, this includes all projects that you have access to, not just projects that you have created.
 
-From the projects screen, you can also begin working on a new project by selecting **Create new project** and choosing either an **Empty project** or **Project from template**.
+Each individual project is shown on a card that includes the title of the project, the last modified date, the products included in the project and whether the project includes APIs, events, runtime, or a combination.
 
-To learn more about projects, begin by reading the [projects overview](projects.md).
+You can use the sort functionality to change the order in which projects are displayed, and you can begin working on a new project by selecting **Create new project**.
 
-![](images/projects-card-view.png)
+For more information on projects, being by reading the [projects overview](projects.md).
 
-## Downloads
+![](images/projects.png)
 
-The **Downloads** screen provides access to the SDKs for many of Adobe's most powerful and popular products and technologies. It can be accessed by selecting **Download resources** from the **Quick start** menu or by selecting **Downloads** in the top navigation.
+## APIs and services
 
-To learn more about downloading resources, read the [downloads overview](downloads.md).
+The _APIs and services_ screen provides access to all available APIs, Events and services for Adobe products and technologies, with which you can develop applications. It can be accessed by selecting selecting **APIs and services** in the top navigation.
 
-![](images/downloads-and-SDKs.png)
+To learn more about available APIs and services, read the [APIs and services overview](apis-and-services.md).
+
+![APIs and services](images/apis-and-services.png)
