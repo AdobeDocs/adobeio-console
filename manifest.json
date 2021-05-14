@@ -110,10 +110,10 @@
         "title": "Insights"
     },
     {
-        "importedFileName": "downloads",
+        "importedFileName": "apis-and-services",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/downloads.md",
-        "title": "Downloads"
+        "path": "AdobeDocs/adobeio-console/stage/apis-and-services.md",
+        "title": "APIs and services"
     },
     {
         "importedFileName": "faq",
