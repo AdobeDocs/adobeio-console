@@ -13,4 +13,4 @@ This documentation shows you how to use Adobe Developer Console to create projec
 
 **To begin using Console to build projects, read the [Getting Started Guide](getting-started.md).**
 
-![](images/developer-console-home.png)
+![Adobe Developer Console home](images/developer-console-home.png)
