@@ -2,9 +2,16 @@
 
 In order to begin creating projects quickly and easily, this overview document introduces key areas of the Adobe Developer Console user interface (UI), broken down by tab:
 
+* [Access](#access)
 * [Home](#home)
 * [Projects](#projects)
-* [APIs and services](#apisandservices) 
+* [APIs and services](#apis_and_services) 
+
+## Access
+
+Users who already belong to an Adobe enterprise or team organization, require either System Administrator or Developer permissions in order to access the Adobe Developer Console. More information about user management can be found in the [Adobe Admin Console guide](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/users.ug.html).
+
+For users who do not belong to an Adobe enterprise or team organization, we will automatically create your own personal Developer organization during sign-up. 
 
 ## Home
 
@@ -60,7 +67,7 @@ For more information on projects, being by reading the [projects overview](proje
 
 ## APIs and services
 
-The _API and services_ screen provides access to all available APIs, Events and services for Adobe products and technologies, with which you can develop applications. It can be accessed by selecting selecting **APIs and services** in the top navigation.
+The _APIs and services_ screen provides access to all available APIs, Events and services for Adobe products and technologies, with which you can develop applications. It can be accessed by selecting selecting **APIs and services** in the top navigation.
 
 To learn more about available APIs and services, read the [APIs and services overview](apis-and-services.md).
 
