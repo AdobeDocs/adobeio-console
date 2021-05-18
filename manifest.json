@@ -13,86 +13,86 @@
     {
         "importedFileName": "overview",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/overview.md",
+        "path": "AdobeDocs/adobeio-console/master/overview.md",
         "title": "Console Overview"
     },
     {
         "importedFileName": "getting-started",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/getting-started.md",
+        "path": "AdobeDocs/adobeio-console/master/getting-started.md",
         "title": "Getting Started"
     },
     {
         "importedFileName": "projects",
-        "path": "AdobeDocs/adobeio-console/stage/projects.md",
+        "path": "AdobeDocs/adobeio-console/master/projects.md",
         "title": "Projects",
         "pages": [
             {
                 "importedFileName": "projects-empty",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/projects-empty.md",
+                "path": "AdobeDocs/adobeio-console/master/projects-empty.md",
                 "title": "Create an Empty Project"
             },
             {
                 "importedFileName": "projects-template",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/projects-template.md",
+                "path": "AdobeDocs/adobeio-console/master/projects-template.md",
                 "title": "Create a Templated Project"
             }
         ]
     },
     {
         "importedFileName": "plugins",
-        "path": "AdobeDocs/adobeio-console/stage/plugin-project.md",
+        "path": "AdobeDocs/adobeio-console/master/plugin-project.md",
         "title": "Plugins",
         "pages": [
             {
                 "importedFileName": "plugin-distribution",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/plugin-distribution.md",
+                "path": "AdobeDocs/adobeio-console/master/plugin-distribution.md",
                 "title": "Distribute a Plugin"
             },
             {
                 "importedFileName": "plugin-update",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/plugin-update.md",
+                "path": "AdobeDocs/adobeio-console/master/plugin-update.md",
                 "title": "Update a Plugin"
             }
         ]
     },
     {
         "importedFileName": "services",
-        "path": "AdobeDocs/adobeio-console/stage/services.md",
+        "path": "AdobeDocs/adobeio-console/master/services.md",
         "title": "Services",
         "pages": [
             {
                 "importedFileName": "services-add-api-jwt",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/services-add-api-jwt.md",
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-jwt.md",
                 "title": "Add API using Service Account (JWT)"
             },
             {
                 "importedFileName": "services-add-api-key",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/services-add-api-key.md",
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-key.md",
                 "title": "Add API using API Key"
             },
             {
                 "importedFileName": "services-add-api-oauth",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/services-add-api-oauth.md",
+                "path": "AdobeDocs/adobeio-console/master/services-add-api-oauth.md",
                 "title": "Add API using Oauth"
             },
             {
                 "importedFileName": "services-add-event",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/services-add-event.md",
+                "path": "AdobeDocs/adobeio-console/master/services-add-event.md",
                 "title": "Add Events"
             },
             {
                 "importedFileName": "services-enable-runtime",
                 "pages": [],
-                "path": "AdobeDocs/adobeio-console/stage/services-enable-runtime.md",
+                "path": "AdobeDocs/adobeio-console/master/services-enable-runtime.md",
                 "title": "Enable Runtime"
             }
         ]
@@ -100,31 +100,31 @@
     {
         "importedFileName": "credentials",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/credentials.md",
+        "path": "AdobeDocs/adobeio-console/master/credentials.md",
         "title": "Credentials"
     },
     {
         "importedFileName": "insights",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/insights.md",
+        "path": "AdobeDocs/adobeio-console/master/insights.md",
         "title": "Insights"
     },
     {
         "importedFileName": "apis-and-services",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/apis-and-services.md",
+        "path": "AdobeDocs/adobeio-console/master/apis-and-services.md",
         "title": "APIs and services"
     },
     {
         "importedFileName": "faq",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/faq.md",
+        "path": "AdobeDocs/adobeio-console/master/faq.md",
         "title": "FAQ"
     },
     {
         "importedFileName": "support",
         "pages": [],
-        "path": "AdobeDocs/adobeio-console/stage/support.md",
+        "path": "AdobeDocs/adobeio-console/master/support.md",
         "title": "Support"
     }
   ]
