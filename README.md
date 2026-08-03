@@ -1,3 +1,11 @@
+# ⚠️ WARNING: THIS REPOSITORY IS ARCHIVED
+
+This project has moved and is no longer maintained here. Please refer to the new repository for the latest updates:
+
+👉 New Repo: https://github.com/AdobeDocs/adobe-dev-console
+
+---
+
 # Adobe Developer Console Documentation
 
 Adobe Developer Console is the developer's tool for managing relationship between their applications and Adobe technology. Through Console, developers can create and manage applications that communicate and collaborate with Adobe.
